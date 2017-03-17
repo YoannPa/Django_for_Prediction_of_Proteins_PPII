@@ -26,7 +26,11 @@ create table PDB(
 	nom_Proteine VARCHAR(255) not null,
 	chaine VARCHAR(10) not null,
 	sequence_Proteine TEXT not null,
+<<<<<<< HEAD
 	taille_Proteine INT not null,
+=======
+	taille_Proteine FLOAT not null,
+>>>>>>> 6af1dbd4f4651d20a9f4469c8f90c13af33395c7
 	resolution_PDB FLOAT not null,
 	header VARCHAR(255) not null,
 	meth_Res BIT not null,
@@ -36,8 +40,15 @@ create table PDB(
 create table struct_sec(
 	id_struct_sec INT not null AUTO_INCREMENT PRIMARY KEY,
 	structure_Predite TEXT not null,
+<<<<<<< HEAD
 	nombre_PPII INT not null, 
 	pourcentage_PPII FLOAT not null,
+=======
+	nombre_PPII INT not null,
+	pourcentage_PPII FLOAT not null, 
+	angle_phi TEXT not null,
+	angle_psi TEXT not null,
+>>>>>>> 6af1dbd4f4651d20a9f4469c8f90c13af33395c7
 	id_PDB char(4) not null,
 	nom_Analyse VARCHAR(7) not null,
 	FOREIGN KEY (id_PDB) REFERENCES PDB(id_PDB),
