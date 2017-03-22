@@ -14,7 +14,7 @@ use M2BI_Projet_PPII;
 #Tables creation
 
 create table methodes_res(
-	meth_Res BIT not null PRIMARY KEY
+	meth_Res VARCHAR(10) not null PRIMARY KEY
 );
 
 create table methodes_analyse(
@@ -22,14 +22,14 @@ create table methodes_analyse(
 );
 
 create table PDB(
-	id_PDB char(4) not null PRIMARY KEY,
+	id_PDB CHAR(4) not null PRIMARY KEY,
 	nom_Proteine VARCHAR(255) not null,
 	chaine VARCHAR(10) not null,
 	sequence_Proteine TEXT not null,
 	taille_Proteine INT not null,
 	resolution_PDB FLOAT not null,
 	header VARCHAR(255) not null,
-	meth_Res BIT not null,
+	meth_Res VARCHAR(10) not null,
 	FOREIGN KEY (meth_Res) REFERENCES methodes_res(meth_Res)
 );
 
@@ -40,7 +40,7 @@ create table struct_sec(
 	pourcentage_PPII FLOAT not null, 
 	angle_phi TEXT not null,
 	angle_psi TEXT not null,
-	id_PDB char(4) not null,
+	id_PDB CHAR(4) not null,
 	nom_Analyse VARCHAR(7) not null,
 	FOREIGN KEY (id_PDB) REFERENCES PDB(id_PDB),
 	FOREIGN KEY (nom_Analyse) REFERENCES methodes_analyse(nom_Analyse) 
@@ -58,7 +58,7 @@ show columns from methodes_res;
 show columns from struct_sec;
 
 
-#Delete database: drop database database_name;
+#Delete database: drop database M2BI_Projet_PPII;
 
 
 -- Insertion de Données dans les tables
