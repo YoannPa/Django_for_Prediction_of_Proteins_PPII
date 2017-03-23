@@ -16,7 +16,7 @@ create table PDB(
 	resolution_PDB FLOAT not null,
 	header VARCHAR(255) not null,
 	meth_Res VARCHAR(10) not null,
-	FOREIGN KEY (meth_Res) REFERENCES methodes_res(meth_Res)
+	FOREIGN KEY (meth_Res) REFERENCES methodes_res(meth_Res) ON DELETE CASCADE
 );
 
 create table struct_sec(
@@ -28,6 +28,6 @@ create table struct_sec(
 	angle_psi TEXT not null,
 	id_PDB CHAR(4) not null,
 	nom_Analyse VARCHAR(7) not null,
-	FOREIGN KEY (id_PDB) REFERENCES PDB(id_PDB),
-	FOREIGN KEY (nom_Analyse) REFERENCES methodes_analyse(nom_Analyse) 
+	FOREIGN KEY (id_PDB) REFERENCES PDB(id_PDB) ON DELETE CASCADE,
+	FOREIGN KEY (nom_Analyse) REFERENCES methodes_analyse(nom_Analyse) ON DELETE CASCADE 
 );

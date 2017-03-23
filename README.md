@@ -5,7 +5,7 @@
 * Install **libmysqlclient-dev** and **MySQL-python**:
 
 ```bash
-sudo apt-get install libmysqlclient-dev
+sudo apt install libmysqlclient-dev
 sudo pip install MySQL-python
 ```
 
