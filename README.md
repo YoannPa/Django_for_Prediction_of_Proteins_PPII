@@ -109,4 +109,26 @@ python manage.py makemigrations pdbapp
 python manage.py migrate
 ```
 
-The database will be updated with the tables necessary for the communication between MySQL and the Django app.
+The database will be updated with the tables necessary for the communication
+between MySQL and the Django app.
+
+* Create new Superuser account:
+
+```bash
+python manage.py createsuperuser
+```
+
+Follow instructions.
+
+* Launch server:
+
+```bash
+python manage.py runserver
+```
+
+* In your web browser go to [localhost:8000](http://localhost:8000) and then
+ [localhost:8000/admin/](http://localhost:8000/admin/) to sign in with the
+ username and password you just define.  
+You can now administrate all informations in the database to be displayed on the
+ website.
+
