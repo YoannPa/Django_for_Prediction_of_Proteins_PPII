@@ -2,6 +2,13 @@
 
 ## Prerequesites
 
+* Install **libmysqlclient-dev** and **MySQL-python**:
+
+```bash
+sudo apt-get install libmysqlclient-dev
+sudo pip install MySQL-python
+```
+
 * Set your working directory to the folder containing the file **create_db.sql**
 
 * Launch Mysql:
