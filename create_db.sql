@@ -1,4 +1,6 @@
 
+
+-- Creation Database M2BI_Projet_PPII
 create table methodes_res(
 	meth_Res VARCHAR(10) not null PRIMARY KEY
 );
@@ -31,3 +33,5 @@ create table struct_sec(
 	FOREIGN KEY (id_PDB) REFERENCES PDB(id_PDB) ON DELETE CASCADE,
 	FOREIGN KEY (nom_Analyse) REFERENCES methodes_analyse(nom_Analyse) ON DELETE CASCADE 
 );
+
+-- Insertion de Données dans les tables

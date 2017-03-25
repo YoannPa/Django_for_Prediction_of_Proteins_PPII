@@ -1,0 +1,46 @@
+#SEGNO
+#-----
+#To run:
+
+__RAMAPLOT=/home/jdoe/path/to/SEGNO/all1deg.data segno -pdb 1xyz.pdb > 1xyz.segno
+
+#then to extract data
+./extract_XTLSSTR2SEQ2D.pl 1xyz.segno 
+
+#XTLSSTR
+#-------
+#To run:
+XTLSSTR-linux
+
+#Then enter
+1xyz.pdb
+
+#Produce
+1xyz.pd.vtr
+1xyz.pd.ln
+1atn.pd.cnt
+
+#-> interesting file: 1atn.pd.ln
+
+#Then extract data
+./extract_XTLSSTR2SEQ2D.pl 1atn.pd.ln
+
+
+#PROSS
+#-----
+#To run:
+./PROSS.py 1atn.pdb >1xyz.pross
+
+#Then to extract data : 
+./extract_PROSS2SEQ2D.pl 1xyz.pross
+
+#DSSPPII
+#----
+#To run:
+./dssppiii.pl 1xyz.pdb >1xyz.dssp
+
+
+
+
+
+

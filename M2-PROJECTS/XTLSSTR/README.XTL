@@ -1,0 +1,35 @@
+Program xtlsstr written by S. M. King and W. C. Johnson uses two angles
+and three distances to assign secondary structure to Xray and NMR
+coordinates from the Brookhaven Protein Data Bank.  The algorithm uses two
+angles and three distances to assign alpha helix (H and h), 3-10 helix (G
+and g), extended beta strand (E and e), hydrogen-bonded (T) and
+nonhydrogen-bonded (N) beta-turns, and polyproline II type (3-1) helix (P
+and p) to amides (assigned to the amino acid contributing the CO), in the
+same way that a researcher would assign these secondary structures
+visually.
+        This version 1.3.8 avoids almost all numbering problems in pdb files by
+renumbering the input file beginning with '1'.  The only problem I see is
+if there is a real gap in the data.  Then two amino acids that are not next
+to each other in the protein become next to each other in the input and
+output files.  The original version 1.3.5 is also included here as xtlsstr5
+for users who do not want the input file renumbered.
+        The coordinates for most ligands are under the heading "HETATM".  This
+poses no problem for the program.  However, the coordinates for peptide
+ligands are sometimes given under the heading "ATOM" and treated like a
+subunit.  Then the program thinks the ligand is a subunit of the protein. 
+The problem is further complicated when the numbering of the ligand does
+not begin with 1.  Coordinates for ligands must be deleted from the file
+when they are treated the same as a subunit.
+        The program asks for the name of the Protein Data Bank file on the screen,
+to be typed in as the standard file name pdbxxxx.ent.  The program produces
+three files as output: (1) pdbxxxx.ln that line by line gives the amino
+acid, assigned structure, and five parameters, (2) pdbxxxx.vtr that gives
+assigned structure to each amino acid as a vector, (3) pdbxxxx.cnt that
+gives the number of amide-amide interactions for each amide.  Amides can be
+assigned to more than one structure.  The Fortran source code xtlsstr.f
+contains detailed instructions, and the range of the five parameters
+defining the five structures are easily modified to suit the user.  The
+executable file xtlsstr.exe was compiled on a Silicon Graphics using a
+Fortran 77 compiler and System 6.0.
+
+

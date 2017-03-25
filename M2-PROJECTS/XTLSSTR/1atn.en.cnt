@@ -1,0 +1,34 @@
+ENDODEOXYRIBONUCLEASE                   08-MAR-91   1ATN    
+ATOMIC STRUCTURE OF THE ACTIN:DNASE I COMPLEX               
+MOL_ID: 1;                                                  
+           
+Subunit  1
+Count of amide interactions for H is  101.0
+Count of amide interactions for G is   33.5
+Count of amide interactions for E is   47.0
+Count of amide interactions for T is   39.0
+Count of amide interactions for N is   19.5
+Count of amide interactions for P is   16.0
+Count of amides is  372.0
+           
+Fractions of secondary structure are:
+H= 0.272,  G= 0.090,  E= 0.126,  T= 0.105,  N= 0.052,  P= 0.043  O= 0.312
+           
+Subunit  2
+Count of amide interactions for H is   53.0
+Count of amide interactions for G is   23.0
+Count of amide interactions for E is   50.0
+Count of amide interactions for T is   11.0
+Count of amide interactions for N is   13.0
+Count of amide interactions for P is    9.0
+Count of amides is  259.0
+           
+Fractions of secondary structure are:
+H= 0.205,  G= 0.089,  E= 0.193,  T= 0.042,  N= 0.050,  P= 0.035  O= 0.386
+           
+           
+Totals for secondary structure are:
+H= 154.0,  G=  56.5,  E=  97.0,  T=  50.0,  N=  32.5,  P=  25.0  Amides=  630.0
+           
+Fractions of total secondary structure are:
+H= 0.244,  G= 0.090,  E= 0.154,  T= 0.079,  N= 0.052,  P= 0.040  O= 0.341

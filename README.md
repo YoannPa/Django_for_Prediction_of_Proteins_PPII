@@ -132,3 +132,34 @@ python manage.py runserver
 You can now administrate all informations in the database to be displayed on the
  website.
 
+
+
+## In case of problems with the MySQL database:
+
+To show existing tables:
+
+```sql
+show tables;
+```
+
+To show tables columns:
+
+```sql
+show columns from PDB;
+show columns from methodes_analyse;
+show columns from methodes_res;
+show columns from struct_sec;
+```
+
+To Delete the database:
+
+```sql
+drop database M2BI_Projet_PPII;
+```
+
+To display all databases:
+
+```sql
+show databases;
+```
+

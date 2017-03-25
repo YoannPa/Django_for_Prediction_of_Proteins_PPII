@@ -1,0 +1,629 @@
+    1  ASP_A  O                                       -48.603 -39.150           
+    2  GLU_A  O                                       -25.462 -50.212 disfavoured
+    3  ASP_A  O                                      -129.546  -1.208           
+    4  GLU_A  O                                       -59.741 -42.339           
+    5  THR_A  O                                       -77.877 -40.762           
+    6  THR_A  O                                       -72.134 -15.878           
+    7  ALA_A  e  (strand_term)  F 1     SHEET_STRAND  -75.485 133.061           
+    8  LEU_A  E       (strand)  F 1     SHEET_STRAND -101.666 152.340           
+    9  VAL_A  E       (strand)  F 1     SHEET_STRAND -133.637 118.186           
+   10  CYS_A  E       (strand)  F 1     SHEET_STRAND -121.494 113.078           
+   11  ASP_A  E       (strand)  F 1     SHEET_STRAND -102.760 108.150           
+   12  ASN_A  E       (strand)  F 1     SHEET_STRAND  -86.925 119.953           
+   13  GLY_A  e  (strand_term)  F 1     SHEET_STRAND -117.362 174.815           
+   14  SER_A  O                                       -73.638 -31.445           
+   15  GLY_A  O                                      -113.352 -47.854 disfavoured
+   16  LEU_A  e  (strand_term)  F 2     SHEET_STRAND -120.339 149.680           
+   17  VAL_A  E       (strand)  F 2     SHEET_STRAND  -99.844 140.303           
+   18  LYS_A  E       (strand)  F 2     SHEET_STRAND -119.554 129.784           
+   19  ALA_A  E       (strand)  F 2     SHEET_STRAND -147.866 167.160           
+   20  GLY_A  E       (strand)  F 2     SHEET_STRAND  153.960-169.270           
+   21  PHE_A  E       (strand)  F 2     SHEET_STRAND -107.096 137.339           
+   22  ALA_A  e  (strand_term)  F 2     SHEET_STRAND  -60.525 131.650           
+   23  GLY_A  O                                       119.941 -52.130  forbidden
+   24  ASP_A  O                                       -59.692 162.190           
+   25  ASP_A  O                                       -89.656 -18.910           
+   26  ALA_A  O                                      -152.662 157.524           
+   27  PRO_A  O                                       -59.295 131.355           
+   28  ARG_A  O                                       -71.382 -25.753           
+   29  ALA_A  e  (strand_term)  F 3     SHEET_STRAND -138.712 128.675           
+   30  VAL_A  E       (strand)  F 3     SHEET_STRAND -138.436 126.585           
+   31  PHE_A  e  (strand_term)  F 3     SHEET_STRAND -165.015 154.360           
+   32  PRO_A  e  (strand_term)  F 4     SHEET_STRAND  -60.420 149.187           
+   33  SER_A  E       (strand)  F 4     SHEET_STRAND  -95.445  60.664           
+   34  ILE_A  E       (strand)  F 4     SHEET_STRAND -124.304 164.152           
+   35  VAL_A  E       (strand)  F 4     SHEET_STRAND -144.718 114.766           
+   36  GLY_A  E       (strand)  F 4     SHEET_STRAND -101.427 142.043           
+   37  ARG_A  e  (strand_term)  F 4     SHEET_STRAND -125.646 113.556           
+   38  PRO_A  O                                       -56.410 122.534           
+   39  ARG_A  O                                       -63.830 -18.995           
+   40  HIS_A  e  (strand_term)  F 5     SHEET_STRAND -139.775 158.597           
+   41  GLN_A  E       (strand)  F 5     SHEET_STRAND  -87.036 136.339           
+   42  GLY_A  E       (strand)  F 5     SHEET_STRAND  162.269-179.687           
+   43  VAL_A  E       (strand)  F 5     SHEET_STRAND -138.157 162.459           
+   44  MET_A  E       (strand)  F 5     SHEET_STRAND  -88.224 156.489           
+   45  VAL_A  e  (strand_term)  F 5     SHEET_STRAND  -61.196 114.513           
+   46  GLY_A  O                                        99.311 -15.207           
+   47  MET_A  P      (polypro)  P 6   POLYPRO_STRAND  -99.304 167.303           
+   48  GLY_A  P      (polypro)  P 6   POLYPRO_STRAND  -91.609 172.678           
+   49  GLN_A  p (polypro_term)  P 6   POLYPRO_STRAND  -58.039 130.185           
+   50  LYS_A  O                                      -120.394 133.602           
+   51  ASP_A  O                                       -83.055 -22.354           
+   52  SER_A  e  (strand_term)  F 7     SHEET_STRAND -157.937 158.397           
+   53  TYR_A  E       (strand)  F 7     SHEET_STRAND -138.477 148.176           
+   54  VAL_A  e  (strand_term)  F 7     SHEET_STRAND -139.789 144.895           
+   55  GLY_A  O                                        73.180-130.404           
+   56  ASP_A  H  (alpha_helix)  H 1      ALPHA_HELIX  -70.264 -36.434           
+   57  GLU_A  H  (alpha_helix)  H 1      ALPHA_HELIX  -62.761 -25.291           
+   58  ALA_A  H  (alpha_helix)  H 1      ALPHA_HELIX  -76.308 -34.311           
+   59  GLN_A  H  (alpha_helix)  H 1      ALPHA_HELIX  -72.218 -49.631           
+   60  SER_A  H  (alpha_helix)  H 1      ALPHA_HELIX  -60.251 -32.296           
+   61  LYS_A  O                                      -103.422  28.017           
+   62  ARG_A  G     (310     )  G 2        310_HELIX  -62.763 -25.250           
+   63  GLY_A  G     (310     )  G 2        310_HELIX  -61.494 -25.263           
+   64  ILE_A  g     (310_term)  G 2        310_HELIX -109.735   7.273           
+   65  LEU_A  e  (strand_term)  F 8     SHEET_STRAND -125.304 160.981           
+   66  THR_A  E       (strand)  F 8     SHEET_STRAND -105.741 116.979           
+   67  LEU_A  E       (strand)  F 8     SHEET_STRAND  -80.930 139.571           
+   68  LYS_A  E       (strand)  F 8     SHEET_STRAND -140.293 137.942           
+   69  TYR_A  e  (strand_term)  F 8     SHEET_STRAND  -96.797 101.936           
+   70  PRO_A  O                                       -59.805 -23.650           
+   71  ILE_A  O                                      -115.809 104.349           
+   72  GLU_A  O                                       -97.487 114.813           
+   74  GLY_A  O                                        85.683 -16.815           
+   75  ILE_A  O                                       -97.794 137.865           
+   76  ILE_A  O                                       -75.111 118.549           
+   77  THR_A  O                                       -98.679 -33.586           
+   78  ASN_A  O                                      -124.874 113.126           
+   79  TRP_A  H  (alpha_helix)  M 3        MIX_HELIX  -76.136 -20.392           
+   80  ASP_A  H  (alpha_helix)  M 3        MIX_HELIX  -73.404 -50.992           
+   81  ASP_A  H  (alpha_helix)  M 3        MIX_HELIX  -66.463 -20.943           
+   82  MET_A  H  (alpha_helix)  M 3        MIX_HELIX  -79.042 -46.168           
+   83  GLU_A  H  (alpha_helix)  M 3        MIX_HELIX  -57.014 -31.658           
+   84  LYS_A  H  (alpha_helix)  M 3        MIX_HELIX  -63.006 -49.989           
+   85  ILE_A  H  (alpha_helix)  M 3        MIX_HELIX  -62.059 -38.571           
+   86  TRP_A  H  (alpha_helix)  M 3        MIX_HELIX  -63.554 -45.612           
+   87  HIS_A  H  (alpha_helix)  M 3        MIX_HELIX  -54.146 -49.515           
+   88  HIS_A  H  (alpha_helix)  M 3        MIX_HELIX  -56.715 -41.377           
+   89  THR_A  H  (alpha_helix)  M 3        MIX_HELIX  -65.042 -49.474           
+   90  PHE_A  H  (alpha_helix)  M 3        MIX_HELIX  -67.799 -56.925           
+   91  TYR_A  I     (pi_helix)  M 3        MIX_HELIX  -78.785 -30.112           
+   92  ASN_A  I     (pi_helix)  M 3        MIX_HELIX -107.489 -49.136           
+   93  GLU_A  I     (pi_helix)  M 3        MIX_HELIX  -69.687 -55.316           
+   94  LEU_A  I     (pi_helix)  M 3        MIX_HELIX  -93.535 -12.334           
+   95  ARG_A  O                                        55.260  26.760           
+   96  VAL_A  O                                       -95.807 161.217           
+   97  ALA_A  O                                       -92.441 127.248           
+   98  PRO_A  O                                       -67.112 -28.949           
+   99  GLU_A  O                                       -67.856   2.419           
+  100  GLU_A  O                                      -127.361  20.897           
+  101  HIS_A  e  (strand_term)  F 9     SHEET_STRAND -125.034 127.589           
+  102  PRO_A  E       (strand)  F 9     SHEET_STRAND  -69.031 143.394           
+  103  THR_A  E       (strand)  F 9     SHEET_STRAND -122.053 114.700           
+  104  LEU_A  E       (strand)  F 9     SHEET_STRAND  -96.279 123.111           
+  105  LEU_A  E       (strand)  F 9     SHEET_STRAND -109.134 165.566           
+  106  THR_A  E       (strand)  F 9     SHEET_STRAND -122.244 152.554           
+  107  GLU_A  e  (strand_term)  F 9     SHEET_STRAND -127.736 172.648           
+  108  ALA_A  O                                       -84.777 162.215           
+  109  PRO_A  O                                       -37.916 -58.301 disfavoured
+  110  LEU_A  O                                      -119.431  48.644 disfavoured
+  111  ASN_A  O                                       -60.707 124.364           
+  112  PRO_A  O                                       -53.943 129.325           
+  113  LYS_A  H  (alpha_helix)  M 4        MIX_HELIX  -40.559 -39.682           
+  114  ALA_A  H  (alpha_helix)  M 4        MIX_HELIX  -67.133 -30.692           
+  115  ASN_A  H  (alpha_helix)  M 4        MIX_HELIX  -72.393 -44.731           
+  116  ARG_A  H  (alpha_helix)  M 4        MIX_HELIX  -63.026 -40.763           
+  117  GLU_A  H  (alpha_helix)  M 4        MIX_HELIX  -64.909 -35.631           
+  118  LYS_A  H  (alpha_helix)  M 4        MIX_HELIX  -71.896 -46.091           
+  119  MET_A  H  (alpha_helix)  M 4        MIX_HELIX  -66.808 -15.982           
+  120  THR_A  H  (alpha_helix)  M 4        MIX_HELIX  -80.418 -44.292           
+  121  GLN_A  H  (alpha_helix)  M 4        MIX_HELIX  -53.510 -45.605           
+  122  ILE_A  H  (alpha_helix)  M 4        MIX_HELIX  -76.218 -34.348           
+  123  MET_A  H  (alpha_helix)  M 4        MIX_HELIX  -65.941 -55.577           
+  124  PHE_A  H  (alpha_helix)  M 4        MIX_HELIX  -73.337 -43.189           
+  125  GLU_A  I     (pi_helix)  M 4        MIX_HELIX  -86.725 -25.907           
+  126  THR_A  I     (pi_helix)  M 4        MIX_HELIX -108.412 -24.374           
+  127  PHE_A  I     (pi_helix)  M 4        MIX_HELIX -100.159 -16.707           
+  128  ASN_A  O                                        57.534  49.462           
+  129  VAL_A  O                                       -75.845 150.208           
+  130  PRO_A  O                                       -59.778 -44.470           
+  131  ALA_A  e  (strand_term)  F10     SHEET_STRAND -156.746 156.413           
+  132  MET_A  E       (strand)  F10     SHEET_STRAND -148.377-178.068           
+  133  TYR_A  E       (strand)  F10     SHEET_STRAND -170.507 139.714           
+  134  VAL_A  E       (strand)  F10     SHEET_STRAND -115.710 111.449           
+  135  ALA_A  E       (strand)  F10     SHEET_STRAND  -93.591 152.955           
+  136  ILE_A  e  (strand_term)  F10     SHEET_STRAND  -85.141 141.990           
+  137  GLN_A  H  (alpha_helix)  H 5      ALPHA_HELIX  -60.732 -58.447           
+  138  ALA_A  H  (alpha_helix)  H 5      ALPHA_HELIX  -49.349 -33.113           
+  139  VAL_A  H  (alpha_helix)  H 5      ALPHA_HELIX  -67.114 -38.903           
+  140  LEU_A  H  (alpha_helix)  H 5      ALPHA_HELIX  -73.233 -31.697           
+  141  SER_A  H  (alpha_helix)  H 5      ALPHA_HELIX  -64.620 -44.816           
+  142  LEU_A  H  (alpha_helix)  H 5      ALPHA_HELIX  -59.505 -45.908           
+  143  TYR_A  H  (alpha_helix)  H 5      ALPHA_HELIX  -65.707 -38.311           
+  144  ALA_A  H  (alpha_helix)  H 5      ALPHA_HELIX  -64.470 -16.937           
+  145  SER_A  O                                       -98.092  23.852           
+  146  GLY_A  O                                        85.507 -44.615 disfavoured
+  147  ARG_A  O                                       -84.502 176.558           
+  148  THR_A  O                                      -122.914 -13.984           
+  149  THR_A  e  (strand_term)  F11     SHEET_STRAND -131.253 136.301           
+  150  GLY_A  E       (strand)  F11     SHEET_STRAND  168.554-176.464           
+  151  ILE_A  E       (strand)  F11     SHEET_STRAND -128.400 128.081           
+  152  VAL_A  E       (strand)  F11     SHEET_STRAND  -96.800 128.425           
+  153  LEU_A  E       (strand)  F11     SHEET_STRAND  -96.142 112.511           
+  154  ASP_A  E       (strand)  F11     SHEET_STRAND -113.997 128.634           
+  155  SER_A  e  (strand_term)  F11     SHEET_STRAND -147.631 112.407           
+  156  GLY_A  O                                      -121.858-120.120 disfavoured
+  157  ASP_A  O                                       -95.611 -43.102           
+  158  GLY_A  O                                      -109.232 -25.139           
+  159  VAL_A  e  (strand_term)  F12     SHEET_STRAND -129.108 153.516           
+  160  THR_A  E       (strand)  F12     SHEET_STRAND -118.384 145.965           
+  161  HIS_A  E       (strand)  F12     SHEET_STRAND -145.844 160.206           
+  162  ASN_A  E       (strand)  F12     SHEET_STRAND -128.406 116.081           
+  163  VAL_A  E       (strand)  F12     SHEET_STRAND -125.622 104.636           
+  164  PRO_A  E       (strand)  F12     SHEET_STRAND  -73.583 126.831           
+  165  ILE_A  E       (strand)  F12     SHEET_STRAND -122.828 131.878           
+  166  TYR_A  e  (strand_term)  F12     SHEET_STRAND -123.628 117.236           
+  167  GLU_A  O                                        43.923  34.911           
+  168  GLY_A  O                                       103.277 -19.390           
+  169  TYR_A  e  (strand_term)  F13     SHEET_STRAND  -91.582 112.970           
+  170  ALA_A  E       (strand)  F13     SHEET_STRAND  -63.335 135.313           
+  171  LEU_A  e  (strand_term)  F13     SHEET_STRAND  -93.151  91.740           
+  172  PRO_A  O                                       -38.544 -48.613           
+  173  HIS_A  O                                       -78.905   5.717           
+  174  ALA_A  O                                      -121.705  -8.894           
+  175  ILE_A  e  (strand_term)  F14     SHEET_STRAND  -62.739 134.685           
+  176  MET_A  E       (strand)  F14     SHEET_STRAND -128.188 141.507           
+  177  ARG_A  E       (strand)  F14     SHEET_STRAND -123.063 130.948           
+  178  LEU_A  E       (strand)  F14     SHEET_STRAND -125.701 110.383           
+  179  ASP_A  E       (strand)  F14     SHEET_STRAND  -75.763  62.111           
+  180  LEU_A  E       (strand)  F14     SHEET_STRAND -147.309 119.884           
+  181  ALA_A  e  (strand_term)  F14     SHEET_STRAND -144.367-157.159 disfavoured
+  182  GLY_A  H  (alpha_helix)  H 6      ALPHA_HELIX  -59.559 -27.975           
+  183  ARG_A  H  (alpha_helix)  H 6      ALPHA_HELIX  -68.439 -53.976           
+  184  ASP_A  H  (alpha_helix)  H 6      ALPHA_HELIX  -55.359 -43.593           
+  185  LEU_A  H  (alpha_helix)  H 6      ALPHA_HELIX  -65.124 -29.983           
+  186  THR_A  H  (alpha_helix)  H 6      ALPHA_HELIX  -76.274 -33.697           
+  187  ASP_A  H  (alpha_helix)  H 6      ALPHA_HELIX  -78.592 -24.937           
+  188  TYR_A  H  (alpha_helix)  H 6      ALPHA_HELIX  -77.020 -39.308           
+  189  LEU_A  H  (alpha_helix)  H 6      ALPHA_HELIX  -60.030 -43.835           
+  190  MET_A  H  (alpha_helix)  H 6      ALPHA_HELIX  -44.767 -55.573           
+  191  LYS_A  H  (alpha_helix)  H 6      ALPHA_HELIX  -67.425 -52.717           
+  192  ILE_A  H  (alpha_helix)  H 6      ALPHA_HELIX  -62.067 -11.322           
+  193  LEU_A  H  (alpha_helix)  H 6      ALPHA_HELIX  -96.023 -33.154           
+  194  THR_A  H  (alpha_helix)  H 6      ALPHA_HELIX  -71.841 -34.431           
+  195  GLU_A  H  (alpha_helix)  H 6      ALPHA_HELIX  -67.376 -25.103           
+  196  ARG_A  O                                       -72.626  -1.558           
+  197  GLY_A  O                                        97.058  59.262 disfavoured
+  198  TYR_A  b  (strand_term)  I15      ISOL_STRAND -143.340 175.293           
+  199  SER_A  B       (strand)  I15      ISOL_STRAND -145.577 118.219           
+  200  PHE_A  b  (strand_term)  I15      ISOL_STRAND -110.973  91.190           
+  201  VAL_A  O                                       -98.244 -64.764 disfavoured
+  202  THR_A  O                                       -78.212 168.823           
+  203  THR_A  O                                       -67.985 -20.895           
+  204  ALA_A  O                                       -77.238  -5.535           
+  205  GLU_A  g     (310_term)  M 7        MIX_HELIX  -98.541 -50.367           
+  206  ARG_A  G     (310     )  M 7        MIX_HELIX  -44.823 -57.449           
+  207  GLU_A  G     (310     )  M 7        MIX_HELIX  -59.685 -40.508           
+  208  ILE_A  g     (310_term)  M 7        MIX_HELIX  -73.656 -11.938           
+  209  VAL_A  G     (310     )  M 7        MIX_HELIX  -64.652 -32.933           
+  210  ARG_A  G     (310     )  M 7        MIX_HELIX  -67.138 -35.336           
+  211  ASP_A  G     (310     )  M 7        MIX_HELIX  -78.026 -21.136           
+  212  ILE_A  H  (alpha_helix)  M 7        MIX_HELIX  -70.999 -55.147           
+  213  LYS_A  H  (alpha_helix)  M 7        MIX_HELIX  -45.518 -53.549           
+  214  GLU_A  H  (alpha_helix)  M 7        MIX_HELIX  -62.712 -54.422           
+  215  LYS_A  I     (pi_helix)  M 7        MIX_HELIX  -69.590 -47.539           
+  216  LEU_A  I     (pi_helix)  M 7        MIX_HELIX  -99.011 -19.654           
+  217  CYS_A  b  (strand_term)  I16      ISOL_STRAND  -72.930 144.590           
+  218  TYR_A  B       (strand)  I16      ISOL_STRAND -128.729 153.867           
+  219  VAL_A  B       (strand)  I16      ISOL_STRAND -120.447 107.040           
+  220  ALA_A  B       (strand)  I16      ISOL_STRAND  -82.826 144.434           
+  221  LEU_A  b  (strand_term)  I16      ISOL_STRAND  -91.922 133.791           
+  222  ASP_A  O                                        58.319  70.264 disfavoured
+  223  PHE_A  O                                       -70.787 -16.087           
+  224  GLU_A  O                                       -62.089 -67.704 disfavoured
+  225  ASN_A  O                                       -92.103  44.912 disfavoured
+  226  GLU_A  O                                      -123.693 -33.843           
+  227  MET_A  H  (alpha_helix)  H 8      ALPHA_HELIX  -66.776 -49.817           
+  228  ALA_A  H  (alpha_helix)  H 8      ALPHA_HELIX  -52.213 -44.951           
+  229  THR_A  H  (alpha_helix)  H 8      ALPHA_HELIX  -60.486 -40.430           
+  230  ALA_A  H  (alpha_helix)  H 8      ALPHA_HELIX  -54.611 -42.073           
+  231  ALA_A  H  (alpha_helix)  H 8      ALPHA_HELIX  -64.570 -45.321           
+  232  SER_A  H  (alpha_helix)  H 8      ALPHA_HELIX  -60.457 -22.020           
+  233  SER_A  O                                        47.801  89.928  forbidden
+  234  SER_A  O                                       -88.615-177.685           
+  235  SER_A  O                                       -84.348  53.136           
+  236  LEU_A  O                                       -91.190 -29.164           
+  237  GLU_A  O                                       -50.521 154.365           
+  238  LYS_A  e  (strand_term)  F17     SHEET_STRAND -150.780 111.187           
+  239  SER_A  E       (strand)  F17     SHEET_STRAND  -94.645 129.827           
+  240  TYR_A  E       (strand)  F17     SHEET_STRAND -106.257 135.499           
+  241  GLU_A  e  (strand_term)  F17     SHEET_STRAND  -91.508 122.911           
+  242  LEU_A  O                                       -65.103-171.284 disfavoured
+  243  PRO_A  O                                       -53.653 -33.443           
+  244  ASP_A  O                                      -103.866-160.042 disfavoured
+  245  GLY_A  O                                       -65.647 -50.370           
+  246  GLN_A  O                                       -18.659  73.512  forbidden
+  247  VAL_A  e  (strand_term)  F18     SHEET_STRAND  -68.700 109.848           
+  248  ILE_A  E       (strand)  F18     SHEET_STRAND  -94.293 140.171           
+  249  THR_A  E       (strand)  F18     SHEET_STRAND -112.060 139.210           
+  250  ILE_A  e  (strand_term)  F18     SHEET_STRAND -137.255 110.159           
+  251  GLY_A  O                                       -97.099 -71.888 disfavoured
+  252  ASN_A  O                                       -80.450 -64.662 disfavoured
+  253  GLU_A  O                                       -40.617 -26.222 disfavoured
+  254  ARG_A  O                                       -34.335 -41.551 disfavoured
+  255  PHE_A  O                                      -112.060 -12.189           
+  256  ARG_A  g     (310_term)  G 9        310_HELIX  -67.362 -24.416           
+  257  CYS_A  G     (310     )  G 9        310_HELIX  -71.354 -57.414           
+  258  PRO_A  G     (310     )  G 9        310_HELIX  -70.309 -21.909           
+  259  GLU_A  g     (310_term)  G 9        310_HELIX  -58.684 -17.151           
+  260  THR_A  G     (310     )  G 9        310_HELIX  -64.989 -39.863           
+  261  LEU_A  G     (310     )  G 9        310_HELIX  -57.372 -26.125           
+  262  PHE_A  g     (310_term)  G 9        310_HELIX  -95.568 -27.736           
+  263  GLN_A  O                                      -123.296  96.286           
+  264  PRO_A  G     (310     )  G10        310_HELIX  -72.138 -17.768           
+  265  SER_A  G     (310     )  G10        310_HELIX  -59.718 -21.013           
+  266  PHE_A  G     (310     )  G10        310_HELIX  -63.968 -20.835           
+  267  ILE_A  O                                      -128.202  29.561           
+  268  GLY_A  O                                        64.446  22.014           
+  269  MET_A  O                                       -96.962 132.061           
+  270  GLU_A  O                                       -91.375  -9.817           
+  271  SER_A  P      (polypro)  P19   POLYPRO_STRAND  -63.136 160.717           
+  272  ALA_A  P      (polypro)  P19   POLYPRO_STRAND  -74.113 170.739           
+  273  GLY_A  p (polypro_term)  P19   POLYPRO_STRAND -108.261 162.092           
+  274  ILE_A  O                                       -23.025 -54.574 disfavoured
+  275  HIS_A  H  (alpha_helix)  H11      ALPHA_HELIX  -72.448 -37.455           
+  276  GLU_A  H  (alpha_helix)  H11      ALPHA_HELIX  -70.698 -36.499           
+  277  THR_A  H  (alpha_helix)  H11      ALPHA_HELIX  -71.425 -38.474           
+  278  THR_A  H  (alpha_helix)  H11      ALPHA_HELIX  -52.109 -46.182           
+  279  TYR_A  H  (alpha_helix)  H11      ALPHA_HELIX  -67.904 -49.258           
+  280  ASN_A  H  (alpha_helix)  H11      ALPHA_HELIX  -64.361 -31.567           
+  281  SER_A  H  (alpha_helix)  H11      ALPHA_HELIX  -59.081 -45.150           
+  282  ILE_A  H  (alpha_helix)  H11      ALPHA_HELIX  -68.947 -46.642           
+  283  MET_A  O                                       -77.579  10.888           
+  284  LYS_A  O                                      -100.300  -6.574           
+  285  CYS_A  O                                       -96.333 169.230           
+  286  ASP_A  O                                       -62.345 145.951           
+  287  ILE_A  h   (alpha_term)  H12      ALPHA_HELIX  -58.379 -44.350           
+  288  ASP_A  H  (alpha_helix)  H12      ALPHA_HELIX  -69.898 -26.760           
+  289  ILE_A  H  (alpha_helix)  H12      ALPHA_HELIX  -90.830 -10.909           
+  290  ARG_A  H  (alpha_helix)  H12      ALPHA_HELIX  -63.075 -27.310           
+  291  LYS_A  h   (alpha_term)  H12      ALPHA_HELIX  -68.274 -28.814           
+  292  ASP_A  H  (alpha_helix)  H12      ALPHA_HELIX  -69.003 -54.613           
+  293  LEU_A  H  (alpha_helix)  H12      ALPHA_HELIX  -53.306 -40.986           
+  294  TYR_A  H  (alpha_helix)  H12      ALPHA_HELIX  -66.937 -31.891           
+  295  ALA_A  O                                       -90.162  11.554           
+  296  ASN_A  e  (strand_term)  F20     SHEET_STRAND -148.811  64.873           
+  297  ASN_A  E       (strand)  F20     SHEET_STRAND  -92.768 100.474           
+  298  VAL_A  E       (strand)  F20     SHEET_STRAND  -98.168 135.598           
+  299  MET_A  E       (strand)  F20     SHEET_STRAND -105.473 136.140           
+  300  SER_A  e  (strand_term)  F20     SHEET_STRAND -145.292 158.281           
+  301  GLY_A  O                                       114.579 147.093           
+  302  GLY_A  G     (310     )  G13        310_HELIX  -52.087 -42.749           
+  303  THR_A  G     (310     )  G13        310_HELIX  -75.228  -8.438           
+  304  THR_A  g     (310_term)  G13        310_HELIX  -92.874  10.686           
+  305  MET_A  O                                       -86.674 -16.215           
+  306  TYR_A  O                                       -47.064 113.848 disfavoured
+  307  PRO_A  O                                       -47.909 144.018           
+  308  GLY_A  O                                        77.137  17.216           
+  309  ILE_A  H  (alpha_helix)  H14      ALPHA_HELIX  -76.169 -37.553           
+  310  ALA_A  H  (alpha_helix)  H14      ALPHA_HELIX  -71.083 -48.222           
+  311  ASP_A  H  (alpha_helix)  H14      ALPHA_HELIX  -59.724 -45.238           
+  312  ARG_A  H  (alpha_helix)  H14      ALPHA_HELIX  -60.528 -46.687           
+  313  MET_A  H  (alpha_helix)  H14      ALPHA_HELIX  -66.499 -31.509           
+  314  GLN_A  H  (alpha_helix)  H14      ALPHA_HELIX  -59.396 -52.696           
+  315  LYS_A  H  (alpha_helix)  H14      ALPHA_HELIX  -79.359 -20.940           
+  316  GLU_A  H  (alpha_helix)  H14      ALPHA_HELIX  -72.420 -43.461           
+  317  ILE_A  H  (alpha_helix)  H14      ALPHA_HELIX  -88.774 -23.381           
+  318  THR_A  H  (alpha_helix)  H14      ALPHA_HELIX  -55.483 -48.475           
+  319  ALA_A  O                                       -73.912   9.605           
+  320  LEU_A  O                                      -121.771 -23.180           
+  321  ALA_A  O                                       -82.220 148.708           
+  322  PRO_A  O                                       -59.364 129.897           
+  323  SER_A  O                                       -54.084 -16.589           
+  324  THR_A  O                                       -69.046  -7.618           
+  325  MET_A  e  (strand_term)  F21     SHEET_STRAND  -98.626 150.066           
+  326  LYS_A  E       (strand)  F21     SHEET_STRAND -100.050 125.106           
+  327  ILE_A  E       (strand)  F21     SHEET_STRAND  -98.245 145.697           
+  328  LYS_A  E       (strand)  F21     SHEET_STRAND -160.240 110.425 disfavoured
+  329  ILE_A  E       (strand)  F21     SHEET_STRAND  -98.783 100.081           
+  330  ILE_A  E       (strand)  F21     SHEET_STRAND  -89.521 126.387           
+  331  ALA_A  e  (strand_term)  F21     SHEET_STRAND -135.498  90.675           
+  332  PRO_A  O                                       -72.033 162.080           
+  333  PRO_A  G     (310     )  G15        310_HELIX  -70.591 -37.476           
+  334  GLU_A  G     (310     )  G15        310_HELIX  -80.089   5.705           
+  335  ARG_A  G     (310     )  G15        310_HELIX  -42.245 -26.678 disfavoured
+  336  LYS_A  G     (310     )  G15        310_HELIX  -64.609 -16.459           
+  337  TYR_A  O                                      -119.770  20.857           
+  338  SER_A  H  (alpha_helix)  H16      ALPHA_HELIX  -52.023 -52.108           
+  339  VAL_A  H  (alpha_helix)  H16      ALPHA_HELIX  -47.785 -51.737           
+  340  TRP_A  H  (alpha_helix)  H16      ALPHA_HELIX  -68.602 -40.789           
+  341  ILE_A  H  (alpha_helix)  H16      ALPHA_HELIX  -68.859 -38.600           
+  342  GLY_A  H  (alpha_helix)  H16      ALPHA_HELIX  -61.515 -32.903           
+  343  GLY_A  H  (alpha_helix)  H16      ALPHA_HELIX  -75.285 -39.677           
+  344  SER_A  H  (alpha_helix)  H16      ALPHA_HELIX  -61.366 -41.442           
+  345  ILE_A  H  (alpha_helix)  H16      ALPHA_HELIX  -64.727 -60.807           
+  346  LEU_A  H  (alpha_helix)  H16      ALPHA_HELIX  -53.466 -47.405           
+  347  ALA_A  H  (alpha_helix)  H16      ALPHA_HELIX  -76.920 -22.657           
+  348  SER_A  H  (alpha_helix)  H16      ALPHA_HELIX  -85.797 -15.094           
+  349  LEU_A  O                                       -56.790 142.252           
+  350  SER_A  O                                       -55.487 -37.984           
+  351  THR_A  O                                       -94.043  -2.063           
+  352  PHE_A  O                                       -83.642 -15.956           
+  353  GLN_A  O                                       -54.870 -41.605           
+  354  GLN_A  O                                       -73.189  -1.356           
+  355  MET_A  O                                      -104.415  -8.847           
+  356  TRP_A  O                                       -52.439 122.101           
+  357  ILE_A  O                                       -76.792 115.673           
+  358  THR_A  O                                       -92.896 156.592           
+  359  LYS_A  H  (alpha_helix)  H17      ALPHA_HELIX  -49.623 -26.952           
+  360  GLN_A  H  (alpha_helix)  H17      ALPHA_HELIX  -64.549 -62.245           
+  361  GLU_A  H  (alpha_helix)  H17      ALPHA_HELIX  -46.434 -48.034           
+  362  TYR_A  H  (alpha_helix)  H17      ALPHA_HELIX  -65.895 -59.697           
+  363  ASP_A  H  (alpha_helix)  H17      ALPHA_HELIX  -53.467 -24.304           
+  364  GLU_A  H  (alpha_helix)  H17      ALPHA_HELIX  -94.580 -30.603           
+  365  ALA_A  O                                      -111.224  -9.393           
+  366  GLY_A  O                                        76.692 174.232           
+  367  PRO_A  H  (alpha_helix)  H18      ALPHA_HELIX  -58.403 -19.382           
+  368  SER_A  H  (alpha_helix)  H18      ALPHA_HELIX  -50.410 -42.136           
+  369  ILE_A  H  (alpha_helix)  H18      ALPHA_HELIX  -44.212 -52.047           
+  370  VAL_A  H  (alpha_helix)  H18      ALPHA_HELIX  -83.416 -21.944           
+  371  HIS_A  O                                       -58.351 -28.715           
+  372  ARG_A  O                                        65.221   0.000 disfavoured
+    1  LEU_D  O                                         0.000 115.829  forbidden
+    2  LYS_D  e  (strand_term)  F22     SHEET_STRAND -104.467 115.359           
+    3  ILE_D  E       (strand)  F22     SHEET_STRAND -109.527 144.876           
+    4  ALA_D  E       (strand)  F22     SHEET_STRAND -152.906 162.885           
+    5  ALA_D  E       (strand)  F22     SHEET_STRAND -129.904 132.523           
+    6  PHE_D  E       (strand)  F22     SHEET_STRAND -142.628 113.294           
+    7  ASN_D  E       (strand)  F22     SHEET_STRAND  -91.203 109.225           
+    8  ILE_D  e  (strand_term)  F22     SHEET_STRAND  -99.204 117.889           
+    9  ARG_D  O                                       -56.164 115.598           
+   10  THR_D  O                                        57.982  45.319           
+   11  PHE_D  O                                       -59.928 122.455           
+   12  GLY_D  O                                      -160.929-176.932           
+   13  GLU_D  H  (alpha_helix)  H19      ALPHA_HELIX  -55.709 -39.725           
+   14  THR_D  H  (alpha_helix)  H19      ALPHA_HELIX  -67.651 -49.610           
+   15  LYS_D  H  (alpha_helix)  H19      ALPHA_HELIX  -63.006 -41.041           
+   16  MET_D  H  (alpha_helix)  H19      ALPHA_HELIX  -71.247 -23.036           
+   17  SER_D  H  (alpha_helix)  H19      ALPHA_HELIX  -69.322 -27.476           
+   18  ASN_D  O                                       -71.353 139.518           
+   19  ALA_D  H  (alpha_helix)  H20      ALPHA_HELIX  -80.912 -39.471           
+   20  THR_D  H  (alpha_helix)  H20      ALPHA_HELIX  -66.202 -52.091           
+   21  LEU_D  H  (alpha_helix)  H20      ALPHA_HELIX  -58.242 -49.387           
+   22  ALA_D  H  (alpha_helix)  H20      ALPHA_HELIX  -55.113 -37.716           
+   23  SER_D  H  (alpha_helix)  H20      ALPHA_HELIX  -69.441 -26.561           
+   24  TYR_D  H  (alpha_helix)  H20      ALPHA_HELIX  -89.176 -40.941           
+   25  ILE_D  H  (alpha_helix)  H20      ALPHA_HELIX  -58.178 -50.566           
+   26  VAL_D  H  (alpha_helix)  H20      ALPHA_HELIX  -55.415 -35.340           
+   27  ARG_D  h   (alpha_term)  H20      ALPHA_HELIX  -75.891 -29.610           
+   28  ILE_D  H  (alpha_helix)  H20      ALPHA_HELIX  -73.056 -47.912           
+   29  VAL_D  H  (alpha_helix)  H20      ALPHA_HELIX  -58.274 -39.379           
+   30  ARG_D  O                                       -74.396   7.400           
+   31  ARG_D  O                                       -88.831 -12.943           
+   32  TYR_D  O                                      -112.188 142.997           
+   33  ASP_D  O                                       -83.949 -22.064           
+   34  ILE_D  e  (strand_term)  F23     SHEET_STRAND -139.777 125.859           
+   35  VAL_D  E       (strand)  F23     SHEET_STRAND -130.673 137.571           
+   36  LEU_D  E       (strand)  F23     SHEET_STRAND -111.450 130.804           
+   37  ILE_D  E       (strand)  F23     SHEET_STRAND -122.638 128.082           
+   38  GLN_D  e  (strand_term)  F23     SHEET_STRAND -107.312 161.060           
+   39  GLU_D  O                                        69.882  33.757           
+   40  VAL_D  b  (strand_term)  I24      ISOL_STRAND  -78.379  95.668           
+   41  ARG_D  B       (strand)  I24      ISOL_STRAND -100.444  80.731           
+   42  ASP_D  b  (strand_term)  I24      ISOL_STRAND -131.784 103.942           
+   43  SER_D  O                                       -71.068 -45.380           
+   44  HIS_D  O                                       -98.788  -4.448           
+   45  LEU_D  O                                        75.810  20.164           
+   46  VAL_D  H  (alpha_helix)  H21      ALPHA_HELIX  -65.573 -34.720           
+   47  ALA_D  H  (alpha_helix)  H21      ALPHA_HELIX  -76.507 -33.898           
+   48  VAL_D  H  (alpha_helix)  H21      ALPHA_HELIX  -69.118 -40.808           
+   49  GLY_D  H  (alpha_helix)  H21      ALPHA_HELIX  -52.664 -49.628           
+   50  LYS_D  H  (alpha_helix)  H21      ALPHA_HELIX  -66.297 -36.644           
+   51  LEU_D  H  (alpha_helix)  H21      ALPHA_HELIX  -67.411 -40.852           
+   52  LEU_D  H  (alpha_helix)  H21      ALPHA_HELIX  -74.644 -31.009           
+   53  ASP_D  H  (alpha_helix)  H21      ALPHA_HELIX  -55.013 -50.204           
+   54  TYR_D  H  (alpha_helix)  H21      ALPHA_HELIX  -54.591 -54.814           
+   55  LEU_D  H  (alpha_helix)  H21      ALPHA_HELIX  -67.074 -26.370           
+   56  ASN_D  O                                      -114.176  26.445           
+   57  GLN_D  O                                       -71.155 -21.288           
+   58  ASP_D  O                                      -116.132 -27.889           
+   59  ASP_D  O                                      -120.687 134.739           
+   60  PRO_D  O                                       -67.873 -18.394           
+   61  ASN_D  O                                      -121.368  38.830           
+   62  THR_D  O                                       -64.443 -32.209           
+   63  TYR_D  e  (strand_term)  F25     SHEET_STRAND -145.312 135.693           
+   64  HIS_D  E       (strand)  F25     SHEET_STRAND -115.032 154.921           
+   65  TYR_D  E       (strand)  F25     SHEET_STRAND -120.222 167.290           
+   66  VAL_D  E       (strand)  F25     SHEET_STRAND -133.709 129.611           
+   67  VAL_D  e  (strand_term)  F25     SHEET_STRAND -132.638 140.220           
+   68  SER_D  P      (polypro)  P26   POLYPRO_STRAND  -79.153 176.404           
+   69  GLU_D  P      (polypro)  P26   POLYPRO_STRAND  -82.451 171.154           
+   70  PRO_D  p (polypro_term)  P26   POLYPRO_STRAND  -69.394 144.638           
+   71  LEU_D  O                                      -128.448 134.340           
+   72  GLY_D  O                                       158.880 120.719  forbidden
+   73  ARG_D  O                                       -66.631 -42.206           
+   74  ASN_D  O                                       -35.429 -44.518 disfavoured
+   75  SER_D  e  (strand_term)  F27     SHEET_STRAND   62.637  63.546 disfavoured
+   76  TYR_D  E       (strand)  F27     SHEET_STRAND -162.671  98.574 disfavoured
+   77  LYS_D  E       (strand)  F27     SHEET_STRAND -113.415 160.233           
+   78  GLU_D  E       (strand)  F27     SHEET_STRAND -138.964 159.587           
+   79  ARG_D  E       (strand)  F27     SHEET_STRAND -111.282 172.415           
+   80  TYR_D  E       (strand)  F27     SHEET_STRAND -112.623 126.364           
+   81  LEU_D  E       (strand)  F27     SHEET_STRAND -112.686 119.059           
+   82  PHE_D  E       (strand)  F27     SHEET_STRAND -103.583 140.106           
+   83  LEU_D  E       (strand)  F27     SHEET_STRAND -125.738 125.013           
+   84  PHE_D  E       (strand)  F27     SHEET_STRAND -131.107 154.342           
+   85  ARG_D  e  (strand_term)  F27     SHEET_STRAND  -83.516 114.003           
+   86  PRO_D  O                                       -61.956 -22.979           
+   87  ASN_D  O                                       -75.246  -7.525           
+   88  LYS_D  O                                      -113.122 -33.545           
+   89  VAL_D  e  (strand_term)  F28     SHEET_STRAND -146.116 163.622           
+   90  SER_D  E       (strand)  F28     SHEET_STRAND -126.895 161.731           
+   91  VAL_D  e  (strand_term)  F28     SHEET_STRAND -108.263 111.528           
+   92  LEU_D  O                                       -79.053 -31.681           
+   93  ASP_D  e  (strand_term)  F29     SHEET_STRAND -172.038 173.216           
+   94  THR_D  E       (strand)  F29     SHEET_STRAND -163.947 146.629           
+   95  TYR_D  E       (strand)  F29     SHEET_STRAND -160.893 159.428           
+   96  GLN_D  e  (strand_term)  F29     SHEET_STRAND  -99.140 120.923           
+   97  TYR_D  O                                       -51.783 138.708           
+   98  ASP_D  O                                       -92.022  87.683           
+   99  ASP_D  O                                       -81.911  10.090           
+  100  GLY_D  O                                        96.337  10.690           
+  101  CYS_D  O                                       161.573   0.000  forbidden
+  104  CYS_D  O                                         0.000 -51.762  forbidden
+  105  GLY_D  O                                       105.160 -18.900           
+  106  ASN_D  O                                       -88.133 -34.146           
+  107  ASP_D  O                                       -38.296 125.019 disfavoured
+  108  SER_D  O                                       -72.742 -19.709           
+  109  PHE_D  O                                      -131.079 151.721           
+  110  SER_D  O                                       -64.488 -54.051           
+  111  ARG_D  O                                      -128.255  86.372           
+  112  GLU_D  P      (polypro)  N30 MIX_SHEET_STRAND  -38.095 125.693           
+  113  PRO_D  e  (strand_term)  N30 MIX_SHEET_STRAND  -55.662 133.815           
+  114  ALA_D  E       (strand)  N30 MIX_SHEET_STRAND  -77.205 145.364           
+  115  VAL_D  E       (strand)  N30 MIX_SHEET_STRAND -128.907 128.808           
+  116  VAL_D  E       (strand)  N30 MIX_SHEET_STRAND -131.450 126.984           
+  117  LYS_D  E       (strand)  N30 MIX_SHEET_STRAND  -99.319 125.226           
+  118  PHE_D  E       (strand)  N30 MIX_SHEET_STRAND -106.825 160.745           
+  119  SER_D  E       (strand)  N30 MIX_SHEET_STRAND -119.982 118.998           
+  120  SER_D  e  (strand_term)  N30 MIX_SHEET_STRAND -119.374 137.112           
+  121  HIS_D  O                                      -112.409 -18.006           
+  122  SER_D  O                                       -87.462   9.460           
+  123  THR_D  O                                      -116.217 174.755           
+  124  LYS_D  O                                       -73.864 -53.621           
+  125  VAL_D  O                                       -59.059 126.101           
+  126  LYS_D  O                                      -100.578 -19.915           
+  127  GLU_D  e  (strand_term)  N31 MIX_SHEET_STRAND -142.114 145.897           
+  128  PHE_D  E       (strand)  N31 MIX_SHEET_STRAND -172.881 148.530           
+  129  ALA_D  E       (strand)  N31 MIX_SHEET_STRAND -102.701 152.979           
+  130  ILE_D  E       (strand)  N31 MIX_SHEET_STRAND -125.629 124.444           
+  131  VAL_D  E       (strand)  N31 MIX_SHEET_STRAND -101.986 130.406           
+  132  ALA_D  E       (strand)  N31 MIX_SHEET_STRAND -109.409 132.735           
+  133  LEU_D  E       (strand)  N31 MIX_SHEET_STRAND -146.220 136.349           
+  134  HIS_D  e  (strand_term)  N31 MIX_SHEET_STRAND -117.686 102.473           
+  135  SER_D  P      (polypro)  N31 MIX_SHEET_STRAND  -79.864 149.497           
+  136  ALA_D  p (polypro_term)  N31 MIX_SHEET_STRAND  -62.723 117.936           
+  137  PRO_D  O                                       -48.199 -43.594           
+  138  SER_D  O                                       -59.729 -27.521           
+  139  ASP_D  O                                      -110.818   4.751           
+  140  ALA_D  H  (alpha_helix)  M22        MIX_HELIX  -45.225 -49.520           
+  141  VAL_D  H  (alpha_helix)  M22        MIX_HELIX  -61.205 -37.505           
+  142  ALA_D  H  (alpha_helix)  M22        MIX_HELIX  -75.859 -41.296           
+  143  GLU_D  H  (alpha_helix)  M22        MIX_HELIX  -68.723 -45.866           
+  144  ILE_D  G     (310     )  M22        MIX_HELIX  -59.568 -26.977           
+  145  ASN_D  G     (310     )  M22        MIX_HELIX  -78.657 -38.383           
+  146  SER_D  G     (310     )  M22        MIX_HELIX  -71.166 -20.171           
+  147  LEU_D  g     (310_term)  M22        MIX_HELIX  -60.789 -16.290           
+  148  TYR_D  G     (310     )  M22        MIX_HELIX  -65.563 -39.684           
+  149  ASP_D  G     (310     )  M22        MIX_HELIX  -69.424 -31.057           
+  150  VAL_D  H  (alpha_helix)  M22        MIX_HELIX  -73.478 -34.546           
+  151  TYR_D  H  (alpha_helix)  M22        MIX_HELIX  -60.500 -42.110           
+  152  LEU_D  H  (alpha_helix)  M22        MIX_HELIX  -67.371 -26.198           
+  153  ASP_D  H  (alpha_helix)  M22        MIX_HELIX  -75.122 -39.200           
+  154  VAL_D  H  (alpha_helix)  M22        MIX_HELIX  -62.212 -44.408           
+  155  GLN_D  H  (alpha_helix)  M22        MIX_HELIX  -60.527 -40.549           
+  156  GLN_D  H  (alpha_helix)  M22        MIX_HELIX  -66.127 -61.063           
+  157  LYS_D  I     (pi_helix)  M22        MIX_HELIX  -58.576 -69.531 disfavoured
+  158  TRP_D  O                                       -94.250   0.362           
+  159  HIS_D  O                                        55.534  40.512           
+  160  LEU_D  O                                      -120.830 128.540           
+  161  ASN_D  O                                       -95.648 -38.127           
+  162  ASP_D  e  (strand_term)  F32     SHEET_STRAND  -74.861  94.759           
+  163  VAL_D  E       (strand)  F32     SHEET_STRAND -125.330 140.754           
+  164  MET_D  E       (strand)  F32     SHEET_STRAND -110.901 132.923           
+  165  LEU_D  E       (strand)  F32     SHEET_STRAND -122.824 128.708           
+  166  MET_D  E       (strand)  F32     SHEET_STRAND -157.627 154.598           
+  167  GLY_D  E       (strand)  F32     SHEET_STRAND  150.063-164.058           
+  168  ASP_D  e  (strand_term)  F32     SHEET_STRAND  -98.262  97.978           
+  169  PHE_D  O                                       -88.241  -3.695           
+  170  ASN_D  O                                        49.048  39.828           
+  171  ALA_D  O                                       -91.108  48.417 disfavoured
+  172  ASP_D  O                                       179.410 179.546 disfavoured
+  173  CYS_D  O                                        49.220-132.369 disfavoured
+  174  SER_D  O                                       -63.260 -33.145           
+  175  TYR_D  O                                       -76.220 -31.496           
+  176  VAL_D  O                                      -137.832 126.525           
+  177  THR_D  O                                      -111.803 177.129           
+  178  SER_D  h   (alpha_term)  H23      ALPHA_HELIX  -56.177 -34.848           
+  179  SER_D  H  (alpha_helix)  H23      ALPHA_HELIX  -79.980 -26.966           
+  180  GLN_D  H  (alpha_helix)  H23      ALPHA_HELIX  -74.957 -28.208           
+  181  TRP_D  H  (alpha_helix)  H23      ALPHA_HELIX  -51.364 -34.267           
+  182  SER_D  h   (alpha_term)  H23      ALPHA_HELIX  -63.939 -14.689           
+  183  SER_D  O                                      -104.975  23.889           
+  184  ILE_D  O                                      -124.041 111.697           
+  185  ARG_D  H  (alpha_helix)  H24      ALPHA_HELIX  -56.595 -31.041           
+  186  LEU_D  H  (alpha_helix)  H24      ALPHA_HELIX  -67.249 -21.128           
+  187  ARG_D  H  (alpha_helix)  H24      ALPHA_HELIX  -94.776 -38.946           
+  188  THR_D  H  (alpha_helix)  H24      ALPHA_HELIX  -81.264 -38.152           
+  189  SER_D  O                                       -62.785 125.447           
+  190  SER_D  O                                       -79.669  10.604           
+  191  THR_D  O                                       -65.219 -35.235           
+  192  PHE_D  e  (strand_term)  F33     SHEET_STRAND -106.544 129.557           
+  193  GLN_D  E       (strand)  F33     SHEET_STRAND  -97.024 118.486           
+  194  TRP_D  e  (strand_term)  F33     SHEET_STRAND  -91.379 123.094           
+  195  LEU_D  O                                       -94.737 -29.826           
+  196  ILE_D  O                                      -100.764 115.851           
+  197  PRO_D  O                                       -71.719 171.806           
+  198  ASP_D  O                                       -75.119  -8.264           
+  199  SER_D  O                                       -67.215 -57.986           
+  200  ALA_D  O                                       -44.817 136.706           
+  201  ASP_D  O                                       -96.346 124.275           
+  202  THR_D  O                                      -127.801  17.135           
+  203  THR_D  O                                       -97.475 142.295           
+  204  ALA_D  O                                       -76.594 -18.839           
+  205  THR_D  O                                       -83.193 169.448           
+  206  SER_D  O                                       -43.844 -29.095           
+  207  THR_D  b  (strand_term)  I34      ISOL_STRAND  -60.387 157.029           
+  208  ASN_D  B       (strand)  I34      ISOL_STRAND -127.119 106.383           
+  209  CYS_D  B       (strand)  I34      ISOL_STRAND -147.977 146.414           
+  210  ALA_D  b  (strand_term)  I34      ISOL_STRAND -102.959  66.842 disfavoured
+  211  TYR_D  O                                       -75.095 -23.427           
+  212  ASP_D  e  (strand_term)  F35     SHEET_STRAND -111.796 120.652           
+  213  ARG_D  E       (strand)  F35     SHEET_STRAND -124.959 155.150           
+  214  ILE_D  E       (strand)  F35     SHEET_STRAND -127.144 121.885           
+  215  VAL_D  E       (strand)  F35     SHEET_STRAND -119.707 134.204           
+  216  VAL_D  E       (strand)  F35     SHEET_STRAND -126.445 129.282           
+  217  ALA_D  e  (strand_term)  F35     SHEET_STRAND -116.868 161.924           
+  218  GLY_D  O                                       107.793 134.414           
+  219  SER_D  H  (alpha_helix)  H25      ALPHA_HELIX  -76.188 -32.872           
+  220  LEU_D  H  (alpha_helix)  H25      ALPHA_HELIX  -80.500 -43.577           
+  221  LEU_D  H  (alpha_helix)  H25      ALPHA_HELIX  -56.779 -50.886           
+  222  GLN_D  H  (alpha_helix)  H25      ALPHA_HELIX  -59.860 -24.354           
+  223  SER_D  H  (alpha_helix)  H25      ALPHA_HELIX  -84.798 -20.237           
+  224  SER_D  H  (alpha_helix)  H25      ALPHA_HELIX  -81.474 -24.846           
+  225  VAL_D  P      (polypro)  P36   POLYPRO_STRAND  -63.335 121.676           
+  226  VAL_D  P      (polypro)  P36   POLYPRO_STRAND  -71.617 120.037           
+  227  PRO_D  p (polypro_term)  P36   POLYPRO_STRAND  -55.819 124.391           
+  228  GLY_D  O                                        67.557  42.058           
+  229  SER_D  O                                      -107.473  -1.279           
+  230  ALA_D  O                                       -92.535 119.693           
+  231  ALA_D  O                                      -172.085 162.832           
+  232  PRO_D  b  (strand_term)  I37      ISOL_STRAND  -79.023 168.369           
+  233  PHE_D  B       (strand)  I37      ISOL_STRAND -125.282 113.063           
+  234  ASP_D  b  (strand_term)  I37      ISOL_STRAND  -82.379  83.740           
+  235  PHE_D  H  (alpha_helix)  H26      ALPHA_HELIX  -70.391 -33.051           
+  236  GLN_D  H  (alpha_helix)  H26      ALPHA_HELIX  -60.039 -53.142           
+  237  ALA_D  H  (alpha_helix)  H26      ALPHA_HELIX  -70.792 -26.034           
+  238  ALA_D  H  (alpha_helix)  H26      ALPHA_HELIX  -82.057 -29.898           
+  239  TYR_D  O                                      -111.319  12.960           
+  240  GLY_D  O                                        57.130  17.774           
+  241  LEU_D  O                                       -60.041 158.303           
+  242  SER_D  O                                       -77.539-179.201           
+  243  ASN_D  H  (alpha_helix)  H27      ALPHA_HELIX  -70.368 -44.101           
+  244  GLU_D  H  (alpha_helix)  H27      ALPHA_HELIX  -54.251 -45.438           
+  245  MET_D  H  (alpha_helix)  H27      ALPHA_HELIX  -71.099 -53.013           
+  246  ALA_D  H  (alpha_helix)  H27      ALPHA_HELIX  -49.870 -41.600           
+  247  LEU_D  H  (alpha_helix)  H27      ALPHA_HELIX  -76.704 -25.303           
+  248  ALA_D  H  (alpha_helix)  H27      ALPHA_HELIX  -65.151 -25.162           
+  249  ILE_D  H  (alpha_helix)  H27      ALPHA_HELIX  -74.368 -66.791 disfavoured
+  250  SER_D  O                                      -162.366 158.934           
+  251  ASP_D  O                                       -83.859   7.122           
+  252  HIS_D  e  (strand_term)  F38     SHEET_STRAND -130.065 163.440           
+  253  TYR_D  E       (strand)  F38     SHEET_STRAND -116.286 156.431           
+  254  PRO_D  E       (strand)  F38     SHEET_STRAND  -62.759 142.574           
+  255  VAL_D  E       (strand)  F38     SHEET_STRAND -105.890 126.239           
+  256  GLU_D  E       (strand)  F38     SHEET_STRAND -113.427 166.180           
+  257  VAL_D  E       (strand)  F38     SHEET_STRAND -154.259 156.392           
+  258  THR_D  E       (strand)  F38     SHEET_STRAND -114.991 130.053           
+  259  LEU_D  e  (strand_term)  F38     SHEET_STRAND -101.054 167.829           
+  260  THR_D  O                                      -145.899   0.000 disfavoured
