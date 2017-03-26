@@ -1,0 +1,9 @@
+{% if protdb %}
+    <ul>
+    {% for i in protdb %}
+        <li><a href="/pdbapp/home/{{ i.id_pdb }}">{{ i.id_pdb }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No PDBs are available.</p>
+{% endif %}

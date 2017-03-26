@@ -1,0 +1,9 @@
+{% if mresol %}
+    <ul>
+    {% for i in mresol %}
+        <li><a href="/pdbapp/home/{{ i.meth_res }}">{{ i.meth_res }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No resolution methods are available.</p>
+{% endif %}
