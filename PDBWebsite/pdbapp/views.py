@@ -4,26 +4,32 @@ from django.template import loader
 from .models import MethodesRes, Pdb
 
 def home(request):
-    #return HttpResponse("HOME.")
+    mresol = MethodesRes.objects.order_by('meth_res')\
+    [:len(MethodesRes.objects.order_by('meth_res'))]
 
-    mresol = MethodesRes.objects.order_by('meth_res')[:2]
-    #res = 'Resolution methods list: ', ', '.join([i.meth_res for i in mresol])
-    #return HttpResponse(res)
-
-    template = loader.get_template('pdbapp/home.html')
     context = {
         'mresol': mresol
     }
-    return HttpResponse(template.render(context, request))
+
+    return render(request, 'pdbapp/home.html', context) 
 
 def pdbinfo(request):
 
-    protdb = Pdb.objects.order_by('id_pdb')[:1]
-    template = loader.get_template('pdbapp/pdbinfo.html')
+    protdb = Pdb.objects.order_by('id_pdb')\
+    [:len(Pdb.objects.order_by('id_pdb'))]
+    
     context = {
         'protdb': protdb
     }
-    return HttpResponse(template.render(context, request))
+    
+    return render(request, 'pdbapp/pdbinfo.html', context)
 
 def about(request):
-    return HttpResponse("About us.")
+    
+    namelist = ['Quentin LETOURNEUR', 'Yoann PAGEAUD']
+    
+    context = {
+        'namelist': namelist
+    } 
+    
+    return render(request, 'pdbapp/about.html', context)

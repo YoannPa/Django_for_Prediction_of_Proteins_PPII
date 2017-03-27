@@ -2,6 +2,8 @@ from django.conf.urls import url
 
 from . import views
 
+app_name = 'pdbapp'
+
 urlpatterns = [
     url(r'^home/$', views.home, name='home'),
     url(r'^pdbinfo/$', views.pdbinfo, name='pdbinfo'),

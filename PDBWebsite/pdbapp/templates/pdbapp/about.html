@@ -1,0 +1,14 @@
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'pdbapp/style.css' %}" />
+
+<h1>About Us</h1>
+
+{% if namelist %}
+    <ul>
+    {% for i in namelist %}
+        <li><a href="/pdbapp/pdbinfo/{{ i }}">{{ i }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No informations available.</p>
+{% endif %}

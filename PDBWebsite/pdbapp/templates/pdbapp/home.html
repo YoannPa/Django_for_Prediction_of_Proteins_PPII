@@ -1,3 +1,8 @@
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'pdbapp/style.css' %}" />
+
+<h1>PDBs Database (Projet M2BI)</h1>
+
 {% if mresol %}
     <ul>
     {% for i in mresol %}

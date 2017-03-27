@@ -1,0 +1,13 @@
+h1 {
+	text-align: center;
+	font-family: Arial;
+}
+
+li a {
+	color: #008B8B ;
+	font-family: Arial;
+}
+
+body {
+	background: white url("images/bckgrnd.jpg") no-repeat right bottom;
+}

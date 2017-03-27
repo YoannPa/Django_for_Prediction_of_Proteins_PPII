@@ -1,7 +1,12 @@
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'pdbapp/style.css' %}" />
+
+<h1>PDBs recorded in the database</h1>
+
 {% if protdb %}
     <ul>
     {% for i in protdb %}
-        <li><a href="/pdbapp/home/{{ i.id_pdb }}">{{ i.id_pdb }}</a></li>
+        <li><a href="/pdbapp/pdbinfo/{{ i.id_pdb }}">{{ i.id_pdb }}</a></li>
     {% endfor %}
     </ul>
 {% else %}
