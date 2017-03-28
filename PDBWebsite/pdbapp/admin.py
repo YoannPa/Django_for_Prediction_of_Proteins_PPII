@@ -7,9 +7,9 @@ class PdbInline(admin.TabularInline):
     model = Pdb
 
 class PdbAdmin(admin.ModelAdmin):
-    list_display = ('id_pdb','nom_proteine','chaine','taille_proteine','meth_res')
+    list_display = ('id_pdb_chain','header','chaine','taille_proteine','meth_res')
     list_filter = ['chaine','meth_res']
-    search_fields = ['id_pdb','nom_proteine']
+    search_fields = ['id_pdb_chain','header']
 
 
 class MethodesAnalyseInline(admin.TabularInline):
@@ -30,7 +30,7 @@ class StructSecInline(admin.TabularInline):
     model = MethodesRes
 
 class StructSecAdmin(admin.ModelAdmin):
-    list_display = ('id_struct_sec','nombre_ppii','pourcentage_ppii','id_pdb','nom_analyse')
+    list_display = ('id_struct_sec','nombre_PPII','pourcentage_PPII','id_PDB','nom_Analyse')
     search_fields = ['nombre_ppii','pourcentage_ppii']
 
 
