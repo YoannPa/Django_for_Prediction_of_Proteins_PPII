@@ -7,7 +7,7 @@ class PdbInline(admin.TabularInline):
     model = Pdb
 
 class PdbAdmin(admin.ModelAdmin):
-    list_display = ('id_pdb_chain','header','chaine','taille_proteine','meth_res')
+    list_display = ('id_pdb','header','chaine','taille_proteine','meth_res')
     list_filter = ['chaine','meth_res']
     search_fields = ['id_pdb_chain','header']
 

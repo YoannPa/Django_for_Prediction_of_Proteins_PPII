@@ -79,7 +79,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'M2BI_Projet_PPII',
 	'USER': 'root',
-	'PASSWORD': 'bdd2017',
+	'PASSWORD': 'Allerlom',
 	'HOST': '',
 	'PORT': '',
     }
