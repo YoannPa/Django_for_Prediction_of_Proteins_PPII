@@ -5,7 +5,7 @@
 # take as argument : - ($1) the list of PDB ids with chain -> list_wth_chain.txt
 #					 - ($2) path to the PDB_files directory
 
-if [ "$#" -ne 3 ];then
+if [ "$#" -ne 2 ];then
 	echo -e "\tUsage : create_PDB_table.sh list_with_chain.txt PDB_files/"
 	echo -e "\tlist_with_chain.txt : path to the list of PDB ids with chain"
 	echo -e "\tPDB_files/ : path to the PDB_files directory"
