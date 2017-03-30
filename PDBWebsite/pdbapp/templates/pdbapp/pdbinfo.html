@@ -3,12 +3,42 @@
 
 <h1>PDBs recorded in the database</h1>
 
+<body class="news">
+  <header>
+    <div class="nav">
+      <ul>
+        <li class="HOME"><a href="/pdbapp/home/">Home</a></li>
+        <li class="PDB"><a class="active" href="/pdbapp/pdbinfo/">Infos PDB</a></li>
+        <li class="ABOUT"><a href="/pdbapp/about/">About</a></li>
+      </ul>
+    </div>
+  </header>
+</body>
+
+
 {% if protdb %}
-    <ul>
+    <table align="center" border="3" width="100%">
+    <tbody>
+	<tr>
+		<th>PDB Id</th>
+		<th>Chain</th>
+		<th>Header</th>
+		<th>Size</th>
+		<th>Resol.</th>
+		<th>Method Res.</th>
+	</tr>
     {% for i in protdb %}
-        <li><a href="/pdbapp/pdbinfo/{{ i.id_pdb }}">{{ i.id_pdb }}</a></li>
+	<tr>
+	<td><a href="/pdbapp/pdbinfo/{{ i.id_pdb }}">{{ i.id_pdb }}</a></td>
+	<td>{{ i.chaine }}</td>
+	<td>{{ i.header }}</td>
+	<td>{{ i.taille_proteine }}</td>
+	<td>{{ i.resolution_pdb }}</td>
+	<td>{{ i.meth_res }}</td>
+	</tr>
     {% endfor %}
-    </ul>
+    </tbody>
+    </table>
 {% else %}
     <p>No PDBs are available.</p>
 {% endif %}
