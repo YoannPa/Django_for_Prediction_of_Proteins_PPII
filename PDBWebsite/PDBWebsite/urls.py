@@ -20,6 +20,6 @@ from pdbapp.views import *
 urlpatterns = [
 	url(r'^$', home, name='home'),
 	url(r'^pdbapp/', include('pdbapp.urls')),
-    url(r'^admin/', admin.site.urls)
+	url(r'^admin/', admin.site.urls)
 ]
 

@@ -33,3 +33,15 @@ def about(request):
     } 
     
     return render(request, 'pdbapp/about.html', context)
+
+def detail(request, id_pdb):
+
+    pdbid = id_pdb   
+
+    context = {
+	'pdbid': pdbid
+    }
+    
+    return render(request, 'pdbapp/pdbstat.html', context)
+    #return HttpResponse("You're looking at question %s." % id_pdb)
+    

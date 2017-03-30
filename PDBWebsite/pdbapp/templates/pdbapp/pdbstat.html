@@ -1,0 +1,22 @@
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'pdbapp/style.css' %}" />
+
+<h1>PDB Details</h1>
+
+<body class="news">
+  <header>
+    <div class="nav">
+      <ul>
+        <li class="home"><a href="/pdbapp/home/">Home</a></li>
+        <li class="PDB"><a href="/pdbapp/pdbinfo/">Infos PDB</a></li>
+        <li class="PDB Details"><a class="active">PDB Details</a></li>
+       </ul>
+    </div>
+  </header>
+</body>
+
+{% if pdbid %}
+	<h2>{{ pdbid }}</h2>
+{% else %}
+    <p>No stats are available.</p>
+{% endif %}
