@@ -1,8 +1,5 @@
 {% load static %}
-<link rel="stylesheet" type="text/css" href="{% static 'pdbapp/style.css' %}" />
-
-<h1>About Us</h1>
-
+<link rel="stylesheet" type="text/css" href="{% static 'pdbapp/stat_style.css' %}" />
 
 <body class="news">
   <header>
@@ -16,11 +13,14 @@
   </header>
 </body>
 
+<h1>About Us</h1>
+
+<h2>Project members</h2>
 
 {% if namelist %}
     <ul>
     {% for i in namelist %}
-        <li><a href="/pdbapp/pdbinfo/{{ i }}">{{ i }}</a></li>
+        <li><a href="/pdbapp/pdbinfo/{{ i }}">{{ i }}</a> - Universite Paris Diderot (Paris 7)</li>
     {% endfor %}
     </ul>
 {% else %}

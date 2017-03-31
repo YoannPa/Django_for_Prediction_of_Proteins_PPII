@@ -1,9 +1,11 @@
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
 from django.http import HttpResponse
 from django.template import loader
 from .models import MethodesRes, Pdb
 
+
 def home(request):
+    
     mresol = MethodesRes.objects.order_by('meth_res')\
     [:len(MethodesRes.objects.order_by('meth_res'))]
 
@@ -12,6 +14,7 @@ def home(request):
     }
 
     return render(request, 'pdbapp/home.html', context) 
+
 
 def pdbinfo(request):
 
@@ -24,6 +27,7 @@ def pdbinfo(request):
     
     return render(request, 'pdbapp/pdbinfo.html', context)
 
+
 def about(request):
     
     namelist = ['Quentin LETOURNEUR', 'Yoann PAGEAUD']
@@ -34,14 +38,13 @@ def about(request):
     
     return render(request, 'pdbapp/about.html', context)
 
+
 def detail(request, id_pdb):
 
-    pdbid = id_pdb   
+    pdb = get_object_or_404(Pdb, id_pdb=id_pdb)  
 
     context = {
-	'pdbid': pdbid
+        'pdb': pdb
     }
     
     return render(request, 'pdbapp/pdbstat.html', context)
-    #return HttpResponse("You're looking at question %s." % id_pdb)
-    

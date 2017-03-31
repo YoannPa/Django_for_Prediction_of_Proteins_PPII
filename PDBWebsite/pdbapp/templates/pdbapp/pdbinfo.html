@@ -1,8 +1,6 @@
 {% load static %}
 <link rel="stylesheet" type="text/css" href="{% static 'pdbapp/style.css' %}" />
 
-<h1>PDBs recorded in the database</h1>
-
 <body class="news">
   <header>
     <div class="nav">
@@ -15,6 +13,7 @@
   </header>
 </body>
 
+<h1>PDBs recorded in the database</h1>
 
 {% if protdb %}
     <table align="center" border="3" width="100%">
@@ -29,12 +28,12 @@
 	</tr>
     {% for i in protdb %}
 	<tr>
-	<td><a href="/pdbapp/{{ i.id_pdb }}">{{ i.id_pdb }}</a></td>
-	<td>{{ i.chaine }}</td>
-	<td>{{ i.header }}</td>
-	<td>{{ i.taille_proteine }}</td>
-	<td>{{ i.resolution_pdb }}</td>
-	<td>{{ i.meth_res }}</td>
+		<td><a href="/pdbapp/{{ i.id_pdb }}">{{ i.id_pdb }}</a></td>
+		<td>{{ i.chaine }}</td>
+		<td>{{ i.header }}</td>
+		<td>{{ i.taille_proteine }}</td>
+		<td>{{ i.resolution_pdb }}</td>
+		<td>{{ i.meth_res }}</td>
 	</tr>
     {% endfor %}
     </tbody>

@@ -1,25 +1,30 @@
 {% load static %}
 <link rel="stylesheet" type="text/css" href="{% static 'pdbapp/style.css' %}" />
 
-<h1>PDBs Database (Projet M2BI)</h1>
-
 <body class="news">
   <header>
     <div class="nav">
       <ul>
         <li class="home"><a class="active" href="/pdbapp/home/">Home</a></li>
-        <li class="info PDB"><a href="/pdbapp/pdbinfo/">Infos</a></li>
+        <li class="info PDB"><a href="/pdbapp/pdbinfo/">Infos PDB</a></li>
         <li class="about"><a href="/pdbapp/about/">About</a></li>
        </ul>
     </div>
   </header>
 </body>
 
+<h1>PDBs Database (Projet M2BI)</h1>
 
-<form class="form-wrapper">
-    <input type="text" id="search" placeholder="Search for..." required>
+<form action= "/pdbapp/{{ i.id_pdb }}" class="form-wrapper">
+    <input type="text" id="search" placeholder="Search by PDB ID..." required>
     <input type="submit" value="go" id="submit">
 </form>
+
+<form action= "/pdbapp/{{ i.id_pdb }}" class="form-wrapper">
+    <input type="text" id="search" placeholder="Search by Header..." required>
+    <input type="submit" value="go" id="submit">
+</form>
+
 
 {% if mresol %}
     <ul>

@@ -1,7 +1,5 @@
 {% load static %}
-<link rel="stylesheet" type="text/css" href="{% static 'pdbapp/style.css' %}" />
-
-<h1>PDB Details</h1>
+<link rel="stylesheet" type="text/css" href="{% static 'pdbapp/stat_style.css' %}" />
 
 <body class="news">
   <header>
@@ -9,14 +7,68 @@
       <ul>
         <li class="home"><a href="/pdbapp/home/">Home</a></li>
         <li class="PDB"><a href="/pdbapp/pdbinfo/">Infos PDB</a></li>
-        <li class="PDB Details"><a class="active">PDB Details</a></li>
+        <li class="PDB Details"><a class="active">Details</a></li>
+        <li class="ABOUT"><a href="/pdbapp/about/">About</a></li>
        </ul>
     </div>
   </header>
 </body>
 
-{% if pdbid %}
-	<h2>{{ pdbid }}</h2>
+<h1>PDB Details</h1>
+
+{% if pdb %}
+	<h2>{{ pdb.id_pdb }}</h2>
+	<table align="center" border="3">
+	<tbody>
+		<tr>
+			<th style="width: 30%;">Chain</th>
+			<td style="width: 70%;">{{ pdb.chaine }}</td>
+		</tr>
+		<tr>
+			<th style="width: 30%;">Header</th>
+			<td style="width: 70%;">{{ pdb.header }}</td>
+		</tr>
+		<tr>
+			<th style="width: 30%;">Sequence</th>
+			<td style="width: 70%;">
+				<font face="Courier New">
+					{{ pdb.sequence_proteine }}
+				</font>
+			</td>
+		</tr>
+		<tr>
+			<th style="width: 30%;">Start position</th>
+			<td style="width: 70%;">{{ pdb.start_seq }}</td>
+		</tr>
+		<tr>
+			<th style="width: 30%;">Size</th>
+			<td style="width: 70%;">{{ pdb.taille_proteine }}</td>
+		</tr>
+		<tr>
+			<th style="width: 30%;">Resolution</th>
+			<td style="width: 70%;">{{ pdb.resolution_pdb }}</td>
+		</tr>
+		<tr>
+			<th style="width: 30%;">Resolution method</th>
+			<td style="width: 70%;">{{ pdb.meth_res }}</td>
+		</tr>
+		<tr>
+			<th style="width: 30%;">Download link</th>
+			<td style="width: 70%;">
+				<a href="https://files.rcsb.org/download/{{ pdb.id_pdb }}.pdb">{{ pdb.id_pdb }}.pdb</a>	
+			</td>
+		</tr>
+		<tr>
+			<th style="width: 30%;">Ramachandran plot</th>
+			<td style="width: 70%;">
+				<a href="http://mordred.bioc.cam.ac.uk/~rapper/rampage.php">RAMPAGE</a>
+			</td>
+		</tr>
+	</tbody>
+	</table>
+
+
+
 {% else %}
-    <p>No stats are available.</p>
+	<p>No stats are available...</p>
 {% endif %}
