@@ -10,7 +10,7 @@ CREATE TABLE methodes_analyse(
 
 CREATE TABLE PDB(
 	id_PDB_chain CHAR(5) NOT NULL PRIMARY KEY,
-	id_PDB CHAR (4) NOT NULL,
+	id_PDB CHAR(4) NOT NULL,
 	chaine VARCHAR(10) NOT NULL,
 	header VARCHAR(255) NOT NULL,
 	sequence_Proteine TEXT NOT NULL,
@@ -18,7 +18,9 @@ CREATE TABLE PDB(
 	taille_Proteine INT NOT NULL,
 	resolution_PDB FLOAT NOT NULL,
 	meth_Res VARCHAR(10) NOT NULL,
-	FOREIGN KEY (meth_Res) REFERENCES methodes_res(meth_Res) ON DELETE CASCADE
+	FOREIGN KEY (meth_Res)
+	REFERENCES methodes_res(meth_Res)
+	ON DELETE CASCADE
 );
 
 CREATE TABLE struct_sec(
@@ -31,8 +33,12 @@ CREATE TABLE struct_sec(
 	angle_psi TEXT NOT NULL,
 	id_PDB_chain CHAR(5) NOT NULL,
 	nom_Analyse VARCHAR(7) NOT NULL,
-	FOREIGN KEY (id_PDB_chain) REFERENCES PDB(id_PDB_chain) ON DELETE CASCADE,
-	FOREIGN KEY (nom_Analyse) REFERENCES methodes_analyse(nom_Analyse) ON DELETE CASCADE 
+	FOREIGN KEY (id_PDB_chain)
+	REFERENCES PDB(id_PDB_chain)
+	ON DELETE CASCADE,
+	FOREIGN KEY (nom_Analyse)
+	REFERENCES methodes_analyse(nom_Analyse)
+	ON DELETE CASCADE 
 );
 
 

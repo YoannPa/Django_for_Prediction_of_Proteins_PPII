@@ -11,7 +11,8 @@ from django.db import models
 
 
 class Pdb(models.Model):
-    id_pdb = models.CharField(db_column='id_PDB', primary_key=True, max_length=4)  # Field name made lowercase.
+    id_pdb_chain = models.CharField(db_column='id_PDB_chain', primary_key=True, max_length=5)  # Field name made lowercase.
+    id_pdb = models.CharField(db_column='id_PDB', max_length=4)  # Field name made lowercase.
     chaine = models.CharField(max_length=10)
     header = models.CharField(max_length=255)
     sequence_proteine = models.TextField(db_column='sequence_Proteine')  # Field name made lowercase.
@@ -58,7 +59,7 @@ class StructSec(models.Model):
     pourcentage_ppii = models.FloatField(db_column='pourcentage_PPII')  # Field name made lowercase.
     angle_phi = models.TextField()
     angle_psi = models.TextField()
-    id_pdb = models.ForeignKey(Pdb, models.DO_NOTHING, db_column='id_PDB')  # Field name made lowercase.
+    id_pdb_chain = models.ForeignKey(Pdb, models.DO_NOTHING, db_column='id_PDB_chain')  # Field name made lowercase.
     nom_analyse = models.ForeignKey(MethodesAnalyse, models.DO_NOTHING, db_column='nom_Analyse')  # Field name made lowercase.
 
     def __unicode__(self):

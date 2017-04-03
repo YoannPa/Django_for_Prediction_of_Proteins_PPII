@@ -18,8 +18,8 @@ def home(request):
 
 def pdbinfo(request):
 
-    protdb = Pdb.objects.order_by('id_pdb')\
-    [:len(Pdb.objects.order_by('id_pdb'))]
+    protdb = Pdb.objects.order_by('id_pdb_chain')\
+    [:len(Pdb.objects.order_by('id_pdb_chain'))]
     
     context = {
         'protdb': protdb
@@ -39,10 +39,10 @@ def about(request):
     return render(request, 'pdbapp/about.html', context)
 
 
-def detail(request, id_pdb):
+def detail(request, id_pdb_chain):
 
-    pdb = get_object_or_404(Pdb, id_pdb=id_pdb)  
-
+    pdb = get_object_or_404(Pdb, id_pdb_chain=id_pdb_chain)
+    
     context = {
         'pdb': pdb
     }
