@@ -27,14 +27,14 @@ class MethodesResAdmin(admin.ModelAdmin):
 
 
 class StructSecInline(admin.TabularInline):
-    model = MethodesRes
+    model = StructSec
 
 class StructSecAdmin(admin.ModelAdmin):
-    list_display = ('id_struct_sec','nombre_PPII','pourcentage_PPII','id_PDB','nom_Analyse')
-    search_fields = ['nombre_ppii','pourcentage_ppii']
-
+    list_display = ('id_pdb_chain','id_struct_sec','start_pred','nombre_ppii','pourcentage_ppii','nom_analyse')
+    search_fields = ['id_pdb_chain','nombre_ppii']
+    list_filter = ['nom_analyse']
 
 admin.site.register(Pdb,PdbAdmin)
 admin.site.register(MethodesAnalyse)
 admin.site.register(MethodesRes)
-admin.site.register(StructSec)
+admin.site.register(StructSec,StructSecAdmin)

@@ -62,8 +62,8 @@ class StructSec(models.Model):
     id_pdb_chain = models.ForeignKey(Pdb, models.DO_NOTHING, db_column='id_PDB_chain')  # Field name made lowercase.
     nom_analyse = models.ForeignKey(MethodesAnalyse, models.DO_NOTHING, db_column='nom_Analyse')  # Field name made lowercase.
 
-    def __unicode__(self):
-        return self.structure_predite
+    def __str__(self):
+        return str(self.id_pdb_chain)
 
     class Meta:
         managed = False
