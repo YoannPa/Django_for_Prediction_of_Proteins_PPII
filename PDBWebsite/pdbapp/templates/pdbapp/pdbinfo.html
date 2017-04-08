@@ -1,12 +1,32 @@
 {% load static %}
+
+<head>
 <link rel="stylesheet" type="text/css" href="{% static 'pdbapp/style.css' %}" />
+
+<script type="text/javascript" src="{% static 'pdbapp/jquery-3.2.0.min.js' %}">
+</script>
+
+<script type="text/javascript" src="{% static 'pdbapp/jquery.tablesorter.min.js' %}">
+</script>
+
+<script type="text/javascript" src="{% static 'pdbapp/jquery.searchable-1.1.0.min.js' %}">
+</script>
+
+<script type="text/javascript">
+	$(document).ready(function() 
+	    { 
+		$("#pdbtable").tablesorter(); 
+	    } 
+	);
+</script>
+</head>
 
 <body class="news">
   <header>
     <div class="nav">
       <ul>
         <li class="HOME"><a href="/pdbapp/home/">Home</a></li>
-        <li class="PDB"><a class="active" href="/pdbapp/pdbinfo/">Infos PDB</a></li>
+        <li class="PDB"><a class="active" href="/pdbapp/pdbinfo/">PDBs</a></li>
         <li class="ABOUT"><a href="/pdbapp/about/">About</a></li>
       </ul>
     </div>
@@ -16,8 +36,8 @@
 <h1>PDBs recorded in the database</h1>
 
 {% if protdb %}
-    <table align="center" border="3" width="100%">
-    <tbody>
+    <table id="pdbtable" align="center" border="3" width="100%">
+    <thead>
 	<tr>
 		<th>PDB Id</th>
 		<th>Chain</th>
@@ -26,6 +46,8 @@
 		<th>Resol.</th>
 		<th>Method Res.</th>
 	</tr>
+    </thead>
+    <tbody>
     {% for i in protdb %}
 	<tr>
 		<td><a href="/pdbapp/{{ i.id_pdb_chain }}">{{ i.id_pdb }}</a></td>

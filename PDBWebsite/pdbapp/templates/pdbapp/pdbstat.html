@@ -6,7 +6,7 @@
     <div class="nav">
       <ul>
         <li class="home"><a href="/pdbapp/home/">Home</a></li>
-        <li class="PDB"><a href="/pdbapp/pdbinfo/">Infos PDB</a></li>
+        <li class="PDB"><a href="/pdbapp/pdbinfo/">PDBs</a></li>
         <li class="PDB Details"><a class="active">Details</a></li>
         <li class="ABOUT"><a href="/pdbapp/about/">About</a></li>
        </ul>
@@ -53,13 +53,23 @@
 			<td style="width: 70%;">{{ pdb.meth_res }}</td>
 		</tr>
 		<tr>
-			<th style="width: 30%;">Download link</th>
+			<th style="width: 30%;">RCSB page</th>
 			<td style="width: 70%;">
-				<a href="https://files.rcsb.org/download/{{ pdb.id_pdb }}.pdb">{{ pdb.id_pdb }}.pdb</a>	
+				<a href="http://www.rcsb.org/pdb/explore/explore.do?structureId={{ pdb.id_pdb }}">
+					{{ pdb.id_pdb }}
+				</a>
 			</td>
 		</tr>
 		<tr>
-			<th style="width: 30%;">Ramachandran plot</th>
+			<th style="width: 30%;">Download link</th>
+			<td style="width: 70%;">
+				<a href="https://files.rcsb.org/download/{{ pdb.id_pdb }}.pdb">
+					{{ pdb.id_pdb }}.pdb
+				</a>	
+			</td>
+		</tr>
+		<tr>
+			<th style="width: 40%;">Ramachandran plot</th>
 			<td style="width: 70%;">
 				<a href="http://mordred.bioc.cam.ac.uk/~rapper/rampage.php">RAMPAGE</a>
 			</td>

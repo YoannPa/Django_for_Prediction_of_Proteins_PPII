@@ -6,7 +6,7 @@
     <div class="nav">
       <ul>
         <li class="home"><a class="active" href="/pdbapp/home/">Home</a></li>
-        <li class="info PDB"><a href="/pdbapp/pdbinfo/">Infos PDB</a></li>
+        <li class="info PDB"><a href="/pdbapp/pdbinfo/">PDBs</a></li>
         <li class="about"><a href="/pdbapp/about/">About</a></li>
        </ul>
     </div>
@@ -17,21 +17,10 @@
 
 <form action= "/pdbapp/{{ i.id_pdb }}" class="form-wrapper">
     <input type="text" id="search" placeholder="Search by PDB ID..." required>
-    <input type="submit" value="go" id="submit">
+    <input type="submit" value="go" id="submit" pattern="^\w{4}$">
 </form>
 
 <form action= "/pdbapp/{{ i.id_pdb }}" class="form-wrapper">
     <input type="text" id="search" placeholder="Search by Header..." required>
-    <input type="submit" value="go" id="submit">
+    <input type="submit" value="go" id="submit" pattern="^.*$">
 </form>
-
-
-{% if mresol %}
-    <ul>
-    {% for i in mresol %}
-        <li><a href="/pdbapp/home/{{ i.meth_res }}">{{ i.meth_res }}</a></li>
-    {% endfor %}
-    </ul>
-{% else %}
-    <p>No resolution methods are available.</p>
-{% endif %}

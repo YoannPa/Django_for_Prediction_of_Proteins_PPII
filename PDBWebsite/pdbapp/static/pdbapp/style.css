@@ -15,9 +15,17 @@ table {
 	font-family: Arial;
 }
 
+
+th {	
+	font-size: 140%;	
+	background-color: #A9A9A9;
+	height: 50px;
+}
+
+
+
 tr:nth-child(even) {background-color: #f2f2f2}
 tr:nth-child(odd) {background-color: #A9D0F5}
-
 
 td {
 padding-left: 0px;

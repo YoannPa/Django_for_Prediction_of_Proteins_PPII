@@ -2,6 +2,20 @@
 
 ## Prerequesites
 
+* Update your packages already installed
+
+```bash
+sudo apt update
+```
+
+* Install **Python 2.7**
+
+```bash
+sudo apt install python2.7
+```
+
+* Install MySQL
+
 * Install **libmysqlclient-dev** and **MySQL-python**:
 
 ```bash
@@ -102,9 +116,11 @@ python manage.py inspectdb > models.py
 
 * Replace models.py file in the folder pdbapp by the one you generated. 
 
-* Migrate new parameters to the database:
+* Go into the **PDBWesite/** directory and migrate new parameters to the
+ database:
 
 ```bash
+cd PDBWesite/
 python manage.py makemigrations pdbapp
 python manage.py migrate
 ```

@@ -6,7 +6,7 @@
     <div class="nav">
       <ul>
         <li class="home"><a href="/pdbapp/home/">Home</a></li>
-        <li class="info PDB"><a href="/pdbapp/pdbinfo/">Infos</a></li>
+        <li class="info PDB"><a href="/pdbapp/pdbinfo/">PDBs</a></li>
         <li class="about"><a class="active" href="/pdbapp/about/">About</a></li>
        </ul>
     </div>
@@ -20,7 +20,11 @@
 {% if namelist %}
     <ul>
     {% for i in namelist %}
-        <li><a href="/pdbapp/pdbinfo/{{ i }}">{{ i }}</a> - Universite Paris Diderot (Paris 7)</li>
+        <li>{{ i }} - 
+		<a href="https://www.univ-paris-diderot.fr/">
+			Universite Paris Diderot (Paris 7)
+		</a>
+	</li>
     {% endfor %}
     </ul>
 {% else %}
