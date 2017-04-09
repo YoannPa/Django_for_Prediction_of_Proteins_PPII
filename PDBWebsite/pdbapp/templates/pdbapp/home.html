@@ -7,6 +7,7 @@
       <ul>
         <li class="home"><a class="active" href="/pdbapp/home/">Home</a></li>
         <li class="info PDB"><a href="/pdbapp/pdbinfo/">PDBs</a></li>
+        <li class="STRUC"><a href="/pdbapp/strucinfo/">Struc</a></li>
         <li class="about"><a href="/pdbapp/about/">About</a></li>
        </ul>
     </div>
@@ -14,13 +15,3 @@
 </body>
 
 <h1>PDBs Database (Projet M2BI)</h1>
-
-<form action= "/pdbapp/{{ i.id_pdb }}" class="form-wrapper">
-    <input type="text" id="search" placeholder="Search by PDB ID..." required>
-    <input type="submit" value="go" id="submit" pattern="^\w{4}$">
-</form>
-
-<form action= "/pdbapp/{{ i.id_pdb }}" class="form-wrapper">
-    <input type="text" id="search" placeholder="Search by Header..." required>
-    <input type="submit" value="go" id="submit" pattern="^.*$">
-</form>

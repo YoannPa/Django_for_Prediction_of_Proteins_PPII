@@ -12,7 +12,7 @@
 <script type="text/javascript">
 	$(document).ready(function() 
 	    { 
-		$("#pdbtable").tablesorter(); 
+		$("#structable").tablesorter(); 
 	    } 
 	);
 </script>
@@ -22,8 +22,8 @@
 
 <script type="text/javascript">
 	$(function () {
-	    $( '#pdbtable' ).searchable({
-		searchField: '#pdbsearch',
+	    $( '#structable' ).searchable({
+		searchField: '#strucsearch',
 		striped: true,
         	oddRow: { 'background-color': '#A9D0F5' },
         	evenRow: { 'background-color': '#f2f2f2' },
@@ -38,44 +38,42 @@
     <div class="nav">
       <ul>
         <li class="HOME"><a href="/pdbapp/home/">Home</a></li>
-        <li class="PDB"><a class="active" href="/pdbapp/pdbinfo/">PDBs</a></li>
-        <li class="STRUC"><a href="/pdbapp/strucinfo/">Struc</a></li>
+        <li class="PDB"><a href="/pdbapp/pdbinfo/">PDBs</a></li>
+        <li class="STRUC"><a class="active" href="/pdbapp/strucinfo/">Struc</a></li>
         <li class="ABOUT"><a href="/pdbapp/about/">About</a></li>
       </ul>
     </div>
   </header>
 </body>
 
-<h1>PDBs recorded in the database</h1>
+<h1>Structure predictions recorded in the database</h1>
 
-{% if protdb %}
+{% if strucsnd %}
     <form class="form-wrapper">
-	<input type="search" id="pdbsearch" value="" class="form-control" placeholder="Search for a PDB by id, chain, header, size, resolution or resolution method...">
+	<input type="search" id="strucsearch" value="" class="form-control" placeholder="Search by PDB id, prediction, number of PPII, PPII % or prediction tool...">
     </form>
-    <table id="pdbtable" align="center" border="3" width="100%">
+    <table id="structable" align="center" border="3" width="100%">
     <thead>
 	<tr>
 		<th>PDB Id</th>
-		<th>Chain</th>
-		<th>Header</th>
-		<th>Size</th>
-		<th>Resol.</th>
-		<th>Method Res.</th>
+		<th>Prediction</th>
+		<th>Number of PPII</th>
+		<th>PPII %</th>
+		<th>Prediction tool</th>
 	</tr>
     </thead>
     <tbody>
-    {% for i in protdb %}
+    {% for i in strucsnd %}
 	<tr>
-		<td><a href="/pdbapp/{{ i.id_pdb_chain }}">{{ i.id_pdb }}</a></td>
-		<td>{{ i.chaine }}</td>
-		<td>{{ i.header }}</td>
-		<td>{{ i.taille_proteine }}</td>
-		<td>{{ i.resolution_pdb }}</td>
-		<td>{{ i.meth_res }}</td>
+		<td><a href="/pdbapp/{{ i.id_pdb_chain }}">{{ i.id_pdb_chain }}</a></td>
+		<td><a href="/pdbapp/{{ i.id_struct_sec }}">#{{ i.id_struct_sec }}</a></td>
+		<td>{{ i.nombre_ppii }}</td>
+		<td>{{ i.pourcentage_ppii }}</td>
+		<td>{{ i.nom_analyse }}</td>
 	</tr>
     {% endfor %}
     </tbody>
     </table>
 {% else %}
-    <p>No PDBs are available.</p>
+    <p>No structure predictions are available.</p>
 {% endif %}

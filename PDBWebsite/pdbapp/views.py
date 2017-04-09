@@ -1,7 +1,7 @@
 from django.shortcuts import render, get_object_or_404
 from django.http import HttpResponse
 from django.template import loader
-from .models import MethodesRes, Pdb
+from .models import MethodesRes, Pdb, StructSec
 
 
 def home(request):
@@ -26,6 +26,18 @@ def pdbinfo(request):
     }
     
     return render(request, 'pdbapp/pdbinfo.html', context)
+
+
+def strucinfo(request):
+
+    strucsnd = StructSec.objects.order_by('id_pdb_chain')\
+    [:len(StructSec.objects.order_by('id_pdb_chain'))]
+    
+    context = {
+        'strucsnd': strucsnd
+    }
+    
+    return render(request, 'pdbapp/strucinfo.html', context)
 
 
 def about(request):
