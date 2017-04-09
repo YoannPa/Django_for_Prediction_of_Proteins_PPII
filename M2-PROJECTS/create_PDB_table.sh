@@ -13,8 +13,8 @@ if [ "$#" -ne 2 ];then
 fi
 
 # delete the file if it already exist to create it anew
-if [ -f pdb_table.tsv ]; then
-	rm pdb_table.tsv
+if [ -f pdb_table.csv ]; then
+	rm pdb_table.csv
 fi
 
 PDB_files_dir=`echo $2 | sed 's/\/$//'`
@@ -63,28 +63,38 @@ for id_chn in `cat $1`;do
 			pos=0
 		fi
 		if [ $pos -gt 0 ];then
-			if [[ $pos -lt $start && $pos -le $start_msg ]];then
+			# if the missing residue is before the actual start of the sequence
+			if [[ $pos -lt $start && $pos -eq $start_msg ]];then
 				seq="$mres$seq"
+				start=$pos
+			# if the missing residue is inside or at the end of the sequence 
 			else
-				seq="${seq:0:$((pos - 1))}$mres${seq:$((pos - 1)):${#seq}}"
+				seq="${seq:0:$((pos - start))}$mres${seq:$((pos - start)):${#seq}}"
 			fi
 		fi
 	done
 		
-	if [[ $start_msg -lt $start && "$start_msg" -gt "0" ]];then
-		start=$start_msg
-	fi
+	#if [[ $start_msg -lt $start && "$start_msg" -gt "0" ]];then
+	#	start=$start_msg
+	#fi
 	length=`grep -E "ATOM +\w+ +CA *\w+ $chain" $PDB_files_dir/$file | tail -n 1 | cut -c 23-26 | grep -Eo "[0-9]+"`
 	length_msg_res=`grep -Eo "REMARK 465 +\w{3} $chain +[0-9]+" $PDB_files_dir/$file | tail -n 1 | awk '{print $5}'`
 	if [[ $length_msg_res != '' && $length_msg_res -gt $length ]];then
 			length=$length_msg_res
 	fi
 	
+	# format sequence in "fasta" style with lines of 80 chars
+	i=80
+	while [ $i -lt ${#seq} ];do
+		seq="${seq:0:$i}\n${seq:$i:${#seq}}"
+		i=$((i + 80 + 2))
+	done
+
 	reso=`grep -E "REMARK.+RESOLUTION\." $PDB_files_dir/$file | grep -oE "[0-9]\.[0-9]+"`
 	
 	meth_res=`grep -i "experiment type" $PDB_files_dir/$file | grep -Eio "x-ray|nmr"`
 	
-	# write parsed informations to pdb_table.tsv
-	echo -e "$id_chn\t$id\t$chain\t$header\t$seq\t$start\t$length\t$reso\t$meth_res" >> pdb_table.tsv
+	# write parsed informations to pdb_table.csv
+	echo "$id_chn;$id;$chain;$header;$seq;$start;$length;$reso;$meth_res" >> pdb_table.csv
 done
 

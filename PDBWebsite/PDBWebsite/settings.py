@@ -80,6 +80,7 @@ DATABASES = {
         'NAME': 'M2BI_Projet_PPII',
 	'USER': 'root',
 	'PASSWORD': 'Allerlom',
+	'PASSWORD': 'bdd2017',
 	'HOST': '',
 	'PORT': '',
     }
