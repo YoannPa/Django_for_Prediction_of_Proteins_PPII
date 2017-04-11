@@ -1,0 +1,69 @@
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'pdbapp/stat_style.css' %}" />
+
+<body class="news">
+  <header>
+    <div class="nav">
+      <ul>
+        <li class="home"><a href="/pdbapp/home/">Home</a></li>
+        <li class="PDB"><a href="/pdbapp/pdbinfo/">PDBs</a></li>
+        <li class="STRUC"><a href="/pdbapp/strucinfo/">Struc</a></li>
+        <li class="STR Details"><a class="active">Details</a></li>
+        <li class="ABOUT"><a href="/pdbapp/about/">About</a></li>
+       </ul>
+    </div>
+  </header>
+</body>
+
+<h1>Prediction Details</h1>
+
+{% if strpred %}
+	<h2>
+		PDB 
+		<a href="/pdbapp/{{ strpred.id_pdb_chain }}">{{ strpred.id_pdb_chain }}</a>
+		Prediction #{{ strpred.id_struct_sec }} made with {{ strpred.nom_analyse }}
+	</h2>
+	<table align="center" border="3">
+	<tbody>
+		<tr>
+			<th style="width: 30%;">Prediction start position</th>
+			<td style="width: 70%;">{{ strpred.start_pred }}</td>
+		</tr>
+		<tr>
+			<th style="width: 30%;">Predicted secondary structure</th>
+			<td style="width: 70%;">
+				<font face="Courier New">
+					{{ strpred.structure_predite }}
+				</font>
+			</td>
+		</tr>
+		<tr>
+			<th style="width: 30%;">Number of PPII</th>
+			<td style="width: 70%;">{{ strpred.nombre_ppii }}</td>
+		</tr>
+		<tr>
+			<th style="width: 30%;">PPII %</th>
+			<td style="width: 70%;">{{ strpred.pourcentage_ppii }}</td>
+		</tr>
+		<tr>
+			<th style="width: 30%;">Phi angles list</th>
+			<td style="width: 70%;">{{ strpred.angle_phi }}</td>
+		</tr>
+		<tr>
+			<th style="width: 30%;">Psi angles list</th>
+			<td style="width: 70%;">{{ strpred.angle_psi }}</td>
+		</tr>
+		<tr>
+			<th style="width: 40%;">Ramachandran plot</th>
+			<td style="width: 70%;">
+				<a href="http://mordred.bioc.cam.ac.uk/~rapper/rampage.php">
+					RAMPAGE
+				</a>
+			</td>
+		</tr>
+	</tbody>
+	</table>
+
+{% else %}
+	<p>No stats are available...</p>
+{% endif %}

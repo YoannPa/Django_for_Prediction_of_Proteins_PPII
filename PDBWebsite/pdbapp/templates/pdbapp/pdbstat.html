@@ -22,63 +22,61 @@
 	<table align="center" border="3">
 	<tbody>
 		<tr>
-			<th style="width: 30%;">Chain</th>
-			<td style="width: 70%;">{{ pdb.chaine }}</td>
+			<th style="width: 10%;">Chain</th>
+			<td style="width: 90%;">{{ pdb.chaine }}</td>
 		</tr>
 		<tr>
-			<th style="width: 30%;">Header</th>
-			<td style="width: 70%;">{{ pdb.header }}</td>
+			<th style="width: 10%;">Header</th>
+			<td style="width: 90%;">{{ pdb.header }}</td>
 		</tr>
 		<tr>
-			<th style="width: 30%;">Sequence</th>
-			<td style="width: 70%;">
+			<th style="width: 10%;">Sequence</th>
+			<td style="width: 90%;">
 				<font face="Courier New">
 					{{ pdb.sequence_proteine }}
 				</font>
 			</td>
 		</tr>
 		<tr>
-			<th style="width: 30%;">Start position</th>
-			<td style="width: 70%;">{{ pdb.start_seq }}</td>
+			<th style="width: 10%;">Start position</th>
+			<td style="width: 90%;">{{ pdb.start_seq }}</td>
 		</tr>
 		<tr>
-			<th style="width: 30%;">Size</th>
-			<td style="width: 70%;">{{ pdb.taille_proteine }}</td>
+			<th style="width: 10%;">Size</th>
+			<td style="width: 90%;">{{ pdb.taille_proteine }}</td>
 		</tr>
 		<tr>
-			<th style="width: 30%;">Resolution</th>
-			<td style="width: 70%;">{{ pdb.resolution_pdb }}</td>
+			<th style="width: 10%;">Resolution</th>
+			<td style="width: 90%;">{{ pdb.resolution_pdb }}</td>
 		</tr>
 		<tr>
-			<th style="width: 30%;">Resolution method</th>
-			<td style="width: 70%;">{{ pdb.meth_res }}</td>
+			<th style="width: 10%;">Resolution method</th>
+			<td style="width: 90%;">{{ pdb.meth_res }}</td>
 		</tr>
 		<tr>
-			<th style="width: 30%;">RCSB page</th>
-			<td style="width: 70%;">
+			<th style="width: 10%;">RCSB page</th>
+			<td style="width: 90%;">
 				<a href="http://www.rcsb.org/pdb/explore/explore.do?structureId={{ pdb.id_pdb }}">
 					{{ pdb.id_pdb }}
 				</a>
 			</td>
 		</tr>
 		<tr>
-			<th style="width: 30%;">Download link</th>
-			<td style="width: 70%;">
+			<th style="width: 10%;">Download link</th>
+			<td style="width: 90%;">
 				<a href="https://files.rcsb.org/download/{{ pdb.id_pdb }}.pdb">
 					{{ pdb.id_pdb }}.pdb
 				</a>	
 			</td>
 		</tr>
 		<tr>
-			<th style="width: 40%;">Ramachandran plot</th>
-			<td style="width: 70%;">
+			<th style="width: 10%;">Ramachandran plot</th>
+			<td style="width: 90%;">
 				<a href="http://mordred.bioc.cam.ac.uk/~rapper/rampage.php">RAMPAGE</a>
 			</td>
 		</tr>
 	</tbody>
 	</table>
-
-
 
 {% else %}
 	<p>No stats are available...</p>

@@ -60,3 +60,14 @@ def detail(request, id_pdb_chain):
     }
     
     return render(request, 'pdbapp/pdbstat.html', context)
+
+
+def strdetail(request, id_struct_sec):
+
+    strpred = get_object_or_404(StructSec, id_struct_sec=id_struct_sec)
+    
+    context = {
+        'strpred': strpred
+    }
+    
+    return render(request, 'pdbapp/strucstat.html', context)

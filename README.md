@@ -108,19 +108,18 @@ INSTALLED_APPS = [
 
 And save modifications. 
 
-* Generate Django models:
+* Go into the **PDBWesite/** directory and generate Django models:
 
 ```bash
+cd PDBWesite/
 python manage.py inspectdb > models.py
 ```
 
 * Replace models.py file in the folder pdbapp by the one you generated. 
 
-* Go into the **PDBWesite/** directory and migrate new parameters to the
- database:
+* Migrate new parameters to the database:
 
 ```bash
-cd PDBWesite/
 python manage.py makemigrations pdbapp
 python manage.py migrate
 ```

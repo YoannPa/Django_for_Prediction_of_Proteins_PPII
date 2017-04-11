@@ -22,7 +22,7 @@ class Pdb(models.Model):
     meth_res = models.ForeignKey('MethodesRes', models.DO_NOTHING, db_column='meth_Res')  # Field name made lowercase.
 
     def __unicode__(self):
-        return self.id_pdb
+        return self.id_pdb_chain
 
     class Meta:
         managed = False
