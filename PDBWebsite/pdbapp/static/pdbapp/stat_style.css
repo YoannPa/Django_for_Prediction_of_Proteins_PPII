@@ -13,6 +13,11 @@ li {
 	font-family: Arial;
 }
 
+p {
+	font-family: Arial;
+	margin-left: 30px;
+}
+
 body {
 	margin: 0;
 	padding: 0;	
@@ -22,6 +27,14 @@ body {
 table {
 	text-align: left;
 	font-family: Arial;
+}
+
+div.scrollable {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
 }
 
 tr:nth-child(even) {background-color: #f2f2f2}

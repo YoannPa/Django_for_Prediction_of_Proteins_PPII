@@ -2,6 +2,8 @@ from django.shortcuts import render, get_object_or_404
 from django.http import HttpResponse
 from django.template import loader
 from .models import MethodesRes, Pdb, StructSec
+from django.db.models import Avg
+from django.db.models import Sum
 
 
 def home(request):
@@ -42,10 +44,30 @@ def strucinfo(request):
 
 def about(request):
     
+    pdbcount = Pdb.objects.count()
+    structcount = StructSec.objects.count()
+    dsspcount = StructSec.objects.filter(nom_analyse='DSSP').count()
+    prosscount = StructSec.objects.filter(nom_analyse='PROSS').count()
+    avgstartseq = Pdb.objects.aggregate(Avg('start_seq')).values()[0]
+    avgsize = Pdb.objects.aggregate(Avg('taille_proteine')).values()[0]
+    avgres = Pdb.objects.aggregate(Avg('resolution_pdb')).values()[0]
+    avgstartpred = StructSec.objects.aggregate(Avg('start_pred')).values()[0]
+    totppii = StructSec.objects.aggregate(Sum('nombre_ppii')).values()[0]
+    avgpcppii = StructSec.objects.aggregate(Avg('pourcentage_ppii')).values()[0]
     namelist = ['Quentin LETOURNEUR', 'Yoann PAGEAUD']
-    
+
     context = {
-        'namelist': namelist
+        'namelist': namelist,
+	'pdbcount': pdbcount,
+	'structcount': structcount,
+	'dsspcount': dsspcount,
+	'prosscount': prosscount,
+	'avgstartseq': avgstartseq,
+	'avgsize': avgsize,
+	'avgres': avgres,
+	'avgstartpred': avgstartpred,
+	'totppii': totppii,
+	'avgpcppii': avgpcppii
     } 
     
     return render(request, 'pdbapp/about.html', context)
@@ -54,9 +76,11 @@ def about(request):
 def detail(request, id_pdb_chain):
 
     pdb = get_object_or_404(Pdb, id_pdb_chain=id_pdb_chain)
-    
+    strpred = StructSec.objects.filter(id_pdb_chain=id_pdb_chain)
+
     context = {
-        'pdb': pdb
+        'pdb': pdb,
+	'strpred':strpred
     }
     
     return render(request, 'pdbapp/pdbstat.html', context)
@@ -65,9 +89,9 @@ def detail(request, id_pdb_chain):
 def strdetail(request, id_struct_sec):
 
     strpred = get_object_or_404(StructSec, id_struct_sec=id_struct_sec)
-    
-    context = {
-        'strpred': strpred
+
+    context = {       
+	'strpred': strpred
     }
     
     return render(request, 'pdbapp/strucstat.html', context)

@@ -19,65 +19,92 @@
 
 {% if pdb %}
 	<h2>{{ pdb.id_pdb }}</h2>
-	<table align="center" border="3">
+	<table align="left" border="3">
 	<tbody>
 		<tr>
-			<th style="width: 10%;">Chain</th>
-			<td style="width: 90%;">{{ pdb.chaine }}</td>
+			<th style="width: 220px;">Chain</th>
+			<td style="width: 650px;">{{ pdb.chaine }}</td>
 		</tr>
 		<tr>
-			<th style="width: 10%;">Header</th>
-			<td style="width: 90%;">{{ pdb.header }}</td>
+			<th style="width: 220px;">Header</th>
+			<td style="width: 650px;">{{ pdb.header }}</td>
 		</tr>
 		<tr>
-			<th style="width: 10%;">Sequence</th>
-			<td style="width: 90%;">
-				<font face="Courier New">
-					{{ pdb.sequence_proteine }}
-				</font>
-			</td>
+			<th style="width: 220px;">Start position</th>
+			<td style="width: 650px;">{{ pdb.start_seq }}</td>
 		</tr>
 		<tr>
-			<th style="width: 10%;">Start position</th>
-			<td style="width: 90%;">{{ pdb.start_seq }}</td>
+			<th style="width: 220px;">Size</th>
+			<td style="width: 650px;">{{ pdb.taille_proteine }}</td>
 		</tr>
 		<tr>
-			<th style="width: 10%;">Size</th>
-			<td style="width: 90%;">{{ pdb.taille_proteine }}</td>
+			<th style="width: 220px;">Resolution</th>
+			<td style="width: 650px;">{{ pdb.resolution_pdb }}</td>
 		</tr>
 		<tr>
-			<th style="width: 10%;">Resolution</th>
-			<td style="width: 90%;">{{ pdb.resolution_pdb }}</td>
+			<th style="width: 220px;">Resolution method</th>
+			<td style="width: 650px;">{{ pdb.meth_res }}</td>
 		</tr>
 		<tr>
-			<th style="width: 10%;">Resolution method</th>
-			<td style="width: 90%;">{{ pdb.meth_res }}</td>
-		</tr>
-		<tr>
-			<th style="width: 10%;">RCSB page</th>
-			<td style="width: 90%;">
+			<th style="width: 220px;">RCSB page</th>
+			<td style="width: 650px;">
 				<a href="http://www.rcsb.org/pdb/explore/explore.do?structureId={{ pdb.id_pdb }}">
 					{{ pdb.id_pdb }}
 				</a>
 			</td>
 		</tr>
 		<tr>
-			<th style="width: 10%;">Download link</th>
-			<td style="width: 90%;">
+			<th style="width: 220px;">Download link</th>
+			<td style="width: 650px;">
 				<a href="https://files.rcsb.org/download/{{ pdb.id_pdb }}.pdb">
 					{{ pdb.id_pdb }}.pdb
 				</a>	
 			</td>
 		</tr>
 		<tr>
-			<th style="width: 10%;">Ramachandran plot</th>
-			<td style="width: 90%;">
+			<th style="width: 220px;">Ramachandran plot</th>
+			<td style="width: 650px;">
 				<a href="http://mordred.bioc.cam.ac.uk/~rapper/rampage.php">RAMPAGE</a>
 			</td>
 		</tr>
+		<tr>
+			<th style="width: 220px;">Sequence</th>
+			<td style="width: 650px;"><div class=scrollable>
+				<font face="Courier New">
+					{{ pdb.sequence_proteine }}
+				</font>
+			</div></td>
+		</tr>
+
 	</tbody>
 	</table>
 
 {% else %}
 	<p>No stats are available...</p>
+{% endif %}
+
+
+{% if strpred %}
+	<table align="left" border="3">
+	<tbody>
+	
+	{% for i in strpred %}
+		<tr>
+			<th style="width: 220px;">
+				<a href="/pdbapp/{{ i.id_struct_sec }}">
+					{{ i.nom_analyse }} structure prediction
+				</a>
+			</th>
+			<td style="width: 650px;">
+				<font face="Courier New">
+					{{ i.structure_predite }}
+				</font>
+			</td>
+		</tr>
+	{% endfor %}
+	</tbody>
+	</table>
+
+{% else %}
+    <p>No informations available.</p>
 {% endif %}

@@ -16,6 +16,79 @@
 
 <h1>About Us</h1>
 
+<h2>Database Statistics and Informations</h2>
+
+
+{% if pdbcount %}
+    <p><b>{{ pdbcount }} PDBs</b> are currently recorded in the database.</p>
+{% else %}
+    <p>The database is empty.</p>
+{% endif %}
+
+
+{% if structcount %}
+    <p><b>{{ structcount }} structural predictions</b> are currently recorded in the database.</p>
+{% else %}
+    <p>The database is empty.</p>
+{% endif %}
+
+
+{% if dsspcount %}
+    <li style="margin-left:30px"><b>{{ dsspcount }}</b>  DSSP predictions.</li>
+{% else %}
+    <li style="margin-left:30px">The database is empty.</li>
+{% endif %}
+
+
+{% if prosscount %}
+    <li style="margin-left:30px"><b>{{ prosscount }}</b> PROSS predictions.</li>
+{% else %}
+    <li style="margin-left:30px">The database is empty.</li>
+{% endif %}
+
+
+{% if avgstartseq %}
+    <p>Average sequence start in PDBs: <b>{{ avgstartseq }}</b></p>
+{% else %}
+    <p>The database is empty.</p>
+{% endif %}
+
+
+{% if avgsize %}
+    <p>Average protein sequence size: <b>{{ avgsize }}</b></p>
+{% else %}
+    <p>The database is empty.</p>
+{% endif %}
+
+
+{% if avgres %}
+    <p>Average resolution of PDBs: <b>{{ avgres }}</b></p>
+{% else %}
+    <p>The database is empty.</p>
+{% endif %}
+
+
+{% if avgstartpred %}
+    <p>Average start position of predictions: <b>{{ avgstartpred }}</b></p>
+{% else %}
+    <p>The database is empty.</p>
+{% endif %}
+
+
+{% if totppii %}
+    <p>Total number of PPII structures predicted over all PDBs: <b>{{ totppii }}</b></p>
+{% else %}
+    <p>The database is empty.</p>
+{% endif %}
+
+
+{% if avgpcppii %}
+    <p>Average PPII % over all predictions: <b>{{ avgpcppii }}</b></p>
+{% else %}
+    <p>The database is empty.</p>
+{% endif %}
+
+
 <h2>Project members</h2>
 
 {% if namelist %}
@@ -31,3 +104,4 @@
 {% else %}
     <p>No informations available.</p>
 {% endif %}
+
