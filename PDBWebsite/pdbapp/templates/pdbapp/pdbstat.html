@@ -19,7 +19,7 @@
 
 {% if pdb %}
 	<h2>{{ pdb.id_pdb }}</h2>
-	<table align="left" border="3">
+	<table align="left" border="3" style="margin-left:10px;">
 	<tbody>
 		<tr>
 			<th style="width: 220px;">Chain</th>
@@ -82,16 +82,39 @@
 {% else %}
 	<p>No stats are available...</p>
 {% endif %}
-
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
 
 {% if strpred %}
-	<table align="left" border="3">
+	
+    <div style="overflow-x:scroll;max-width:900px;margin-left:10px;">
+    <table align="left" border="3">
 	<tbody>
 	
 	{% for i in strpred %}
-		<tr>
+        <tr>
 			<th style="width: 220px;">
-				<a href="/pdbapp/{{ i.id_struct_sec }}">
+				<a href="/pdbapp/{{ i.id_struct_sec }}", style="overflow:scroll">
 					{{ i.nom_analyse }} structure prediction
 				</a>
 			</th>
@@ -101,9 +124,11 @@
 				</font>
 			</td>
 		</tr>
+        
 	{% endfor %}
 	</tbody>
 	</table>
+    </div>
 
 {% else %}
     <p>No informations available.</p>
