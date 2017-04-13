@@ -3,12 +3,46 @@ h1 {
 	font-family: Arial;
 }
 
+h2 {
+	font-family: Arial;
+	margin-left: 1cm;
+}
+
+h3 {
+	font-family: Arial;
+	margin-left: 1cm;
+}
+
+p {
+	font-family: Arial;
+	margin-left: 1cm;
+	margin-right: 1cm;
+}
+
+li {
+	font-family: Arial;
+}
+
+figcaption {
+	text-align: center;	
+	font-family: Arial;
+	font-weight: bold;
+	font-style: italic;
+}
+
 
 body {
 	margin: 0;
 	padding: 0;	
 	background: white url("images/bckgrnd.jpg") repeat left top;
 }
+
+img {
+	display: block;	
+	margin-left: auto;
+	margin-right: auto;
+}
+
 
 table {
 	text-align: center;

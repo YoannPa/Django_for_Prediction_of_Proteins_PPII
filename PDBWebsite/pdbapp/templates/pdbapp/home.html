@@ -7,7 +7,7 @@
       <ul>
         <li class="home"><a class="active" href="/pdbapp/home/">Home</a></li>
         <li class="info PDB"><a href="/pdbapp/pdbinfo/">PDBs</a></li>
-        <li class="STRUC"><a href="/pdbapp/strucinfo/">Struc</a></li>
+        <li class="STRUC"><a href="/pdbapp/strucinfo/">Strucs</a></li>
         <li class="about"><a href="/pdbapp/about/">About</a></li>
        </ul>
     </div>
@@ -15,3 +15,61 @@
 </body>
 
 <h1>PDBs Database (Projet M2BI)</h1>
+
+
+<h2>How to use the website ?</h2>
+<h3>Access PDBs</h3>
+<p>PDBs informations are accessible on the <b>PDBs</b> page. Here you will find a table containing various informations about the PDBs recorded into the database. To find your PDB of interest you can play with 2 different options:</p>
+<li style="margin-left:1cm; margin-right:1cm;">By sorting the table: to sort the table following one header, you can click on it. the table will be automatically sorted. click a second time to invert the sort order. You also can try a sorting following a specific order of headers by doign a <b>Ctrl+click</b> when clicking multiple headers. To reset your current sorting just reload the page (<b>F5</b>).</li>
+<figure>
+	<img src="{% static 'pdbapp/images/SortPDB.png' %}" style="width:600px">
+	<figcaption>Example of sort following protein size.</figcaption>
+</figure>
+<li style="margin-left:1cm;  margin-right:1cm;">By using the search bar: if you have specific informations about a PDB you are looking for, using the search bar may be you best option. you can search for any kind of informations referenced in the table displayed (PDB id, chain, PDB header, protein size, resolution or resolution method), the table will shorten automatically to let appear PDBs matching your search.</li>
+<figure>
+	<img src="{% static 'pdbapp/images/PDBSearch.png' %}" style="width:600px">
+	<figcaption>Example of filtered search to get PDBs of "Transport" proteins.</figcaption>
+</figure>
+<p>Obviously, if neither the first nor the second option is not enought to find your PDB of interest, you can combine both! Start by filtering PDBs upon specific informations you have by using the searchbar, then, sort the remaining rows in the table to have better chances to find your PDB.</p>
+
+<p>Once you found the PDB of your choice, click its <b>ID</b>. a specific information page corresponding to your PDB will load...</p>  
+
+<h3>Informations in PDB Details</h3>
+<figure>
+	<img src="{% static 'pdbapp/images/PDBDetail.png' %}" style="width:600px">
+	<figcaption>Example of PDB Details page for the PDB <b>1AIE</b>.</figcaption>
+</figure>
+<p>On the <b>PDB Details</b> page you have access to many informations about the recorded PDB : chain, header, start position of the PDB, protein size, resolution, resolution method used and other useful fields explained below:</p>
+<li style="margin-left:1cm;  margin-right:1cm;"><b>RCSB page</b>: this field provides a link to the PDB webpage on RCSB website.</li>
+<li style="margin-left:1cm;  margin-right:1cm;"><b>Donwload link</b>: this field contains a link to download the PDB file (hosted on RCSB website).</li>
+<li style="margin-left:1cm;  margin-right:1cm;"><b>RAMPAGE tool</b>: this field contains a link to an efficient tool named RAMPAGE to plot different Ramachandran plots. if you download the PDB from the previous field, you can generate ramachandran plots for your PDB. It especially provide a ramachandran plot of phi and psi angles values favorable to prolines, which makes it an interesting supplementary tool.</li>
+<li style="margin-left:1cm;  margin-right:1cm;"><b>PDB Sequence</b>: This field contains a Fasta formated proteic sequence with a standardize font size, so that each letters has the same width.</li>
+<li style="margin-left:1cm;  margin-right:1cm;"><b>Secondary Structure Predictions</b>: up to 4 structure prediction fields can be generated under the PDB Sequence. It use the same font parameters than those used for PDB sequence field. In our example 2 predictions are available, made by 2 different prediction tools: DSSP and PROSS. As you can see each tool can be clicked. By clicking on one of them the corresponding prediction page will be display (For more informations about predictions pages see below the <b>Informations in Prediction Details</b> part).</li>
+
+<h3>Access structure predictions</h3>
+<p>Predictions informations are accessible on the <b>Strucs</b> page. Here you will find a table containing various informations about the structure predictions recorded into the database. To find your prediction of interest you can play with the same 2 different options explained previously in the part <b>Access PDBs</b>: by sorting the table, or by filtering prediction with the search bar.</p>
+<p>In this table, informations contained in the 2 first columns are clickable. The 1st column contains PDB ID concatenated to the protein chain in the PDB, while the 2nd one contains uniques integers IDs, one for each prediction. Clicking IDs in the first field will send you to the corresponding <b>PDB Details</b> page, whereas clicking the second field will send you to the <b>Prediction Details</b> page.</p>
+<figure>
+	<img src="{% static 'pdbapp/images/StrucTable.png' %}" style="width:600px">
+	<figcaption>Structure predictions webpage.</figcaption>
+</figure>
+
+<h3>Informations in Prediction Details</h3>
+<p>On the <b>Prediction Details</b> page you have access to many informations about the recorded prediction : prediction start position, secondary structure sequence, predicted number and percentage of PPII in the PDB, phi and psi angle lists, and the RAMPAGE tool.
+In the secondary title of the page, you can see:</p>
+<li style="margin-left:1cm;  margin-right:1cm;">That the "PDB ID+Chain" is clickable. It will send you to the corresponding PDB Details page.</li>
+<li style="margin-left:1cm;  margin-right:1cm;">The number ID of the prediction with the "#" prefix.</li>
+<li style="margin-left:1cm;  margin-right:1cm;">The prediction tool used.</li>
+
+<h3>Informations and Statistics</h3>
+<p>On the page <b>About</b> you will find various live statistics about the database of the project, and the names of the project members (see the screen capture below).</p>
+<figure>
+	<img src="{% static 'pdbapp/images/about.png' %}" style="width:600px">
+	<figcaption>About webpage.</figcaption>
+</figure>
+
+
+
+
+
+

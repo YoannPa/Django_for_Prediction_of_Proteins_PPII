@@ -8,7 +8,7 @@
         <li class="home"><a href="/pdbapp/home/">Home</a></li>
         <li class="PDB"><a href="/pdbapp/pdbinfo/">PDBs</a></li>
         <li class="PDB Details"><a class="active">Details</a></li>
-        <li class="STRUC"><a href="/pdbapp/strucinfo/">Struc</a></li>
+        <li class="STRUC"><a href="/pdbapp/strucinfo/">Strucs</a></li>
         <li class="ABOUT"><a href="/pdbapp/about/">About</a></li>
        </ul>
     </div>
@@ -19,7 +19,7 @@
 
 {% if pdb %}
 	<h2>{{ pdb.id_pdb }}</h2>
-	<table align="left" border="3" style="margin-left:10px;">
+	<table align="left" border="3">
 	<tbody>
 		<tr>
 			<th style="width: 220px;">Chain</th>
@@ -82,39 +82,16 @@
 {% else %}
 	<p>No stats are available...</p>
 {% endif %}
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
+
 
 {% if strpred %}
-	
-    <div style="overflow-x:scroll;max-width:900px;margin-left:10px;">
-    <table align="left" border="3">
+	<table align="left" border="3">
 	<tbody>
 	
 	{% for i in strpred %}
-        <tr>
+		<tr>
 			<th style="width: 220px;">
-				<a href="/pdbapp/{{ i.id_struct_sec }}", style="overflow:scroll">
+				<a href="/pdbapp/{{ i.id_struct_sec }}">
 					{{ i.nom_analyse }} structure prediction
 				</a>
 			</th>
@@ -124,11 +101,9 @@
 				</font>
 			</td>
 		</tr>
-        
 	{% endfor %}
 	</tbody>
 	</table>
-    </div>
 
 {% else %}
     <p>No informations available.</p>
