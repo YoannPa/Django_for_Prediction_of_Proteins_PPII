@@ -27,6 +27,7 @@ body {
 table {
 	text-align: left;
 	font-family: Arial;
+    margin:10px;
 }
 
 div.scrollable {
@@ -42,7 +43,7 @@ tr:nth-child(odd) {background-color: #A9D0F5}
 
 td {
 padding-left: 10px;
-padding-right: 0px;
+padding-right: 10px;
 padding-top: 5px;
 padding-bottom: 5px;
 word-wrap: break-word;
