@@ -86,6 +86,7 @@
 <br>
 
 {% if strpred %}
+    <div style="width:1100px;word-break:break-all">
 	<table align="left" border="3">
 	<tbody>
 	
@@ -96,7 +97,7 @@
 					{{ i.nom_analyse }} structure prediction
 				</a>
 			</th>
-			<td style="width: 650px;">
+			<td style="width: 800px;">
 				<font face="Courier New">
 					{{ i.structure_predite }}
 				</font>
@@ -105,7 +106,7 @@
 	{% endfor %}
 	</tbody>
 	</table>
-
+    </div>
 {% else %}
     <p>No informations available.</p>
 {% endif %}

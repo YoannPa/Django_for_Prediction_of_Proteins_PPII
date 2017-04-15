@@ -24,8 +24,8 @@ for id_chn in `cat $1`;do
 	id=${id_chn:0:4}
 	chain=${id_chn: -1}
 	file=`echo "$id.pdb" | tr '[:upper:]' '[:lower:]'`
-	header=`grep -oE "^HEADER +(\w+[ /])+" $PDB_files_dir/$file | sed -E -e 's/HEADER +//' -e 's/ $//' -e 's/\\n//'`
-	seq=`grep -E "ATOM +\w+ +CA *\w+ $chain" $PDB_files_dir/$file | cut -c 18-20 | \
+	header=`egrep -o "^HEADER +(\w+[ /])+" $PDB_files_dir/$file | sed -E -e 's/HEADER +//' -e 's/ $//' -e 's/\\n//'`
+	seq=`egrep "^ATOM +[0-9]{,4} +(CA|N|C|O) *\w{3,4} $chain" $PDB_files_dir/$file | sort -u -nk6,6 | cut -c 18-20 | \
 	sed -e 's/ALA/A/g' -e 's/CYS/C/g' -e 's/ASP/D/g' \
 	-e 's/GLU/E/g' -e 's/PHE/F/g' -e 's/GLY/G/g' \
 	-e 's/HIS/H/g' -e 's/ILE/I/g' -e 's/LYS/K/g' \
