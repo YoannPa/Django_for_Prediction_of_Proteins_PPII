@@ -19,6 +19,7 @@
 
 {% if pdb %}
 	<h2>{{ pdb.id_pdb }}</h2>
+	<div style="width:1100px;word-break:break-all">
 	<table align="left" border="3">
 	<tbody>
 		<tr>
@@ -69,16 +70,16 @@
 		</tr>
 		<tr>
 			<th style="width: 220px;">Sequence</th>
-			<td style="width: 650px;"><div class=scrollable>
+			<td style="width: 650px;">
 				<font face="Courier New">
 					{{ pdb.sequence_proteine }}
 				</font>
-			</div></td>
+			</td>
 		</tr>
 
 	</tbody>
 	</table>
-
+	</div>
 {% else %}
 	<p>No stats are available...</p>
 {% endif %}
@@ -97,7 +98,7 @@
 					{{ i.nom_analyse }} structure prediction
 				</a>
 			</th>
-			<td style="width: 800px;">
+			<td style="width: 650px;">
 				<font face="Courier New">
 					{{ i.structure_predite }}
 				</font>

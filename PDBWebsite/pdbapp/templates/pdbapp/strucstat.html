@@ -23,39 +23,40 @@
 		<a href="/pdbapp/{{ strpred.id_pdb_chain }}">{{ strpred.id_pdb_chain }}</a>
 		Prediction #{{ strpred.id_struct_sec }} made with {{ strpred.nom_analyse }}
 	</h2>
+	<div style="width:1100px;word-break:break-all">
 	<table align="center" border="3">
 	<tbody>
 		<tr>
-			<th style="width: 30%;">Prediction start position</th>
-			<td style="width: 70%;">{{ strpred.start_pred }}</td>
+			<th style="width: 220px;">Prediction start position</th>
+			<td style="width: 650px;">{{ strpred.start_pred }}</td>
 		</tr>
 		<tr>
-			<th style="width: 30%;">Predicted secondary structure</th>
-			<td style="width: 70%;">
+			<th style="width: 220px;">Predicted structure</th>
+			<td style="width: 650px;">
 				<font face="Courier New">
 					{{ strpred.structure_predite }}
 				</font>
 			</td>
 		</tr>
 		<tr>
-			<th style="width: 30%;">Number of PPII</th>
-			<td style="width: 70%;">{{ strpred.nombre_ppii }}</td>
+			<th style="width: 220px;">Number of AA in PPII</th>
+			<td style="width: 650px;">{{ strpred.nombre_ppii }}</td>
 		</tr>
 		<tr>
-			<th style="width: 30%;">PPII %</th>
-			<td style="width: 70%;">{{ strpred.pourcentage_ppii }}</td>
+			<th style="width: 220px;">PPII %</th>
+			<td style="width: 650px;">{{ strpred.pourcentage_ppii }}</td>
 		</tr>
 		<tr>
-			<th style="width: 30%;">Phi angles list</th>
-			<td style="width: 70%;">{{ strpred.angle_phi }}</td>
+			<th style="width: 220px;">Phi angles list</th>
+			<td style="width: 650px;">{{ strpred.angle_phi }}</td>
 		</tr>
 		<tr>
-			<th style="width: 30%;">Psi angles list</th>
-			<td style="width: 70%;">{{ strpred.angle_psi }}</td>
+			<th style="width: 220px;">Psi angles list</th>
+			<td style="width: 650px;">{{ strpred.angle_psi }}</td>
 		</tr>
 		<tr>
-			<th style="width: 40%;">Ramachandran plot</th>
-			<td style="width: 70%;">
+			<th style="width: 220px;">Ramachandran plot</th>
+			<td style="width: 650px;">
 				<a href="http://mordred.bioc.cam.ac.uk/~rapper/rampage.php">
 					RAMPAGE
 				</a>
@@ -63,7 +64,7 @@
 		</tr>
 	</tbody>
 	</table>
-
+	</div>
 {% else %}
 	<p>No stats are available...</p>
 {% endif %}
