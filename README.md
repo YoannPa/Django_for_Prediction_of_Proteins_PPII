@@ -1,27 +1,51 @@
-# PDB Database
+# Projet BD M2BI - README
+
+Author: Yoann PAGEAUD
+Date: 15-04-2017
+
+
+This document explain every steps of install and configuration necessary to the project.
 
 ## Prerequesites
 
-* Update your packages already installed
+
+* Update packages already installed:
 
 ```bash
 sudo apt update
 ```
 
-* Install **Python 2.7**
+* Install **Python 2.7**:
 
 ```bash
 sudo apt install python2.7
 ```
 
-* Install MySQL
-
-* Install **libmysqlclient-dev** and **MySQL-python**:
+* Install **MySQL and dependencies**:
 
 ```bash
+sudo apt install mysql-client
+sudo apt install mysql-common
+sudo apt install mysql-server
+sudo apt install mysql-sandbox
 sudo apt install libmysqlclient-dev
-sudo pip install MySQL-python
 ```
+
+* Install **MySQL-python**:
+
+```bash
+sudo pip install MySQL-python
+sudo pip install mysqlclient
+```
+
+* Install **Django**:
+
+```bash
+sudo pip install Django
+sudo pip install django-autocomplete-light
+sudo pip install django-simple-menu
+```
+
 
 * Set your working directory to the folder containing the file **create_db.sql**
 
@@ -30,6 +54,9 @@ sudo pip install MySQL-python
 ```bash
 mysql -u root -p
 ```
+
+## Set up Database
+
 
 * Create Database:
 
@@ -43,30 +70,20 @@ create database M2BI_Projet_PPII;
 quit;
 ```
 
-* Load Tables in M2BI_Projet_PPII;
+* Load Tables in M2BI_Projet_PPII using the file **create_db.sql**;
 
 ```bash
 mysql -u root -p M2BI_Projet_PPII < create_db.sql
 ```
 
-Tables are now created. 
+Once tables are created you can move to the Set up of Django 
 
+## Set up Django
 
-* Create the Django project PDBWebsite:
-
-```bash
-django-admin startproject PDBWebsite
-```
-
-* cd into the project.
+* **cd** into the Django project **PDBWebsite/**.
  
-* Create pdbapp:
 
-```bash
-python manage.py startapp pdbapp
-```
-
-* Configure project settings for Database: in settings.py replace:
+* Configure project settings for Database: in **settings.py** replace:
 
 ```python
 DATABASES = {
@@ -92,7 +109,9 @@ DATABASES = {
 }
 ```
 
-Then add 'pdbapp.apps.PdbappConfig' in **INSTALLED_APPS** :
+Don't forget to replace **<your own root password>** by your root password.
+
+Then add **'pdbapp.apps.PdbappConfig'** in **INSTALLED_APPS**:
 
 ```python
 INSTALLED_APPS = [
@@ -108,15 +127,6 @@ INSTALLED_APPS = [
 
 And save modifications. 
 
-* Go into the **PDBWesite/** directory and generate Django models:
-
-```bash
-cd PDBWesite/
-python manage.py inspectdb > models.py
-```
-
-* Replace models.py file in the folder pdbapp by the one you generated. 
-
 * Migrate new parameters to the database:
 
 ```bash
@@ -127,6 +137,8 @@ python manage.py migrate
 The database will be updated with the tables necessary for the communication
 between MySQL and the Django app.
 
+## Set up a supertuser account:
+
 * Create new Superuser account:
 
 ```bash
@@ -134,6 +146,8 @@ python manage.py createsuperuser
 ```
 
 Follow instructions.
+
+## Launch the webserver:
 
 * Launch server:
 
@@ -147,34 +161,7 @@ python manage.py runserver
 You can now administrate all informations in the database to be displayed on the
  website.
 
+## Contact
 
-
-## In case of problems with the MySQL database:
-
-To show existing tables:
-
-```sql
-show tables;
-```
-
-To show tables columns:
-
-```sql
-show columns from PDB;
-show columns from methodes_analyse;
-show columns from methodes_res;
-show columns from struct_sec;
-```
-
-To Delete the database:
-
-```sql
-drop database M2BI_Projet_PPII;
-```
-
-To display all databases:
-
-```sql
-show databases;
-```
-
+In case of problem:  
+Yoann PAGEAUD: [yoann.pageaud@gmail.com](yoann.pageaud@gmail.com)
