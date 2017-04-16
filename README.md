@@ -1,7 +1,7 @@
 # Projet BD M2BI - README
 
-Author: Yoann PAGEAUD
-Date: 15-04-2017
+*Author: Yoann PAGEAUD*  
+*Date: 15-04-2017*
 
 
 This document explain every steps of install and configuration necessary to the project.
@@ -202,8 +202,8 @@ The detailled conceptual framework of our database is available below:
 
 The database has been created following the steps in the **Setup Database** part in the **README.md** (for details about how to install Python, MySQL, and Django, please refer the **Prerequesites** part in the **README.md** file)
 ## Distribution of tasks
-Project report: Quentin & Yoann   
+Project report: Quentin & Yoann  
 Database conception: Quentin & Yoann  
 Predictions generation: Quentin  
-Website conception: Yoann
-README: Yoann
+Website conception: Yoann  
+README: Yoann  
