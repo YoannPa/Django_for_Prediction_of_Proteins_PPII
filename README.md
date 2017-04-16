@@ -185,7 +185,7 @@ Yoann PAGEAUD: [yoann.pageaud@gmail.com](yoann.pageaud@gmail.com)
 ## Introduction
 TODO
 ## Materials and Methods
-This project has been developped under the Linux distribution **Ubuntu 16.04** and was shared in a git repository hosted on GitLab.
+This project has been developped under the Linux distribution **Ubuntu 16.04** and was shared in a git repository hosted on GitLab.  
 Various packages and tools had to be installed. Install steps are explained in the **Prerequesites** part of the **README.md** file. 
 
 ### Prediction Tools
@@ -195,7 +195,10 @@ The choice has been made to use a standard MySQL database better suited for web 
 We decided to create 4 different tables : one for PDB informations, one for Predictions informations, and 2 others for prediction methods and resolution methods.   
 The detailled conceptual framework of our database is available below:
 
-IMAGE
+<p align="center">
+<img src="https://gitlab.com/Yoann.Pageaud/Projet_BD_M2BI/raw/master/Base%20de%20Donn%C3%A9es%20Projet%20M2BI.png">
+</p>
+<br>
 
 The database has been created following the steps in the **Setup Database** part in the **README.md** (for details about how to install Python, MySQL, and Django, please refer the **Prerequesites** part in the **README.md** file)
 ## Distribution of tasks
