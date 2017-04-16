@@ -1,5 +1,5 @@
 <p align="center">
-<img src="PDBWebsite/pdbapp/static/pdbapp/images/Banner_M2BI.png">
+<img src="https://drive.google.com/open?id=0B5xwCCugUeC8eUNNTHMxN29nR0k">
 </p>
 <br>
 # Projet BD M2BI - README
