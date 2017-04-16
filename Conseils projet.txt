@@ -1,1 +1,0 @@
-Je vous recommande notamment de bien étudier la diapo 186  (cours-BDD-2017), qui vous expose un exemple d'affichage de tableau dynamique à partir d'une requête SQL; Si vous savez faire cela, le projet n'aura aucune difficulté particulière.

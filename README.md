@@ -174,7 +174,7 @@ Yoann PAGEAUD: [yoann.pageaud@gmail.com](yoann.pageaud@gmail.com)
 
 
 <p align="center">
-<img src="https://goo.gl/xAHv96" style="width:100%">
+<img src="https://gitlab.com/Yoann.Pageaud/Projet_BD_M2BI/Report_img/raw/master/Banner_M2BI.png" style="width:100%">
 </p>
 <br>
 # Projet M2BI Website & Database
@@ -196,7 +196,7 @@ We decided to create 4 different tables : one for PDB informations, one for Pred
 The detailled conceptual framework of our database is available below:
 
 <p align="center">
-<img src="https://gitlab.com/Yoann.Pageaud/Projet_BD_M2BI/raw/master/Base%20de%20Donn%C3%A9es%20Projet%20M2BI.png" style="width:600px">
+<img src="https://gitlab.com/Yoann.Pageaud/Projet_BD_M2BI/Report_img/raw/master/Base%20de%20Donn%C3%A9es%20Projet%20M2BI.png" style="width:600px">
 </p>
 <br>
 
