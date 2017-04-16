@@ -1,5 +1,5 @@
 <p align="center">
-<img src="https://lh5.googleusercontent.com/6O1Q8K-A-nxXVpY-H1S9IUlD6eiLzq2hM_UHTDz_HpjxK2TWz8B9owPmIF4tv27Ymi20qgh47rNj0KU=w928-h889-rw">
+<img src="https://goo.gl/xAHv96">
 </p>
 <br>
 # Projet BD M2BI - README
@@ -169,3 +169,39 @@ You can now administrate all informations in the database to be displayed on the
 
 In case of any problems:  
 Yoann PAGEAUD: [yoann.pageaud@gmail.com](yoann.pageaud@gmail.com)
+
+
+
+
+
+
+
+
+
+# Projet M2BI Website & Database
+<br>
+**Authors: PAGEAUD Yoann ; LETOURNEUR Quentin.**  
+[**Université Paris Diderot - Paris 7, France.**](http://www.univ-paris-diderot.fr/)  
+<br>
+## Introduction
+TODO
+## Materials and Methods
+This project has been developped under the Linux distribution **Ubuntu 16.04** and was shared in a git repository hosted on GitLab.
+Various packages and tools had to be installed. Install steps are explained in the **Prerequesites** part of the **README.md** file. 
+
+### Prediction Tools
+TODO
+### Database and web infrastructure
+The choice has been made to use a standard MySQL database better suited for web use.  
+We decided to create 4 different tables : one for PDB informations, one for Predictions informations, and 2 others for prediction methods and resolution methods.   
+The detailled conceptual framework of our database is available below:
+
+IMAGE
+
+The database has been created following the steps in the **Setup Database** part in the **README.md** (for details about how to install Python, MySQL, and Django, please refer the **Prerequesites** part in the **README.md** file)
+## Distribution of tasks
+Project report: Quentin & Yoann   
+Database conception: Quentin & Yoann  
+Predictions generation: Quentin  
+Website conception: Yoann
+README: Yoann
