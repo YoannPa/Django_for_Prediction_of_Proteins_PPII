@@ -1,5 +1,5 @@
 <p align="center">
-<img src="https://drive.google.com/open?id=0B5xwCCugUeC8eUNNTHMxN29nR0k">
+<img src="https://lh5.googleusercontent.com/6O1Q8K-A-nxXVpY-H1S9IUlD6eiLzq2hM_UHTDz_HpjxK2TWz8B9owPmIF4tv27Ymi20qgh47rNj0KU=w928-h889-rw">
 </p>
 <br>
 # Projet BD M2BI - README
