@@ -1,7 +1,3 @@
-<p align="center">
-<img src="https://goo.gl/xAHv96">
-</p>
-<br>
 # Projet BD M2BI - README
 
 Author: Yoann PAGEAUD
@@ -177,7 +173,10 @@ Yoann PAGEAUD: [yoann.pageaud@gmail.com](yoann.pageaud@gmail.com)
 
 
 
-
+<p align="center">
+<img src="https://goo.gl/xAHv96">
+</p>
+<br>
 # Projet M2BI Website & Database
 <br>
 **Authors: PAGEAUD Yoann ; LETOURNEUR Quentin.**  
