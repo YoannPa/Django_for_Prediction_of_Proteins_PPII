@@ -1,3 +1,7 @@
+<p align="center">
+<img src="PDBWebsite/pdbapp/static/pdbapp/images/Banner_M2BI.png">
+</p>
+<br>
 # Projet BD M2BI - README
 
 Author: Yoann PAGEAUD
@@ -163,5 +167,5 @@ You can now administrate all informations in the database to be displayed on the
 
 ## Contact
 
-In case of problem:  
+In case of any problems:  
 Yoann PAGEAUD: [yoann.pageaud@gmail.com](yoann.pageaud@gmail.com)
