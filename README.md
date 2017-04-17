@@ -191,16 +191,16 @@ Secondary structures play a key role in proteins shape and functions. their
  structures, α-helix, β-sheet and turns. But there are also other patterns like
  Polyproline II (PPII) which are less frequent and less studied. Although we
  know there existence since the 50's they were thought to be only present in
- fibrous proteins and in low frequencies []. Since then, severals studies have
+ fibrous proteins and in low frequencies^**2,9**. Since then, severals studies have
  shown that PPII are also present in globular proteins and that they can be
- present even without proline in them []. They can play a main role for
+ present even without proline in them^**1**. They can play a main role for
  interactions between proteins and there flexibility is one of their interesting
  trait. What is most surprising about them is that unlike other regular
- secondary structures they don't seem to have stabilizing interactions (**fig. 1**)
- []. However there is no gold standard prediction yet for there assignment and
+ secondary structures they don't seem to have stabilizing interactions (**1,fig. 1**)
+ . However there is no gold standard prediction yet for there assignment and
  they are still understudied.  
 For this project we built a MySQL database containing secondary structure
- predictions made from 2 prediction tools (DSSP and PROSS) []. The database is
+ predictions made from 2 prediction tools (DSSP and PROSS)^**6,10**. The database is
  accessible through a web interface designed with the **Python^14** framework
  Django.  
  Thanks to our website, a user can search for any PDB stored into the database
