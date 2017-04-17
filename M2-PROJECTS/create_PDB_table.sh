@@ -73,22 +73,12 @@ for id_chn in `cat $1`;do
 			fi
 		fi
 	done
-		
-	#if [[ $start_msg -lt $start && "$start_msg" -gt "0" ]];then
-	#	start=$start_msg
-	#fi
+	
 	length=`grep -E "ATOM +\w+ +CA *\w+ $chain" $PDB_files_dir/$file | tail -n 1 | cut -c 23-26 | grep -Eo "[0-9]+"`
 	length_msg_res=`grep -Eo "REMARK 465 +\w{3} $chain +[0-9]+" $PDB_files_dir/$file | tail -n 1 | awk '{print $5}'`
 	if [[ $length_msg_res != '' && $length_msg_res -gt $length ]];then
 			length=$length_msg_res
 	fi
-	
-	# format sequence in "fasta" style with lines of 80 chars
-	i=80
-	while [ $i -lt ${#seq} ];do
-		seq="${seq:0:$i}\n${seq:$i:${#seq}}"
-		i=$((i + 80 + 2))
-	done
 
 	reso=`grep -E "REMARK.+RESOLUTION\." $PDB_files_dir/$file | grep -oE "[0-9]\.[0-9]+"`
 	

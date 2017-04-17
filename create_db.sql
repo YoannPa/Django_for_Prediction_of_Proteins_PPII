@@ -50,4 +50,4 @@ INSERT INTO methodes_analyse (nom_Analyse) VALUES ('DSSP'), ('PROSS');
 
 LOAD DATA LOCAL INFILE 'pdb_table.csv' INTO TABLE PDB FIELDS TERMINATED BY ';';
 
-LOAD DATA LOCAL INFILE 'sspred_table.tsv' INTO TABLE struct_sec;
+LOAD DATA LOCAL INFILE 'sspred_table_aligned.tsv' INTO TABLE struct_sec;

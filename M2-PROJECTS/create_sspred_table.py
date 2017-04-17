@@ -119,7 +119,7 @@ with open(args[1], "r") as inpt:
                                 st_gap = int(pl[3:6].strip())
                                 end_gap = int(lin_suiv[3:6].strip())
                                 
-                                sspred += "x" * (end_gap - st_gap - 1)
+                                sspred += "X" * (end_gap - st_gap - 1)
                                 
                                 sspred += lin_suiv[11]
                                 if sspred[-1] == "P":
