@@ -196,7 +196,7 @@ The choice has been made to use a standard MySQL database better suited for web
 We decided to create 4 different tables : one for PDB informations, one for
  predictions informations, and 2 others for prediction methods and resolution
  methods.   
-The detailled conceptual framework of our database is available below:
+The detailled conceptual framework of our database is available below:  
 
 <p align="center">
 <img src="https://gitlab.com/Yoann.Pageaud/Projet_BD_M2BI/raw/master/Report_img/Base%20de%20Donn%C3%A9es%20Projet%20M2BI.png" style="width:600px">
@@ -216,6 +216,11 @@ This file contains queries necessary to the creation of the 4 tables and
 After the database has been populated, We had to found a way to access it easily
  if any further modification would be needed.  
 For this purpose, the choice has been made to use Django.  
+<br>
+<p align="center">
+<img src="https://gitlab.com/Yoann.Pageaud/Projet_BD_M2BI/raw/master/Report_img/386517.png" style="width:600px">
+<b>Figure 2: Django M.V.T model.</b>
+</p>
 <br>
 Django is a widely used python framework thought for developping websites easily
  with short deadlines.  
@@ -254,6 +259,12 @@ Multiple applications can be generated in a Django project, following the
 The structure of a Django project follows some standards defined by the
  **Django Project** initiative (**Fig. 3**).  
 
+<br>
+<p align="center">
+<img src="https://gitlab.com/Yoann.Pageaud/Projet_BD_M2BI/raw/master/Report_img/Tree_PDBWebsite.png" style="width:600px">
+<b>Figure 3: Structure of the Django project PDBWebsite.</b>
+</p>
+<br>
 
 The views "home","pdbinfo","strucinfo","about","detail" and "strdetail" were
  created in the file **views.py**. In Django each view is associated to one
