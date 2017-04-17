@@ -217,8 +217,8 @@ After the database has been populated, We had to found a way to access it easily
  if any further modification would be needed.  
 For this purpose, the choice has been made to use Django.  
 <br>
+<img align="center" src="https://gitlab.com/Yoann.Pageaud/Projet_BD_M2BI/raw/master/Report_img/386517.png" style="width:600px">
 <p align="center">
-<img src="https://gitlab.com/Yoann.Pageaud/Projet_BD_M2BI/raw/master/Report_img/386517.png" style="width:600px">
 <b>Figure 2: Django M.V.T model.</b>
 </p>
 <br>
