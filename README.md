@@ -201,7 +201,7 @@ Secondary structures play a key role in proteins shape and functions. their
  they are still understudied.  
 For this project we built a MySQL database containing secondary structure
  predictions made from 2 prediction tools (DSSP and PROSS) []. The database is
- accessible through a web interface designed with the python framework Django.
+ accessible through a web interface designed with the Python framework Django.
  Thanks to our website, a user can search for any PDB stored into the database
  to compare their associated secondary structure predictions with emphasis on
  PPII.  
@@ -224,7 +224,7 @@ The website is compatible with both latest **Chromium** and **Firefox**
 ### Prediction Tools
 TODO
 ### Database and web infrastructure
-The choice has been made to use a standard MySQL database better suited for web
+The choice has been made to use a standard MySQL**^8** database better suited for web
  use.  
 We decided to create 4 different tables : one for PDB informations, one for
  predictions informations, and 2 others for prediction methods and resolution
@@ -248,7 +248,7 @@ This file contains queries necessary to the creation of the 4 tables and
  informations about the predictions generated with DSSP and PROSS.  
 After the database has been populated, We had to found a way to access it easily
  if any further modification would be needed.  
-For this purpose, the choice has been made to use Django.  
+For this purpose, the choice has been made to use Django**^13**.  
 <br>
 <p align="center">
 <img src="https://gitlab.com/Yoann.Pageaud/Projet_BD_M2BI/raw/master/Report_img/386517.png" style="width:600px">
@@ -257,7 +257,7 @@ For this purpose, the choice has been made to use Django.
 <b>Figure 2: Django M.V.T model.</b>
 </p>
 <br>
-Django is a widely used python framework thought for developping websites easily
+Django is a widely used Python framework thought for developping websites easily
  with short deadlines.  
 It has made its prooves since it has been used to developped websites of renowed
  institutions like Instagram, Pinterest or NASA.  
@@ -267,7 +267,7 @@ It's based on the **"Model-View-Template" (M.V.T.)** model (**Fig. 2**) which is
 It also integrate modules simplifying the creation and configuration of an
  administration interface to access database entries easily and make small
  modifications on some of them in case of minor bugs.  
-Moreover, Django is working with its own python functions to access the
+Moreover, Django is working with its own Python functions to access the
  database. Administrator can use them to access the database by a
  **Django shell**.  
 Thus, it has also been used to generate a **models.py** file defining models
@@ -347,7 +347,7 @@ HTML templates can host each variable by calling them as followed:
 {{ variable }}
 ```
 
-If the variable is iterative, a Python **for** loop with **if** and **else**
+If the variable is iterative, a Python**^14** **for** loop with **if** and **else**
  conditions can also be used inside the template. It allows to display any query
  results dynamically on a web page.  
 
@@ -361,11 +361,11 @@ To make the tables generated dynamically, on the page **pdbinfo.html** and
  the **static/pdbapp/** directory.
 2 javascript files were used:  
 
-* **jquery.searchable-1.0.0.min.js** to enable the search options.
-* **jquery.tablesorter.min.js** to enable the sorting options.
+* **jquery.searchable-1.0.0.min.js^11** to enable the search options.
+* **jquery.tablesorter.min.js^4** to enable the sorting options.
 
 Both scripts call functions defined in a well known javascript library:
- **JQuery** accessible in the file **jquery-3.2.0.min.js**.
+ **JQuery^5** accessible in the file **jquery-3.2.0.min.js**.
 
 To sum up everything about HTML display: 
 Javascripts files call functions from JQuery.  
@@ -396,9 +396,9 @@ The website can be navigated thanks to a menu bar on the top of each page.
 Both **pdbstat.html** and **strucstat.html** pages contain links that simplifies
  the navigation between a PDB and its corresponding predictions.  
 Furthermore, additional options have been added to the PDB details pages to have
- access to the corresponding **RCSB** page, to be able to
+ access to the corresponding **RCSB^3** page, to be able to
  **download the PDB file**, and to have a quick access to the online tool
- **RAMPAGE** which generate multiple Ramachandran plots, one especially
+ **RAMPAGE^7** which generate multiple Ramachandran plots, one especially
  representing the distribution of **Proline-favorable regions**.  
 
 A menu bar has been added to the top of each HTML templates so that all pages
@@ -407,9 +407,10 @@ A menu bar has been added to the top of each HTML templates so that all pages
 Every details relative to webpages, are available on the **Home** page
  when starting the web server in the **How to use the website ?** part.  
 
-Alongside the user accessible part of our website, and administration interface
- have been configured (to access the admin interface you need to create a
- superuser account, see details in the README file for more informations).  
+Alongside the user accessible part of our website, and administration
+ interface**^12** have been configured (to access the admin interface you need
+ to create a superuser account, see details in the README file for more
+ informations).  
 <br>
 <p align="center">
 <img src="https://gitlab.com/Yoann.Pageaud/Projet_BD_M2BI/raw/master/Report_img/adminhome.png" style="width:600px">
@@ -425,9 +426,9 @@ Access to entries in all database tables have been made available, with the
  **Struct secs** entries have been displayed in tables. they can be accessed by
  a search bar or by sorting tables rows on both pages. Additionally, the
  **Pdbs** admin page entries can be filtered following their chain name, and/or
- the resolution method used to generate the PDBs (**Fig. 5**), while **Struct secs** admin
- page entries can be filtered following the method of prediction
- (DSSP or PROSS).  
+ the resolution method used to generate the PDBs (**Fig. 5**), while
+ **Struct secs** admin page entries can be filtered following the method of
+ prediction (DSSP or PROSS).  
 <br>
 <p align="center">
 <img src="https://gitlab.com/Yoann.Pageaud/Projet_BD_M2BI/raw/master/Report_img/admin-pdb-exmpl.png" style="width:600px">
@@ -438,7 +439,7 @@ Access to entries in all database tables have been made available, with the
 <br>
 Settings of the administration part of the website rely on many different files.
  Most of them can be found in the **admin.py** file in **pdbapp/**. Each table
- is defined in it as a python class and the parameters to access entries in
+ is defined in it as a Python class and the parameters to access entries in
  administration tables are defined under 3 differents standard variables:  
 
 * **list_display**: it contains all table fields that should be displayed.
@@ -446,7 +447,8 @@ Settings of the administration part of the website rely on many different files.
 * **search_fields**: it contains all table fields to be searched using the
  search bar.  
 
-To modify or delete any entry, just click it, the administrator is redirected to a modification page with all fields of the entry accessible.  
+To modify or delete any entry, just click it, the administrator is redirected to
+ a modification page with all fields of the entry accessible.  
 The user accessible part of the website has also been made accessible by
  clicking the link **VIEW SITE** in the top right corner of the interface, and
  redirects the administrator to the home page.  
@@ -461,8 +463,10 @@ With Django, once the web server is launched, you do not need any interruption
  access the database, modify, delete and create entries:
 
 * The normal way by MySQL in the Terminal.
-* The Django way using Django shell (**> python manage.py shell**) with Django's functions.
-* The Django-admin way using the administration interface to make minor modifications on entries.
+* The Django way using Django shell (**> python manage.py shell**) with Django's
+ functions.
+* The Django-admin way using the administration interface to make minor
+ modifications on entries.
  
 The Display of Predictions just below a PDB sequence on the PDB details pages,
  make the interpretation of secondary structure prediction more easy.  
