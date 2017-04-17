@@ -569,12 +569,10 @@ This project can still be improved on many different ways.
 
 ## Encountered difficulties
 **Quentin**:  
-We found that PROSS  was better than DSSP when it comes to PPII detection. This
- is due to the difference in there way of assigning secondary structure. PROSS
- is based only on dihedral angles and DSSP mainly on H-bond. Since there are
- few/none H-bonds in PPII, it may be more difficult for DSSP to detect them. But
- for other secondary structures, DSSP gives more detailed results because for
- example it differentiate between different types of helix while DSSP don't.
+There may be others but I saw that there is a problem with the prediction of the
+ 1tke.pdb file with DSSP that take into account an heteroatom at the end of the
+ prediction. We could have manually modified the errors in this entry using the
+ Django administration interface.  
 
 **Yoann**:  
 I had some difficulties in understanding how Django worked since I never
