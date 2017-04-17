@@ -223,7 +223,63 @@ The website is compatible with both latest **Chromium** and **Firefox**
  versions.
 
 ### Prediction Tools
-TODO
+
+To generate predictions, two prediction tools DSSP and PROSS were used.  
+DSSP Predict secondary structure using mainly H-bond patterns for alpha-helix
+ and beta-strand/bridge, C-alpha positions for bends and backbone dihedral
+ angles for chirality.  
+Shown below is the description of characters used for secondary structure prediction:  
+* H = alpha-helix
+* E = beta-strand
+* B = beta-bridge
+* G = 3-helix (310-helix)
+* I = 5-helix (pi-helix)
+* T  = 3-, 4- or 5- turn
+* S = bend
+* P = PPII
+* 'whitespace' = coil
+
+PROSS predict secondary structure using only dihedral angles mesostates.  
+
+<br>
+<p align="center">
+<img src="https://gitlab.com/Yoann.Pageaud/Projet_BD_M2BI/raw/master/Report_img/grid_pross.png" style="width:600px">
+</p>
+<p align="center">
+<b>Figure 2: fine grain grid for mesostate assignment.For two given dihedral angles (phi and psi) of a residue the grid define its mesotate.</b>
+</p>
+<br>
+
+* H = alpha-helix
+* E = beta-strand
+* T = beta-turn
+* P = PPII
+* C = coil
+
+After launching DSSP and PROSS on the PDBs we downloaded, informations have been
+ extracted from the PDBs and secondary structures predictions were placed to
+ place them in the database.  
+
+To do so we generated a bash and a python script : create_pdb_table.sh and
+ create_sspred_table.py.  
+The first script extracts severals informations from a PDB file like the header,
+ the sequence, the protein size based on the number of the last residue.
+To make the length of the sequence as close as possible to this number we
+ retrieved and placed in the sequence the missing residues mentioned in the PDB
+ file. To recognize them they were written in lowercase.  
+
+The second script extracts informations from secondary structure prediction
+ files from DSSP or PROSS like, for example, the sequence representing the
+ secondary structure assignment, and the computed phi and psi angles by residue.  
+
+Both tools detect missing residues (chain breaks) to avoid shift apparition
+ between the sequence and the prediction chain. 'X' were inserted where there
+ are missing residues.  
+
+An additional script aligne_sequence_and_prediction.sh  has been made to add '-'
+ at the start of the predictions if there is a shift in the sequence and the
+ prediction due to misssing residues at the start of the sequence.  
+
 ### Database and web infrastructure
 The choice has been made to use a standard **MySQL^8** database better suited for web
  use.  
@@ -234,7 +290,7 @@ The detailled conceptual framework of our database is available below:
 
 <p align="center">
 <img src="https://gitlab.com/Yoann.Pageaud/Projet_BD_M2BI/raw/master/Report_img/Base%20de%20Donn%C3%A9es%20Projet%20M2BI.png" style="width:600px">
-<b>Figure 1: Database conceptual framework.</b>
+<b>Figure 3: Database conceptual framework.</b>
 </p>
 <br>
 The database has been created following the steps in the **Setup Database** part
@@ -255,14 +311,14 @@ For this purpose, the choice has been made to use **Django^13**.
 <img src="https://gitlab.com/Yoann.Pageaud/Projet_BD_M2BI/raw/master/Report_img/386517.png" style="width:600px">
 </p>
 <p align="center">
-<b>Figure 2: Django M.V.T model.</b>
+<b>Figure 4: Django M.V.T model.</b>
 </p>
 <br>
 Django is a widely used Python framework thought for developping websites easily
  with short deadlines.  
 It has made its prooves since it has been used to developped websites of renowed
  institutions like Instagram, Pinterest or NASA.  
-It's based on the **"Model-View-Template" (M.V.T.)** model (**Fig. 2**) which is
+It's based on the **"Model-View-Template" (M.V.T.)** model (**Fig. 4**) which is
  slightly different from the common "Model-View-Controller" (M.V.C.) model
  because Django manages the "Controller" part on its own.  
 It also integrate modules simplifying the creation and configuration of an
@@ -293,14 +349,14 @@ Multiple applications can be generated in a Django project, following the
  different needs. For our project, we decided to create only one application
  **pdbapp/** to answer to one biological question.  
 The structure of a Django project follows some standards defined by the
- **Django Project** initiative (**Fig. 3**).  
+ **Django Project** initiative (**Fig. 5**).  
 
 <br>
 <p align="center">
 <img src="https://gitlab.com/Yoann.Pageaud/Projet_BD_M2BI/raw/master/Report_img/Tree_PDBWebsite.png" style="width:600px">
 </p>
 <p align="center">
-<b>Figure 3: Structure of the Django project PDBWebsite.</b>
+<b>Figure 5: Structure of the Django project PDBWebsite.</b>
 </p>
 <br>
 
@@ -417,17 +473,17 @@ Alongside the user accessible part of our website, an
 <img src="https://gitlab.com/Yoann.Pageaud/Projet_BD_M2BI/raw/master/Report_img/adminhome.png" style="width:600px">
 </p>
 <p align="center">
-<b>Figure 4: Administration main page.</b>
+<b>Figure 6: Administration main page.</b>
 </p>
 <br>
 Access to entries in all database tables have been made available, with the
  posibility to remove entries or to modify them. Work groups and users list was
  already available from the default Django parameters. An history of
- modifications has also been added (**Fig. 4**). In the admin pages **Pdbs** and
+ modifications has also been added (**Fig. 6**). In the admin pages **Pdbs** and
  **Struct secs** entries have been displayed in tables. they can be accessed by
  a search bar or by sorting tables rows on both pages. Additionally, the
  **Pdbs** admin page entries can be filtered following their chain name, and/or
- the resolution method used to generate the PDBs (**Fig. 5**), while
+ the resolution method used to generate the PDBs (**Fig. 7**), while
  **Struct secs** admin page entries can be filtered following the method of
  prediction (DSSP or PROSS).  
 <br>
@@ -435,7 +491,7 @@ Access to entries in all database tables have been made available, with the
 <img src="https://gitlab.com/Yoann.Pageaud/Projet_BD_M2BI/raw/master/Report_img/admin-pdb-exmpl.png" style="width:600px">
 </p>
 <p align="center">
-<b>Figure 5: Administration page for PDBs.</b>
+<b>Figure 7: Administration page for PDBs.</b>
 </p>
 <br>
 Settings of the administration part of the website rely on many different files.
@@ -455,6 +511,13 @@ The user accessible part of the website has also been made accessible by
  redirects the administrator to the home page.  
 
 ## Discussion
+
+We found that PROSS  was better than DSSP when it comes to PPII detection. This
+ is due to the difference in there way of assigning secondary structure. PROSS
+ is based only on dihedral angles and DSSP mainly on H-bond. Since there are
+ few/none H-bonds in PPII, it may be more difficult for DSSP to detect them. But
+ for other secondary structures, DSSP gives more detailed results because for
+ example it differentiate between different types of helix while DSSP don't.
 
 Using Django framework to develop a website confer many advantages (listed in
  the Materials and Methods part above) and give convenient tools to easily
@@ -501,6 +564,12 @@ Next improvments to be added could be a display of a ramachandran plot, for each
 
 ## Encountered difficulties
 **Quentin**:  
+We found that PROSS  was better than DSSP when it comes to PPII detection. This
+ is due to the difference in there way of assigning secondary structure. PROSS
+ is based only on dihedral angles and DSSP mainly on H-bond. Since there are
+ few/none H-bonds in PPII, it may be more difficult for DSSP to detect them. But
+ for other secondary structures, DSSP gives more detailed results because for
+ example it differentiate between different types of helix while DSSP don't.
 
 **Yoann**:  
 I had some difficulties in understanding how Django worked since I never
