@@ -367,6 +367,64 @@ Furthermore, additional options have been added to the PDB details pages to have
  **download the PDB file**, and to have a quick access to the online tool
  **RAMPAGE** which generate multiple Ramachandran plots, one especially
  representing the distribution of **Proline-favorable regions**.  
+
+A menu bar has been added to the top of each HTML templates so that all pages
+ are easily accessible.  
+
+Every details relative to webpages, are available on the **Home** page
+ when starting the web server in the **How to use the website ?** part.  
+
+Alongside the user accessible part of our website, and administration interface
+ have been configured (to access the admin interface you need to create a
+ superuser account, see details in the README file for more informations).  
+<br>
+<p align="center">
+<img src="https://gitlab.com/Yoann.Pageaud/Projet_BD_M2BI/raw/master/Report_img/adminhome.png" style="width:600px">
+</p>
+<p align="center">
+<b>Figure 4: Administration main page.</b>
+</p>
+<br>
+Access to entries in all database tables have been made available, with the
+ posibility to remove entries or to modify them. Work groups and users list was
+ already available from the default Django parameters. An history of
+ modifications has also been added (**Fig. 4**). In the admin pages **Pdbs** and
+ **Struct secs** entries have been displayed in tables. they can be accessed by
+ a search bar or by sorting tables rows on both pages. Additionally, the
+ **Pdbs** admin page entries can be filtered following their chain name, and/or
+ the resolution method used to generate the PDBs (**Fig. 5**), while **Struct secs** admin
+ page entries can be filtered following the method of prediction
+ (DSSP or PROSS).  
+<br>
+<p align="center">
+<img src="https://gitlab.com/Yoann.Pageaud/Projet_BD_M2BI/raw/master/Report_img/adminhome.png" style="width:600px">
+</p>
+<p align="center">
+<b>Figure 5: Administration page for PDBs.</b>
+</p>
+<br>
+Settings of the administration part of the website rely on many different files.
+ Most of them can be found in the **admin.py** file in **pdbapp/**. Each table
+ is defined in it as a python class and the parameters to access entries in
+ administration tables are defined under 3 differents standard variables:  
+
+* **list_display**: it contains all table fields that should be displayed.
+* **list_filter**: it contains all table fields to be used for filtering.
+* **search_fields**: it contains all table fields to be searched using the
+ search bar.  
+
+To modify or delete any entry, just click it, the administrator is redirected to a modification page with all fields of the entry accessible.  
+The user accessible part of the website has also been made accessible by
+ clicking the link **VIEW SITE** in the top right corner of the interface, and
+ redirects the administrator to the home page.  
+
+## Discussion
+
+
+
+##Conclusion
+
+
  
 ## Encountered difficulties
 **Quentin**:  

@@ -24,31 +24,31 @@
 	<tbody>
 		<tr>
 			<th style="width: 220px;">Chain</th>
-			<td style="width: 650px;">{{ pdb.chaine }}</td>
+			<td style="width: 800px;">{{ pdb.chaine }}</td>
 		</tr>
 		<tr>
 			<th style="width: 220px;">Header</th>
-			<td style="width: 650px;">{{ pdb.header }}</td>
+			<td style="width: 800px;">{{ pdb.header }}</td>
 		</tr>
 		<tr>
 			<th style="width: 220px;">Start position</th>
-			<td style="width: 650px;">{{ pdb.start_seq }}</td>
+			<td style="width: 800px;">{{ pdb.start_seq }}</td>
 		</tr>
 		<tr>
 			<th style="width: 220px;">Size</th>
-			<td style="width: 650px;">{{ pdb.taille_proteine }}</td>
+			<td style="width: 800px;">{{ pdb.taille_proteine }}</td>
 		</tr>
 		<tr>
 			<th style="width: 220px;">Resolution</th>
-			<td style="width: 650px;">{{ pdb.resolution_pdb }}</td>
+			<td style="width: 800px;">{{ pdb.resolution_pdb }}</td>
 		</tr>
 		<tr>
 			<th style="width: 220px;">Resolution method</th>
-			<td style="width: 650px;">{{ pdb.meth_res }}</td>
+			<td style="width: 800px;">{{ pdb.meth_res }}</td>
 		</tr>
 		<tr>
 			<th style="width: 220px;">RCSB page</th>
-			<td style="width: 650px;">
+			<td style="width: 800px;">
 				<a href="http://www.rcsb.org/pdb/explore/explore.do?structureId={{ pdb.id_pdb }}">
 					{{ pdb.id_pdb }}
 				</a>
@@ -56,7 +56,7 @@
 		</tr>
 		<tr>
 			<th style="width: 220px;">Download link</th>
-			<td style="width: 650px;">
+			<td style="width: 800px;">
 				<a href="https://files.rcsb.org/download/{{ pdb.id_pdb }}.pdb">
 					{{ pdb.id_pdb }}.pdb
 				</a>	
@@ -64,13 +64,13 @@
 		</tr>
 		<tr>
 			<th style="width: 220px;">Ramachandran plot</th>
-			<td style="width: 650px;">
+			<td style="width: 800px;">
 				<a href="http://mordred.bioc.cam.ac.uk/~rapper/rampage.php">RAMPAGE</a>
 			</td>
 		</tr>
 		<tr>
 			<th style="width: 220px;">Sequence</th>
-			<td style="width: 650px;">
+			<td style="width: 800px;">
 				<font face="Courier New">
 					{{ pdb.sequence_proteine }}
 				</font>
@@ -98,7 +98,7 @@
 					{{ i.nom_analyse }} structure prediction
 				</a>
 			</th>
-			<td style="width: 650px;">
+			<td style="width: 800px;">
 				<font face="Courier New">
 					{{ i.structure_predite }}
 				</font>
