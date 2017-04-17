@@ -27,15 +27,7 @@ body {
 table {
 	text-align: left;
 	font-family: Arial;
-    margin:10px;
-}
-
-div.scrollable {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    overflow: auto;
+	margin: 10px;
 }
 
 tr:nth-child(even) {background-color: #f2f2f2}

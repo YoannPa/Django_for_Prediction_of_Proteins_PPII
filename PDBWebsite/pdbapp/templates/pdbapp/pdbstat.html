@@ -19,8 +19,8 @@
 
 {% if pdb %}
 	<h2>{{ pdb.id_pdb }}</h2>
-	<div style="width:1100px;word-break:break-all">
-	<table align="left" border="3">
+	<div style="width:100%">
+	<table align="left" border="3" style="word-break:break-all">
 	<tbody>
 		<tr>
 			<th style="width: 220px;">Chain</th>
@@ -84,11 +84,11 @@
 	<p>No stats are available...</p>
 {% endif %}
 
-<br>
+<div style = "clear:both;"></div>
 
 {% if strpred %}
-    <div style="width:1100px;word-break:break-all">
-	<table align="left" border="3">
+	<div style="width:100%">
+	<table align="left" border="3" style="word-break:break-all">
 	<tbody>
 	
 	{% for i in strpred %}
@@ -107,7 +107,7 @@
 	{% endfor %}
 	</tbody>
 	</table>
-    </div>
+	</div>
 {% else %}
     <p>No informations available.</p>
 {% endif %}
