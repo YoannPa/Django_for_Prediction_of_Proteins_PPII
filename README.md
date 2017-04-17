@@ -166,12 +166,14 @@ You can now administrate all informations in the database to be displayed on the
 In case of any problems:  
 Yoann PAGEAUD: [yoann.pageaud@gmail.com](yoann.pageaud@gmail.com)
 
-
-
-
-
-
-
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
 <p align="center">
 <img src="https://gitlab.com/Yoann.Pageaud/Projet_BD_M2BI/raw/master/Report_img/Banner_M2BI.png" style="width:100%">
