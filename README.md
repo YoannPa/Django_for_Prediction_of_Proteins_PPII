@@ -239,7 +239,7 @@ The detailled conceptual framework of our database is available below:
 The database has been created following the steps in the **Setup Database** part
  in the **README.md** (for details about how to install Python, MySQL, and
  Django, please refer the **Prerequesites** part in the **README.md** file).  
-Once the database has been created in MySQL, tables are created and filled with
+Once the database has been created in MySQL, tables were created and filled with
  entries thanks to the **create_db.sql** file.  
 This file contains queries necessary to the creation of the 4 tables and
  populate the tables **PDB** and **struct_sec** by calling 2 files:  
@@ -453,12 +453,47 @@ The user accessible part of the website has also been made accessible by
 
 ## Discussion
 
+Using Django framework to develop a website confer many advantages (listed in
+ the Materials and Methods part above) and give convenient tools to easily
+ access the database and make modifications on a website.  
+With Django, once the web server is launched, you do not need any interruption
+ for maintenance of the website. Moreover, There are now 3 different ways to
+ access the database, modify, delete and create entries:
 
+* The normal way by MySQL in the Terminal.
+* The Django way using Django shell (**> python manage.py shell**) with Django's functions.
+* The Django-admin way using the administration interface to make minor modifications on entries.
+ 
+The Display of Predictions just below a PDB sequence on the PDB details pages,
+ make the interpretation of secondary structure prediction more easy.  
+Supplementary tools like links to download PDB, display RCSB page, or access
+ RAMPAGE, gave more options to the user to explore any other subsisting
+ questions to which the website does not answer. 
+Next improvments to be added could be a display of a ramachandran plot, for each
+ prediction, coloration of structure prediction, and the support of more PDBs
+ and more precition tools. 
 
 ## Conclusion
 
 
- 
+## References
+
+**Chebrek, Romain, Sylvain Leonard, Alexandre G. de Brevern, and Jean-Christophe Gelly**. _“PolyprOnline: Polyproline Helix II and Secondary Structure Assignment Database.”_ Database: The Journal of Biological Databases and Curation 2014 (November 6, 2014). doi:10.1093/database/bau102.
+**Cowan, Pauline M., Stewart McGAVIN, and A. C. T. North**. _“The Polypeptide Chain Configuration of Collagen.”_ Nature 176, no. 4492 (décembre 1955): 1062–64. doi:10.1038/1761062a0.
+**Deshpande, N.** _“The RCSB Protein Data Bank: A Redesigned Query System and Relational Database Based on the mmCIF Schema.”_ Nucleic Acids Research 33, no. Database issue (December 17, 2004): D233–37. doi:10.1093/nar/gki057.
+_“jQuery Plugin: Tablesorter 2.0.”_ Accessed April 10, 2017. http://tablesorter.com/docs/.
+_jquery.org, jquery Foundation-. “jQuery.”_ Accessed April 10, 2017. https://jquery.com/.
+**Kabsch, Wolfgang, and Christian Sander**. _“Dictionary of Protein Secondary Structure: Pattern Recognition of Hydrogen-Bonded and Geometrical Features.”_ Biopolymers 22, no. 12 (décembre 1983): 2577–2637. doi:10.1002/bip.360221211.
+**Lovell, Simon C., Ian W. Davis, W. Bryan Arendall, Paul IW de Bakker, J. Michael Word, Michael G. Prisant, Jane S. Richardson, and David C. Richardson.** _“Structure Validation by Cα Geometry: Φ, ψ and Cβ Deviation.”_ Proteins: Structure, Function, and Bioinformatics 50, no. 3 (2003): 437–450.
+_“MySQL.”_ Accessed April 10, 2017. https://www.mysql.com/.
+**Pauling, Linus, and Robert B. Corey**. _“The Structure of Fibrous Proteins of the Collagen-Gelatin Group.”_ Proceedings of the National Academy of Sciences of the United States of America 37, no. 5 (May 1951): 272–81.
+_“PROSS: Dihedral Angle-Based Secondary Structure Assignment.”_ Accessed April 17, 2017. http://folding.chemistry.msstate.edu/utils/pross.html.
+_“Stidges/jquery-Searchable.”_ GitHub. Accessed April 10, 2017. https://github.com/stidges/jquery-searchable.
+_“The Django Admin Site | Django Documentation | Django.”_ Accessed April 10, 2017. https://docs.djangoproject.com/en/1.11/ref/contrib/admin/.
+_“The Web Framework for Perfectionists with Deadlines | Django.”_ Accessed April 10, 2017. https://www.djangoproject.com/.
+_“Welcome to Python.org.”_ Python.org. Accessed April 10, 2017. https://www.python.org/.
+
+
 ## Encountered difficulties
 **Quentin**:  
 
