@@ -201,7 +201,7 @@ Secondary structures play a key role in proteins shape and functions. their
  they are still understudied.  
 For this project we built a MySQL database containing secondary structure
  predictions made from 2 prediction tools (DSSP and PROSS) []. The database is
- accessible through a web interface designed with the Python**^14** framework
+ accessible through a web interface designed with the **Python^14** framework
  Django.  
  Thanks to our website, a user can search for any PDB stored into the database
  to compare their associated secondary structure predictions with emphasis on
@@ -225,7 +225,7 @@ The website is compatible with both latest **Chromium** and **Firefox**
 ### Prediction Tools
 TODO
 ### Database and web infrastructure
-The choice has been made to use a standard MySQL**^8** database better suited for web
+The choice has been made to use a standard **MySQL^8** database better suited for web
  use.  
 We decided to create 4 different tables : one for PDB informations, one for
  predictions informations, and 2 others for prediction methods and resolution
@@ -249,7 +249,7 @@ This file contains queries necessary to the creation of the 4 tables and
  informations about the predictions generated with DSSP and PROSS.  
 After the database has been populated, We had to found a way to access it easily
  if any further modification would be needed.  
-For this purpose, the choice has been made to use Django**^13**.  
+For this purpose, the choice has been made to use **Django^13**.  
 <br>
 <p align="center">
 <img src="https://gitlab.com/Yoann.Pageaud/Projet_BD_M2BI/raw/master/Report_img/386517.png" style="width:600px">
@@ -408,10 +408,10 @@ A menu bar has been added to the top of each HTML templates so that all pages
 Every details relative to webpages, are available on the **Home** page
  when starting the web server in the **How to use the website ?** part.  
 
-Alongside the user accessible part of our website, and administration
- interface**^12** have been configured (to access the admin interface you need
- to create a superuser account, see details in the README file for more
- informations).  
+Alongside the user accessible part of our website, an
+ **administration interface^12** have been configured (to access the admin
+ interface you need to create a superuser account, see details in the README
+ file for more informations).  
 <br>
 <p align="center">
 <img src="https://gitlab.com/Yoann.Pageaud/Projet_BD_M2BI/raw/master/Report_img/adminhome.png" style="width:600px">
