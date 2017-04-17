@@ -397,7 +397,7 @@ Access to entries in all database tables have been made available, with the
  (DSSP or PROSS).  
 <br>
 <p align="center">
-<img src="https://gitlab.com/Yoann.Pageaud/Projet_BD_M2BI/raw/master/Report_img/adminhome.png" style="width:600px">
+<img src="https://gitlab.com/Yoann.Pageaud/Projet_BD_M2BI/raw/master/Report_img/admin-pdb-exmpl.png" style="width:600px">
 </p>
 <p align="center">
 <b>Figure 5: Administration page for PDBs.</b>
