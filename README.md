@@ -264,6 +264,8 @@ The structure of a Django project follows some standards defined by the
 <br>
 <p align="center">
 <img src="https://gitlab.com/Yoann.Pageaud/Projet_BD_M2BI/raw/master/Report_img/Tree_PDBWebsite.png" style="width:600px">
+</p>
+<p align="center">
 <b>Figure 3: Structure of the Django project PDBWebsite.</b>
 </p>
 <br>
@@ -343,22 +345,29 @@ HTML templates call:
 The website can be navigated thanks to a menu bar on the top of each page.  
 6 HTML templates were made:
 
-* **Home**: this page is an introduction to the website, The biological issue
- raised, and how it answers to it. Examples of use are also described. 
-* **PDBs**: this page contain a table displaying all entries from the PDB table
- in the database. Rows can be sorted and filtered, and each PDB Id send to a
- page displaying every details about a specific PDB. 
-* **Strucs**: this page work exactly the same way than the PDBs page, except
- that from the table, you can access both PDBs details pages and Predictions
- details pages.
-* **About**: this page dynamically display interesting statistics about the
+* **home.html**: this page is an introduction to the website, The biological
+ issue raised, and how it answers to it. Examples of use are also described. 
+* **pdbinfo.html**: this page contain a table displaying all entries from the
+ PDB table in the database. Rows can be sorted and filtered, and each PDB Id
+ send to a page displaying every details about a specific PDB. 
+* **strucinfo.html**: this page work exactly the same way than the PDBs page,
+ except that from the table, you can access both PDBs details pages and
+ predictions details pages.
+* **about.html**: this page dynamically display interesting statistics about the
  database, and contains also authors informations. 
-* **Details**: under this name there are 2 types of details pages: PDB details
- and Prediction details. PDB details pages have an URL ending with the PDB Id
- concatenated to the PDB chain name, whereas Predictions details pages have an
- URL ending by an integer corresponding to the prediction id. both Details pages contain links that simplify the navigation between PDB and corresponding predictions. Further more, additional options have been added to the PDB details pages to have access to the corresponding RCSB PDB page, to be able to download the PDB file, and to have a quick access to the online tool RAMPAGE which generate multiple Ramachandran plots, one especially representing the distribution of Proline-favorable regions.
- 
+* **pdbstat.html**: this page contains PDB details for one PDB. It has an URL
+ ending with the PDB Id concatenated to the PDB chain name.
+* **strucstat.html**: this page contains Predictions details for one prediction.
+ It has an URL ending by an integer corresponding to the prediction id.
 
+Both **pdbstat.html** and **strucstat.html** pages contain links that simplifies
+ the navigation between a PDB and its corresponding predictions.  
+Furthermore, additional options have been added to the PDB details pages to have
+ access to the corresponding **RCSB** page, to be able to
+ **download the PDB file**, and to have a quick access to the online tool
+ **RAMPAGE** which generate multiple Ramachandran plots, one especially
+ representing the distribution of **Proline-favorable regions**.  
+ 
 ## Encountered difficulties
 **Quentin**:  
 
