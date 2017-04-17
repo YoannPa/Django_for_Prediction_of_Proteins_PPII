@@ -191,12 +191,16 @@ Various packages and tools had to be installed. Install steps are explained in t
 ### Prediction Tools
 TODO
 ### Database and web infrastructure
-The choice has been made to use a standard MySQL database better suited for web use.  
-We decided to create 4 different tables : one for PDB informations, one for Predictions informations, and 2 others for prediction methods and resolution methods.   
+The choice has been made to use a standard MySQL database better suited for web
+ use.  
+We decided to create 4 different tables : one for PDB informations, one for
+ predictions informations, and 2 others for prediction methods and resolution
+ methods.   
 The detailled conceptual framework of our database is available below:
 
 <p align="center">
 <img src="https://gitlab.com/Yoann.Pageaud/Projet_BD_M2BI/raw/master/Report_img/Base%20de%20Donn%C3%A9es%20Projet%20M2BI.png" style="width:600px">
+<b>Figure 1: Database conceptual framework.</b>
 </p>
 <br>
 The database has been created following the steps in the **Setup Database** part
