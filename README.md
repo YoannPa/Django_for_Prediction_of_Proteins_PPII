@@ -201,7 +201,8 @@ Secondary structures play a key role in proteins shape and functions. their
  they are still understudied.  
 For this project we built a MySQL database containing secondary structure
  predictions made from 2 prediction tools (DSSP and PROSS) []. The database is
- accessible through a web interface designed with the Python framework Django.
+ accessible through a web interface designed with the Python**^14** framework
+ Django.  
  Thanks to our website, a user can search for any PDB stored into the database
  to compare their associated secondary structure predictions with emphasis on
  PPII.  
@@ -347,7 +348,7 @@ HTML templates can host each variable by calling them as followed:
 {{ variable }}
 ```
 
-If the variable is iterative, a Python**^14** **for** loop with **if** and **else**
+If the variable is iterative, a Python **for** loop with **if** and **else**
  conditions can also be used inside the template. It allows to display any query
  results dynamically on a web page.  
 
