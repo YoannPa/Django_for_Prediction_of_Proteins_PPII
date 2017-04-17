@@ -478,20 +478,20 @@ Next improvments to be added could be a display of a ramachandran plot, for each
 
 ## References
 
-**Chebrek, Romain, Sylvain Leonard, Alexandre G. de Brevern, and Jean-Christophe Gelly**. _“PolyprOnline: Polyproline Helix II and Secondary Structure Assignment Database.”_ Database: The Journal of Biological Databases and Curation 2014 (November 6, 2014). doi:10.1093/database/bau102.
-**Cowan, Pauline M., Stewart McGAVIN, and A. C. T. North**. _“The Polypeptide Chain Configuration of Collagen.”_ Nature 176, no. 4492 (décembre 1955): 1062–64. doi:10.1038/1761062a0.
-**Deshpande, N.** _“The RCSB Protein Data Bank: A Redesigned Query System and Relational Database Based on the mmCIF Schema.”_ Nucleic Acids Research 33, no. Database issue (December 17, 2004): D233–37. doi:10.1093/nar/gki057.
-_“jQuery Plugin: Tablesorter 2.0.”_ Accessed April 10, 2017. http://tablesorter.com/docs/.
-_jquery.org, jquery Foundation-. “jQuery.”_ Accessed April 10, 2017. https://jquery.com/.
-**Kabsch, Wolfgang, and Christian Sander**. _“Dictionary of Protein Secondary Structure: Pattern Recognition of Hydrogen-Bonded and Geometrical Features.”_ Biopolymers 22, no. 12 (décembre 1983): 2577–2637. doi:10.1002/bip.360221211.
-**Lovell, Simon C., Ian W. Davis, W. Bryan Arendall, Paul IW de Bakker, J. Michael Word, Michael G. Prisant, Jane S. Richardson, and David C. Richardson.** _“Structure Validation by Cα Geometry: Φ, ψ and Cβ Deviation.”_ Proteins: Structure, Function, and Bioinformatics 50, no. 3 (2003): 437–450.
-_“MySQL.”_ Accessed April 10, 2017. https://www.mysql.com/.
-**Pauling, Linus, and Robert B. Corey**. _“The Structure of Fibrous Proteins of the Collagen-Gelatin Group.”_ Proceedings of the National Academy of Sciences of the United States of America 37, no. 5 (May 1951): 272–81.
-_“PROSS: Dihedral Angle-Based Secondary Structure Assignment.”_ Accessed April 17, 2017. http://folding.chemistry.msstate.edu/utils/pross.html.
-_“Stidges/jquery-Searchable.”_ GitHub. Accessed April 10, 2017. https://github.com/stidges/jquery-searchable.
-_“The Django Admin Site | Django Documentation | Django.”_ Accessed April 10, 2017. https://docs.djangoproject.com/en/1.11/ref/contrib/admin/.
-_“The Web Framework for Perfectionists with Deadlines | Django.”_ Accessed April 10, 2017. https://www.djangoproject.com/.
-_“Welcome to Python.org.”_ Python.org. Accessed April 10, 2017. https://www.python.org/.
+1- **Chebrek, Romain, Sylvain Leonard, Alexandre G. de Brevern, and Jean-Christophe Gelly**. _“PolyprOnline: Polyproline Helix II and Secondary Structure Assignment Database.”_ Database: The Journal of Biological Databases and Curation 2014 (November 6, 2014). doi:10.1093/database/bau102.  
+2- **Cowan, Pauline M., Stewart McGAVIN, and A. C. T. North**. _“The Polypeptide Chain Configuration of Collagen.”_ Nature 176, no. 4492 (décembre 1955): 1062–64. doi:10.1038/1761062a0.  
+3- **Deshpande, N.** _“The RCSB Protein Data Bank: A Redesigned Query System and Relational Database Based on the mmCIF Schema.”_ Nucleic Acids Research 33, no. Database issue (December 17, 2004): D233–37. doi:10.1093/nar/gki057.  
+4- _“jQuery Plugin: Tablesorter 2.0.”_ Accessed April 10, 2017. http://tablesorter.com/docs/.  
+5- _jquery.org, jquery Foundation-. “jQuery.”_ Accessed April 10, 2017. https://jquery.com/.  
+6- **Kabsch, Wolfgang, and Christian Sander**. _“Dictionary of Protein Secondary Structure: Pattern Recognition of Hydrogen-Bonded and Geometrical Features.”_ Biopolymers 22, no. 12 (décembre 1983): 2577–2637. doi:10.1002/bip.360221211.  
+7- **Lovell, Simon C., Ian W. Davis, W. Bryan Arendall, Paul IW de Bakker, J. Michael Word, Michael G. Prisant, Jane S. Richardson, and David C. Richardson.** _“Structure Validation by Cα Geometry: Φ, ψ and Cβ Deviation.”_ Proteins: Structure, Function, and Bioinformatics 50, no. 3 (2003): 437–450.  
+8- _“MySQL.”_ Accessed April 10, 2017. https://www.mysql.com/.  
+9- **Pauling, Linus, and Robert B. Corey**. _“The Structure of Fibrous Proteins of the Collagen-Gelatin Group.”_ Proceedings of the National Academy of Sciences of the United States of America 37, no. 5 (May 1951): 272–81.  
+10- _“PROSS: Dihedral Angle-Based Secondary Structure Assignment.”_ Accessed April 17, 2017. http://folding.chemistry.msstate.edu/utils/pross.html.  
+11- _“Stidges/jquery-Searchable.”_ GitHub. Accessed April 10, 2017. https://github.com/stidges/jquery-searchable.  
+12- _“The Django Admin Site | Django Documentation | Django.”_ Accessed April 10, 2017. https://docs.djangoproject.com/en/1.11/ref/contrib/admin/.  
+13- _“The Web Framework for Perfectionists with Deadlines | Django.”_ Accessed April 10, 2017. https://www.djangoproject.com/.  
+14- _“Welcome to Python.org.”_ Python.org. Accessed April 10, 2017. https://www.python.org/.  
 
 
 ## Encountered difficulties
