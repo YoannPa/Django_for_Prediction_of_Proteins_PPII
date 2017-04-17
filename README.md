@@ -543,6 +543,11 @@ Next improvments to be added could be a display of a ramachandran plot, for each
 
 ## Conclusion
 
+Using actual technologies from database to web interface, we made predictions for secondary structure and PPIIs available to a large public to answer.  
+PROSS and DSSP predictions are stored in a MySQL database and available to any user on the dedicated webpages.
+MySQL database containing secondary structure predictions made by PROSS and DSSP connected to a web interface using the python framework Django which has been a great help in our project. 
+To able easy detection of PPII and comparison between softwares we designed pages containing the sequence and under its corresponding secondary structure predictions. The database can be search by multiple criteria like the PDB_ID and key words in the protein name.
+This project can still be improved on many different ways.
 
 ## References
 
