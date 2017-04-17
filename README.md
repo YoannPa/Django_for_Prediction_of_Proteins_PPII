@@ -194,7 +194,7 @@ Secondary structures play a key role in proteins shape and functions. their
  present even without proline in them []. They can play a main role for
  interactions between proteins and there flexibility is one of their interesting
  trait. What is most surprising about them is that unlike other regular
- secondary structures they don't seem to have stabilizing interactions (fig. )
+ secondary structures they don't seem to have stabilizing interactions (**fig. 1**)
  []. However there is no gold standard prediction yet for there assignment and
  they are still understudied.  
 For this project we built a MySQL database containing secondary structure
@@ -203,7 +203,14 @@ For this project we built a MySQL database containing secondary structure
  Thanks to our website, a user can search for any PDB stored into the database
  to compare their associated secondary structure predictions with emphasis on
  PPII.  
-
+<br>
+<p align="center">
+<img src="https://gitlab.com/Yoann.Pageaud/Projet_BD_M2BI/raw/master/Report_img/fig_PPII_struct.png" style="width:600px">
+</p>
+<p align="center">
+<b>Figure 1:</b> Idealized major periodic structures: β-structure, α-helix, and PPII helix, modeled as the CA-trace helical axis projection <b>(b-1)</b> and perspective projection <b>(b-2)</b>, and the 10-Ala polypeptide chain <b>(b-3)</b>. PPII helix with n = −3 and d = 3.1 Å is a left-handed narrow and extended helix, the most extended helical structure occurring in proteins, and only slightly less extended than the β-structure. For α-helix, n = +3.6 and d = 1.5 Å; thus, PPII helix covers twice its length per residue. It does not form any regular pattern of local intra- or interchain hydrogen bonds. The CA-trace projection along the helical axis shows the PPII characteristic shape of a triangular prism <b>(b-1)</b>.
+</p>
+<br>
 ## Materials and Methods
 This project has been developped under the Linux distribution **Ubuntu 16.04**
  and was shared in a git repository hosted on GitLab.  
@@ -446,7 +453,7 @@ The user accessible part of the website has also been made accessible by
 
 
 
-##Conclusion
+## Conclusion
 
 
  
