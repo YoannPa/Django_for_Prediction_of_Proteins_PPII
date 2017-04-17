@@ -183,10 +183,34 @@ Yoann PAGEAUD: [yoann.pageaud@gmail.com](yoann.pageaud@gmail.com)
 [**Université Paris Diderot - Paris 7, France.**](http://www.univ-paris-diderot.fr/)  
 <br>
 ## Introduction
-TODO
+Secondary structures play a key role in proteins shape and functions. their
+ characteristics permits us to predict and assign them to a given protein
+ sequence based on structural informations. There are three major secondary
+ structures, α-helix, β-sheet and turns. But there are also other patterns like
+ Polyproline II (PPII) which are less frequent and less studied. Although we
+ know there existence since the 50's they were thought to be only present in
+ fibrous proteins and in low frequencies []. Since then, severals studies have
+ shown that PPII are also present in globular proteins and that they can be
+ present even without proline in them []. They can play a main role for
+ interactions between proteins and there flexibility is one of their interesting
+ trait. What is most surprising about them is that unlike other regular
+ secondary structures they don't seem to have stabilizing interactions (fig. )
+ []. However there is no gold standard prediction yet for there assignment and
+ they are still understudied.  
+For this project we built a MySQL database containing secondary structure
+ predictions made from 2 prediction tools (DSSP and PROSS) []. The database is
+ accessible through a web interface designed with the python framework Django.
+ Thanks to our website, a user can search for any PDB stored into the database
+ to compare their associated secondary structure predictions with emphasis on
+ PPII.  
+
 ## Materials and Methods
-This project has been developped under the Linux distribution **Ubuntu 16.04** and was shared in a git repository hosted on GitLab.  
-Various packages and tools had to be installed. Install steps are explained in the **Prerequesites** part of the **README.md** file. 
+This project has been developped under the Linux distribution **Ubuntu 16.04**
+ and was shared in a git repository hosted on GitLab.  
+Various packages and tools had to be installed. Install steps are explained in
+ the **Prerequesites** part of the **README.md** file.
+The website is compatible with both latest **Chromium** and **Firefox**
+ versions.
 
 ### Prediction Tools
 TODO
