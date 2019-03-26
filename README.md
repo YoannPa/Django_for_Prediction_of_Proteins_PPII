@@ -1,4 +1,4 @@
-# Projet BD M2BI - README
+# Django Website for Prediction of Protein Secondary Structure and Polyproline Helix II
 
 *Author: Yoann PAGEAUD*  
 *Date: 15-04-2017*
