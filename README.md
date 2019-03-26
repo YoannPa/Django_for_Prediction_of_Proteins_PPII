@@ -1,8 +1,8 @@
 # Django Website for Prediction of Protein Secondary Structure and Polyproline Helix II
 
-*Authors: Yoann PAGEAUD & Quentin LETOURNEUR.*  
-*Date: 15-04-2017*
-
+**Authors: PAGEAUD Yoann ; LETOURNEUR Quentin.**  
+[**Université Paris Diderot - Paris 7, France.**](http://www.univ-paris-diderot.fr/)  
+*Date: 15-04-2017*  
 
 This document explain every steps of install and configuration necessary to the project.
 
@@ -166,23 +166,7 @@ You can now administrate all informations in the database to be displayed on the
 In case of any problems:  
 Yoann PAGEAUD: [yoann.pageaud@gmail.com](yoann.pageaud@gmail.com)
 
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
 
-<p align="center">
-<img src="https://github.com/YoannPa/Django_Website_for_Prediction_of_Protein_Secondary_Structure_and_Polyproline_Helix_II/blob/master/Report_img/Banner_M2BI.png" style="width:100%">
-</p>
-
-# Projet M2BI Website & Database
-**Authors: PAGEAUD Yoann ; LETOURNEUR Quentin.**  
-[**Université Paris Diderot - Paris 7, France.**](http://www.univ-paris-diderot.fr/)  
- 
 ## Introduction
 Secondary structures play a key role in proteins shape and functions. their
  characteristics permits us to predict and assign them to a given protein
