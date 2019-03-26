@@ -191,7 +191,7 @@ For this project we built a MySQL database containing secondary structure
  PPII.  
 <br>
 <p align="center">
-<img src="https://gitlab.com/Yoann.Pageaud/Projet_BD_M2BI/raw/master/Report_img/fig_PPII_struct.png" style="width:600px">
+<img src="https://github.com/YoannPa/Django_Website_for_Prediction_of_Protein_Secondary_Structure_and_Polyproline_Helix_II/blob/master/Report_img/fig_PPII_struct.png" style="width:600px">
 </p>
 <p align="center">
 <b>Figure 1:</b> Idealized major periodic structures: β-structure, α-helix, and PPII helix, modeled as the CA-trace helical axis projection <b>(b-1)</b> and perspective projection <b>(b-2)</b>, and the 10-Ala polypeptide chain <b>(b-3)</b>. PPII helix with n = −3 and d = 3.1 Å is a left-handed narrow and extended helix, the most extended helical structure occurring in proteins, and only slightly less extended than the β-structure. For α-helix, n = +3.6 and d = 1.5 Å; thus, PPII helix covers twice its length per residue. It does not form any regular pattern of local intra- or interchain hydrogen bonds. The CA-trace projection along the helical axis shows the PPII characteristic shape of a triangular prism <b>(b-1)</b>.
@@ -226,7 +226,7 @@ PROSS predict secondary structure using only dihedral angles mesostates.
 
 <br>
 <p align="center">
-<img src="https://gitlab.com/Yoann.Pageaud/Projet_BD_M2BI/raw/master/Report_img/grid_pross.png" style="width:600px">
+<img src="https://github.com/YoannPa/Django_Website_for_Prediction_of_Protein_Secondary_Structure_and_Polyproline_Helix_II/blob/master/Report_img/grid_pross.png" style="width:600px">
 </p>
 <p align="center">
 <b>Figure 2: fine grain grid for mesostate assignment.For two given dihedral angles (phi and psi) of a residue the grid define its mesotate.</b>
@@ -272,7 +272,7 @@ We decided to create 4 different tables : one for PDB informations, one for
 The detailled conceptual framework of our database is available below:  
 
 <p align="center">
-<img src="https://gitlab.com/Yoann.Pageaud/Projet_BD_M2BI/raw/master/Report_img/Base%20de%20Donn%C3%A9es%20Projet%20M2BI.png" style="width:600px">
+<img src="https://github.com/YoannPa/Django_Website_for_Prediction_of_Protein_Secondary_Structure_and_Polyproline_Helix_II/blob/master/Report_img/Base%20de%20Donn%C3%A9es%20Projet%20M2BI.png" style="width:600px">
 <b>Figure 3: Database conceptual framework.</b>
 </p>
 <br>
@@ -291,7 +291,7 @@ After the database has been populated, We had to found a way to access it easily
 For this purpose, the choice has been made to use **Django^13**.  
 <br>
 <p align="center">
-<img src="https://gitlab.com/Yoann.Pageaud/Projet_BD_M2BI/raw/master/Report_img/386517.png" style="width:600px">
+<img src="https://github.com/YoannPa/Django_Website_for_Prediction_of_Protein_Secondary_Structure_and_Polyproline_Helix_II/blob/master/Report_img/386517.png" style="width:600px">
 </p>
 <p align="center">
 <b>Figure 4: Django M.V.T model.</b>
@@ -336,7 +336,7 @@ The structure of a Django project follows some standards defined by the
 
 <br>
 <p align="center">
-<img src="https://gitlab.com/Yoann.Pageaud/Projet_BD_M2BI/raw/master/Report_img/Tree_PDBWebsite.png" style="width:600px">
+<img src="https://github.com/YoannPa/Django_Website_for_Prediction_of_Protein_Secondary_Structure_and_Polyproline_Helix_II/blob/master/Report_img/Tree_PDBWebsite.png" style="width:600px">
 </p>
 <p align="center">
 <b>Figure 5: Structure of the Django project PDBWebsite.</b>
@@ -453,7 +453,7 @@ Alongside the user accessible part of our website, an
  file for more informations).  
 <br>
 <p align="center">
-<img src="https://gitlab.com/Yoann.Pageaud/Projet_BD_M2BI/raw/master/Report_img/adminhome.png" style="width:600px">
+<img src="https://github.com/YoannPa/Django_Website_for_Prediction_of_Protein_Secondary_Structure_and_Polyproline_Helix_II/blob/master/Report_img/adminhome.png" style="width:600px">
 </p>
 <p align="center">
 <b>Figure 6: Administration main page.</b>
@@ -471,7 +471,7 @@ Access to entries in all database tables have been made available, with the
  prediction (DSSP or PROSS).  
 <br>
 <p align="center">
-<img src="https://gitlab.com/Yoann.Pageaud/Projet_BD_M2BI/raw/master/Report_img/admin-pdb-exmpl.png" style="width:600px">
+<img src="https://github.com/YoannPa/Django_Website_for_Prediction_of_Protein_Secondary_Structure_and_Polyproline_Helix_II/blob/master/Report_img/admin-pdb-exmpl.png" style="width:600px">
 </p>
 <p align="center">
 <b>Figure 7: Administration page for PDBs.</b>
