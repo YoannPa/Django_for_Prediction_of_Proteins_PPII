@@ -179,11 +179,12 @@ Yoann PAGEAUD: [yoann.pageaud@gmail.com](yoann.pageaud@gmail.com)
 <img src="https://github.com/YoannPa/Django_Website_for_Prediction_of_Protein_Secondary_Structure_and_Polyproline_Helix_II/blob/master/Report_img/Banner_M2BI.png" style="width:100%">
 </p>
 <br>
+
 # Projet M2BI Website & Database
-<br>
+<br>  
 **Authors: PAGEAUD Yoann ; LETOURNEUR Quentin.**  
 [**Université Paris Diderot - Paris 7, France.**](http://www.univ-paris-diderot.fr/)  
-<br>
+<br>  
 ## Introduction
 Secondary structures play a key role in proteins shape and functions. their
  characteristics permits us to predict and assign them to a given protein
