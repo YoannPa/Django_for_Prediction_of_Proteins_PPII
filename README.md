@@ -176,7 +176,7 @@ Yoann PAGEAUD: [yoann.pageaud@gmail.com](yoann.pageaud@gmail.com)
 <br>
 
 <p align="center">
-<img src="https://gitlab.com/Yoann.Pageaud/Projet_BD_M2BI/raw/master/Report_img/Banner_M2BI.png" style="width:100%">
+<img src="https://github.com/YoannPa/Django_Website_for_Prediction_of_Protein_Secondary_Structure_and_Polyproline_Helix_II/blob/master/Report_img/Banner_M2BI.png" style="width:100%">
 </p>
 <br>
 # Projet M2BI Website & Database
