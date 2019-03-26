@@ -1,6 +1,6 @@
 # Django Website for Prediction of Protein Secondary Structure and Polyproline Helix II
 
-*Author: Yoann PAGEAUD & Quentin LETOURNEUR*  
+*Authors: Yoann PAGEAUD & Quentin LETOURNEUR.*  
 *Date: 15-04-2017*
 
 
