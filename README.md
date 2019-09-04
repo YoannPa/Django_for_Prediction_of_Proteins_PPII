@@ -9,16 +9,12 @@ This document explain every steps of install and configuration necessary to the 
 ## Prerequesites
 
 
-* Update packages already installed:
+* Install **Python 3.6**:
 
 ```bash
-sudo apt update
-```
-
-* Install **Python 2.7**:
-
-```bash
-sudo apt install python2.7
+sudo add-apt-repository ppa:jonathonf/python-3.6
+sudo apt-get update
+sudo apt install python3.6
 ```
 
 * Install **MySQL and dependencies**:
@@ -29,6 +25,12 @@ sudo apt install mysql-common
 sudo apt install mysql-server
 sudo apt install mysql-sandbox
 sudo apt install libmysqlclient-dev
+```
+
+* Upgrade **pip**:
+
+```bash
+pip install --upgrade pip
 ```
 
 * Install **MySQL-python**:
@@ -44,10 +46,11 @@ sudo pip install mysqlclient
 sudo pip install Django
 sudo pip install django-autocomplete-light
 sudo pip install django-simple-menu
+python -m pip install django
 ```
 
 
-* Set your working directory to the folder containing the file **create_db.sql**
+* Set your working directory to the git folder containing the script **create_db.sql**
 
 * Launch Mysql:
 
@@ -80,7 +83,7 @@ Once tables are created you can move to the Set up of Django
 
 ## Set up Django
 
-* **cd** into the Django project **PDBWebsite/**.
+* **cd** into the Django project **PDBWebsite/PDBWebsite/**.
  
 
 * Configure project settings for Database: in **settings.py** replace:
@@ -130,6 +133,7 @@ And save modifications.
 * Migrate new parameters to the database:
 
 ```bash
+cd ..
 python manage.py makemigrations pdbapp
 python manage.py migrate
 ```
@@ -137,7 +141,7 @@ python manage.py migrate
 The database will be updated with the tables necessary for the communication
 between MySQL and the Django app.
 
-## Set up a supertuser account:
+## Set up a superuser account:
 
 * Create new Superuser account:
 
