@@ -21,8 +21,8 @@ class Pdb(models.Model):
     resolution_pdb = models.FloatField(db_column='resolution_PDB')  # Field name made lowercase.
     meth_res = models.ForeignKey('MethodesRes', models.DO_NOTHING, db_column='meth_Res')  # Field name made lowercase.
 
-    def __unicode__(self):
-        return self.id_pdb_chain
+    def __str__(self):
+        return str(self.id_pdb_chain)
 
     class Meta:
         managed = False
@@ -32,8 +32,8 @@ class Pdb(models.Model):
 class MethodesAnalyse(models.Model):
     nom_analyse = models.CharField(db_column='nom_Analyse', primary_key=True, max_length=7)  # Field name made lowercase.
 
-    def __unicode__(self):
-        return self.nom_analyse
+    def __str__(self):
+        return str(self.nom_analyse)
 
     class Meta:
         managed = False

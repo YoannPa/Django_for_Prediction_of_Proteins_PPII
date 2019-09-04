@@ -31,7 +31,6 @@ def pdbinfo(request):
 
 
 def strucinfo(request):
-
     strucsnd = StructSec.objects.order_by('id_pdb_chain')\
     [:len(StructSec.objects.order_by('id_pdb_chain'))]
     
@@ -48,12 +47,12 @@ def about(request):
     structcount = StructSec.objects.count()
     dsspcount = StructSec.objects.filter(nom_analyse='DSSP').count()
     prosscount = StructSec.objects.filter(nom_analyse='PROSS').count()
-    avgstartseq = Pdb.objects.aggregate(Avg('start_seq')).values()[0]
-    avgsize = Pdb.objects.aggregate(Avg('taille_proteine')).values()[0]
-    avgres = Pdb.objects.aggregate(Avg('resolution_pdb')).values()[0]
-    avgstartpred = StructSec.objects.aggregate(Avg('start_pred')).values()[0]
-    totppii = StructSec.objects.aggregate(Sum('nombre_ppii')).values()[0]
-    avgpcppii = StructSec.objects.aggregate(Avg('pourcentage_ppii')).values()[0]
+    avgstartseq = list(Pdb.objects.aggregate(Avg('start_seq')).values())[0]
+    avgsize = list(Pdb.objects.aggregate(Avg('taille_proteine')).values())[0]
+    avgres = round(list(Pdb.objects.aggregate(Avg('resolution_pdb')).values())[0],3)
+    avgstartpred = list(StructSec.objects.aggregate(Avg('start_pred')).values())[0]
+    totppii = list(StructSec.objects.aggregate(Sum('nombre_ppii')).values())[0]
+    avgpcppii = round(list(StructSec.objects.aggregate(Avg('pourcentage_ppii')).values())[0],2)
     namelist = ['Quentin LETOURNEUR', 'Yoann PAGEAUD']
 
     context = {
@@ -87,7 +86,6 @@ def detail(request, id_pdb_chain):
 
 
 def strdetail(request, id_struct_sec):
-
     strpred = get_object_or_404(StructSec, id_struct_sec=id_struct_sec)
 
     context = {       
