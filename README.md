@@ -12,8 +12,9 @@ This document explain every steps of install and configuration necessary to the 
 * Install **Python 3.6**:
 
 ```bash
-sudo add-apt-repository ppa:jonathonf/python-3.6
-sudo apt-get update
+sudo apt install software-properties-common
+sudo add-apt-repository ppa:deadsnakes/ppa
+sudo apt update
 sudo apt install python3.6
 ```
 
@@ -21,7 +22,7 @@ sudo apt install python3.6
 
 ```bash
 sudo apt install mysql-client
-sudo apt install mysql-common
+#To run if not installed with mysql-client: sudo apt install mysql-common
 sudo apt install mysql-server
 sudo apt install mysql-sandbox
 sudo apt install libmysqlclient-dev
@@ -36,8 +37,8 @@ pip install --upgrade pip
 * Install **MySQL-python**:
 
 ```bash
-sudo pip install MySQL-python
 sudo pip install mysqlclient
+sudo python -m pip install mysqlclient
 ```
 
 * Install **Django**:
@@ -76,6 +77,7 @@ quit;
 * Load Tables in M2BI_Projet_PPII using the file **create_db.sql**;
 
 ```bash
+cd Django_for_Prediction_of_Proteins_PPII/
 mysql -u root -p M2BI_Projet_PPII < create_db.sql
 ```
 
@@ -86,7 +88,7 @@ Once tables are created you can move to the Set up of Django
 * **cd** into the Django project **PDBWebsite/PDBWebsite/**.
  
 
-* Configure project settings for Database: in **settings.py** replace:
+* In **settings.py** configure project settings for Database:  replace:
 
 ```python
 DATABASES = {
@@ -112,22 +114,7 @@ DATABASES = {
 }
 ```
 
-Don't forget to replace **<your own root password>** by your root password.
-
-Then add **'pdbapp.apps.PdbappConfig'** in **INSTALLED_APPS**:
-
-```python
-INSTALLED_APPS = [
-    'pdbapp.apps.PdbappConfig',
-    'django.contrib.admin',
-    'django.contrib.auth',
-    'django.contrib.contenttypes',
-    'django.contrib.sessions',
-    'django.contrib.messages',
-    'django.contrib.staticfiles',
-]
-```
-
+Don't forget to replace **<your own root password>** by your MySQL password defined during installation.
 And save modifications. 
 
 * Migrate new parameters to the database:

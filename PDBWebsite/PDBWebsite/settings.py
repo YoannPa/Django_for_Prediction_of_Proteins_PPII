@@ -76,12 +76,8 @@ WSGI_APPLICATION = 'PDBWebsite.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'M2BI_Projet_PPII',
-	'USER': 'root',
-	'PASSWORD': 'Allerlom',
-	'HOST': '',
-	'PORT': '',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
 #'PASSWORD': 'bdd2017',
