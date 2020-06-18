@@ -88,7 +88,7 @@ Once tables are created you can move to the Set up of Django
 * **cd** into the Django project **PDBWebsite/PDBWebsite/**.
  
 
-* In **settings.py** configure project settings for Database:
+* In **settings.py** configure project settings for Database:  
 Replace:
 
 ```python
@@ -115,7 +115,7 @@ DATABASES = {
 }
 ```
 
-Don't forget to replace **<your own root password>** by your MySQL password
+Don't forget to replace **\<your own root password\>** by your MySQL password
 defined during installation.  
 And save modifications. 
 
