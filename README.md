@@ -89,6 +89,7 @@ Once tables are created you can move to the Set up of Django
  
 
 * In **settings.py** configure project settings for Database:  
+
 Replace:
 
 ```python
