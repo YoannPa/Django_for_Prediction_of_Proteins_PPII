@@ -80,7 +80,6 @@ DATABASES = {
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
-#'PASSWORD': 'bdd2017',
 
 
 # Password validation
